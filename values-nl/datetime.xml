@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<resources>
+	<string name="sunday">zondag</string>
+	<string name="sunday_short">zo</string>
+	<string name="monday">maandag</string>
+	<string name="monday_short">ma</string>
+	<string name="tuesday">dinsdag</string>
+	<string name="tuesday_short">di</string>
+	<string name="wednesday">woensdag</string>
+	<string name="wednesday_short">wo</string>
+	<string name="thursday">donderdag</string>
+	<string name="thursday_short">do</string>
+	<string name="friday">vrijdag</string>
+	<string name="friday_short">vr</string>
+	<string name="saturday">zaterdag</string>
+	<string name="saturday_short">za</string>
+
+	<string name="jan">januari</string>
+	<string name="feb">februari</string>
+	<string name="mar">maart</string>
+	<string name="apr">april</string>
+	<string name="may">mei</string>
+	<string name="jun">juni</string>
+	<string name="jul">juli</string>
+	<string name="aug">augustus</string>
+	<string name="sep">september</string>
+	<string name="oct">oktober</string>
+	<string name="nov">november</string>
+	<string name="dec">december</string>
+	
+	<string name="janRP">januari</string>
+	<string name="febRP">februari</string>
+	<string name="marRP">maart</string>
+	<string name="aprRP">april</string>
+	<string name="mayRP">mei</string>
+	<string name="junRP">juni</string>
+	<string name="julRP">juli</string>
+	<string name="augRP">augustus</string>
+	<string name="sepRP">september</string>
+	<string name="octRP">oktober</string>
+	<string name="novRP">november</string>
+	<string name="decRP">december</string>
+	
+	<string name="oneDay">dag</string>
+    <string name="twoFourDay">dagen</string>
+    <string name="fiveDay">dagen</string>
+    
+    <string name="timeIntervalInFuture">Na</string>
+    <string name="timeIntervalInPast">Voor</string>
+</resources>

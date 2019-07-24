@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<resources>
+	<string name="sunday">vasárnap</string>
+	<string name="sunday_short">va</string>
+	<string name="monday">hétfő</string>
+	<string name="monday_short">hé</string>
+	<string name="tuesday">kedd</string>
+	<string name="tuesday_short">ke</string>
+	<string name="wednesday">szerda</string>
+	<string name="wednesday_short">sze</string>
+	<string name="thursday">csütörtök</string>
+	<string name="thursday_short">cs</string>
+	<string name="friday">péntek</string>
+	<string name="friday_short">pé</string>
+	<string name="saturday">szombat</string>
+	<string name="saturday_short">szo</string>
+
+	<string name="jan">Január</string>
+	<string name="feb">Február</string>
+	<string name="mar">Március</string>
+	<string name="apr">Április</string>
+	<string name="may">Május</string>
+	<string name="jun">Június</string>
+	<string name="jul">Július</string>
+	<string name="aug">Augusztus</string>
+	<string name="sep">Szeptember</string>
+	<string name="oct">Október</string>
+	<string name="nov">November</string>
+	<string name="dec">December</string>
+	
+	<string name="janRP">Január</string>
+	<string name="febRP">Február</string>
+	<string name="marRP">Március</string>
+	<string name="aprRP">Április</string>
+	<string name="mayRP">Május</string>
+	<string name="junRP">Június</string>
+	<string name="julRP">Július</string>
+	<string name="augRP">Augusztus</string>
+	<string name="sepRP">Szeptember</string>
+	<string name="octRP">Október</string>
+	<string name="novRP">November</string>
+	<string name="decRP">December</string>
+	
+	<string name="rightNow">most</string>
+	
+	<string name="oneDay">nap</string>
+    <string name="twoFourDay">napok</string>
+    <string name="fiveDay">napok</string>
+    
+    <string name="oneHour">óra</string>
+    <string name="twoFourHour">órák</string>
+    <string name="fiveHour">órák</string>
+    
+    <string name="oneMinute">perc</string>
+    <string name="twoFourMinute">percek</string>
+    <string name="fiveMinute">percek</string>
+
+    <string name="daysShort">n</string>
+    <string name="hoursShort">ó</string>
+    <string name="minutesShort">p</string>
+    
+    <string name="timeIntervalInFuture">ban</string>
+    <string name="timeIntervalInPast">előtt</string>        
+    
+</resources>

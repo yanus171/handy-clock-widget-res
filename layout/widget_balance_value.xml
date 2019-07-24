@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal" xmlns:tools="http://schemas.android.com/tools">
+                
+    <TextView
+        android:id="@+id/balanceValue"
+        style="@style/Shadow"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="balanceValue"
+        android:layout_gravity="center_vertical|left"
+        android:textColor="#ffffff"
+        android:textSize="11sp"
+        android:singleLine="true"
+        android:paddingLeft="1sp"
+        android:paddingRight="0sp"
+        android:textStyle="normal"
+        tools:ignore="HardcodedText" />
+         
+    <TextView
+        android:id="@+id/perDayMinus"
+        style="@style/Shadow"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="perDayMinus"
+        android:layout_gravity="center_vertical|left"
+        android:textColor="#00ff00"
+        android:textSize="11sp"
+        android:singleLine="true"
+        android:paddingLeft="0sp"
+        android:paddingRight="0sp"
+        android:textStyle="normal"
+        tools:ignore="HardcodedText" />
+    
+    <TextView
+        android:id="@+id/perDayPlus"
+        style="@style/Shadow"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="perDayPlus"
+        android:layout_gravity="center_vertical|left"
+        android:textColor="#0000ff"
+        android:textSize="11sp"
+        android:singleLine="true"
+        android:paddingLeft="0sp"
+        android:paddingRight="0sp"
+        android:textStyle="normal"
+        tools:ignore="HardcodedText" />
+    
+    <TextView
+        android:id="@+id/lastChange"
+        style="@style/Shadow"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="lastChange"
+        android:layout_gravity="center_vertical|left"
+        android:textColor="#ffff00"
+        android:textSize="11sp"
+        android:singleLine="true"
+        android:paddingLeft="0sp"
+        android:paddingRight="0sp"
+        android:textStyle="normal"
+        tools:ignore="HardcodedText" />
+    
+    <TextView
+        android:id="@+id/comma"
+        style="@style/Shadow"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=","
+        android:layout_gravity="center_vertical|left"
+        android:textColor="#ffffff"
+        android:textSize="11sp"
+        android:singleLine="true"
+        android:paddingLeft="0sp"
+        android:paddingRight="2sp"
+        android:textStyle="normal"
+        tools:ignore="HardcodedText" />
+
+     
+</LinearLayout>

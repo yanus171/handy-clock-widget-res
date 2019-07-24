@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<resources>
+	<string name="sunday">sunday</string>
+	<string name="sunday_short">su</string>
+	<string name="monday">monday</string>
+	<string name="monday_short">mo</string>
+	<string name="tuesday">tuesday</string>
+	<string name="tuesday_short">tu</string>
+	<string name="wednesday">wednesday</string>
+	<string name="wednesday_short">we</string>
+	<string name="thursday">thursday</string>
+	<string name="thursday_short">tu</string>
+	<string name="friday">friday</string>
+	<string name="friday_short">fr</string>
+	<string name="saturday">saturday</string>
+	<string name="saturday_short">sa</string>
+
+	<string name="jan">January</string>
+	<string name="feb">February</string>
+	<string name="mar">March</string>
+	<string name="apr">April</string>
+	<string name="may">May</string>
+	<string name="jun">June</string>
+	<string name="jul">July</string>
+	<string name="aug">August</string>
+	<string name="sep">September</string>
+	<string name="oct">October</string>
+	<string name="nov">November</string>
+	<string name="dec">December</string>
+	
+	<string name="janShort">jan</string>
+	<string name="febShort">feb</string>
+	<string name="marShort">mar</string>
+	<string name="aprShort">apr</string>
+	<string name="mayShort">may</string>
+	<string name="junShort">jun</string>
+	<string name="julShort">jul</string>
+	<string name="augShort">aug</string>
+	<string name="sepShort">sep</string>
+	<string name="octShort">oct</string>
+	<string name="novShort">nov</string>
+	<string name="decShort">dec</string>
+	
+	<string name="janRP">January</string>
+	<string name="febRP">February</string>
+	<string name="marRP">March</string>
+	<string name="aprRP">April</string>
+	<string name="mayRP">May</string>
+	<string name="junRP">June</string>
+	<string name="julRP">July</string>
+	<string name="augRP">August</string>
+	<string name="sepRP">September</string>
+	<string name="octRP">October</string>
+	<string name="novRP">November</string>
+	<string name="decRP">December</string>
+	
+	<string name="rightNow">right now</string>
+	
+	<string name="oneWeek">week</string>
+    <string name="twoFourWeek">weeks</string>
+    <string name="fiveWeek">weeks</string>
+    
+    <string name="oneMonth">month</string>
+    <string name="twoFourMonth">months</string>
+    <string name="fiveMonth">months</string>
+    
+    <string name="oneDay">day</string>
+    <string name="twoFourDay">days</string>
+    <string name="fiveDay">days</string>
+    
+    <string name="oneHour">hour</string>
+    <string name="twoFourHour">hours</string>
+    <string name="fiveHour">hours</string>
+    
+    <string name="oneMinute">minute</string>
+    <string name="twoFourMinute">minutes</string>
+    <string name="fiveMinute">minutes</string>
+
+    <string name="monthsShort">months</string>
+    <string name="weeksShort">w</string>
+    <string name="daysShort">d</string>
+    <string name="hoursShort">h</string>
+    <string name="minutesShort">m</string>
+    
+    <string name="timeIntervalInFuture">in</string>
+    <string name="timeIntervalInPast">ago</string>        
+    
+    <string name="morning">Morning</string>
+    <string name="evening">Evening</string>
+    <string name="day">Day</string>
+    
+    <string name="in">in</string>
+</resources>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools" tools:ignore="MissingTranslation">
+	<dimen name="widget_margin3">0dp</dimen>
+	<dimen name="widget_margin5">0dp</dimen>    
+	<dimen name="widget_margin6">1dp</dimen>
+	<dimen name="widget_background_pad_bottom">8dp</dimen>    
+	<dimen name="widget_background_pad_bottom_small">2dp</dimen>
+	<dimen name="widget_margin8">1dp</dimen>    
+	<dimen name="widget_background_pad_top">8dp</dimen>
+	<dimen name="widget_background_pad_top_small">5dp</dimen>
+</resources>

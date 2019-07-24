@@ -1,0 +1,245 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:link="ru.yanus171.android.handyclockwidget.free.LinkPreference"
+    xmlns:startActivity="ru.yanus171.android.handyclockwidget.free.StartActivityPreference"
+    xmlns:colorPreference="ru.yanus171.android.handyclockwidget.free.ColorPreference"
+    android:key="preferenceTitle"
+    android:orderingFromXml="true"
+    android:title="@string/preferenceTitle" >
+
+    <ru.yanus171.android.handyclockwidget.free.StartActivityPreference
+        android:key="sendDebugInfo"
+        android:summary="@string/sendDebugInfoSummary"
+        android:title="@string/sendDebugInfo"
+        startActivity:className=""
+        android:icon="@drawable/pref_help_white"
+        startActivity:oper="sendDebugInfo" />
+
+    <ListPreference
+        android:defaultValue="Dark"
+        android:entries="@array/themeList"
+        android:entryValues="@array/themeValueList"
+        android:key="theme"
+        android:icon="@drawable/pref_color"
+        android:title="@string/theme" />
+    		
+    <ru.yanus171.android.handyclockwidget.free.ColorPreference
+        android:defaultValue="@string/constDefaultTodayBorderColor"
+        android:key="todayBorderColor"
+        android:title="@string/todayBorderColor" />
+
+    <PreferenceCategory
+	         android:layout="@layout/preference_category"
+	         android:icon="@drawable/pref_fontsize"
+	         android:title="@string/fontSize" />
+    
+   	<ListPreference
+           android:defaultValue="@string/constDefaultTimeFontSize"
+           android:entries="@array/fontSizeValueList"
+           android:entryValues="@array/fontSizeValueList"
+           android:key="labelTimeFontSizeMain"
+           android:icon="@drawable/pref_fontsize"
+           android:title="@string/time" />
+   	<ListPreference
+           android:key="labelTimeFontSizeMain21"
+           android:defaultValue="@string/constDefaultTimeFontSize21"
+           android:entries="@array/fontSizeValueList"
+           android:entryValues="@array/fontSizeValueList"
+           android:icon="@drawable/pref_fontsize"
+           android:title="@string/fontSize21" />
+   	<ListPreference
+           android:defaultValue="@string/constDefaultMainFontSize"
+           android:entries="@array/fontSizeValueList"
+           android:entryValues="@array/fontSizeValueList"
+           android:key="mainFontSize"
+           android:icon="@drawable/pref_fontsize"
+           android:title="@string/fontSizeMainText" />
+   	<ListPreference
+           android:defaultValue="@string/constDefaultSmallFontSize"
+           android:entries="@array/fontSizeValueList"
+           android:entryValues="@array/fontSizeValueList"
+           android:key="smallFontSize"
+           android:icon="@drawable/pref_fontsize"
+           android:title="@string/fontSizeSmallText" />
+    
+	<PreferenceCategory
+            android:layout="@layout/preference_category"
+            android:title="@string/common" />
+   	
+    <CheckBoxPreference
+        android:defaultValue="false"
+        android:key="notificantionIcon"
+        android:summary="@string/notificantionIconSummary"
+        android:title="@string/notificantionIcon" />
+    
+    <ListPreference
+        android:defaultValue="@string/constDefaultTimeWidgetLayout"
+        android:entries="@array/timeWidgetLayoutList"
+        android:entryValues="@array/timeWidgetLayoutValueList"
+        android:key="timeWidgetLayout"
+        android:icon="@drawable/pref_layout_2"
+        android:title="@string/layout"
+        android:summary="@string/timeWidgetLayoutSummary" />
+
+    <PreferenceCategory
+            android:layout="@layout/preference_category"
+            android:title="@string/showInWidget" />
+
+    <ru.yanus171.android.handyclockwidget.free.FontListSelectPreference
+        android:defaultValue="@string/constDefaultTimeFont"
+        android:key="fontFamily"
+        android:title="@string/fontFamily" />
+
+    <CheckBoxPreference
+        android:defaultValue="true"
+        android:key="showTime"
+        android:icon="@drawable/pref_clock_dark"
+        android:title="@string/time" />
+            
+    <CheckBoxPreference
+        android:defaultValue="true"
+        android:key="showAlarm"
+        android:icon="@drawable/pref_alarm_3"
+        android:title="@string/alarm" />
+
+    <CheckBoxPreference
+        android:defaultValue="true"
+        android:key="showDate"
+        android:icon="@drawable/pref_dateweekday_dark"
+        android:title="@string/date" />
+
+    <ListPreference
+        android:defaultValue="D MMMMMM"
+        android:dependency="showDate"
+        android:entries="@array/dateFormat"
+        android:entryValues="@array/dateFormat"
+        android:key="timeWidgetDateFormat"
+        android:title="@string/dateFormat" />
+
+    <CheckBoxPreference
+        android:defaultValue="false"
+        android:key="showWeekday"
+        android:icon="@drawable/pref_dateweekday_dark"
+        android:summary="@string/showWeekdaySummary"
+        android:title="@string/showWeekday" />
+    
+    <CheckBoxPreference
+        android:defaultValue="false"
+        android:dependency="showWeekday"
+        android:key="showWeekdayShort"
+        android:title="@string/showWeekdayShort" />
+ 
+    <CheckBoxPreference
+        android:defaultValue="true"
+        android:key="showMonthCalendar"
+        android:icon="@drawable/pref_grid"
+        android:title="@string/monthCalendar" />        
+    
+    <CheckBoxPreference
+        android:defaultValue="false"
+        android:key="eventListViewShowEmptyDays"
+        android:summary="@string/eventListViewShowEmptyDaysSummary"
+        android:title="@string/eventListViewShowEmptyDays" />
+
+    <PreferenceCategory
+        android:layout="@layout/preference_category"
+        android:key="infoSources"
+        android:title="@string/infoSources" />
+
+    <CheckBoxPreference
+        android:defaultValue="true"
+        android:key="eventListWidgetShowContactEvents"
+        android:icon="@drawable/pref_bd"
+        android:title="@string/contactEvents" />
+        
+    <CheckBoxPreference
+        android:defaultValue="true"
+        android:key="eventListWidgetShowCalendarEvents"
+        android:icon="@drawable/pref_calendar"
+        android:title="@string/calendarEvents" />
+    
+	<CheckBoxPreference
+	    android:defaultValue="false"
+	    android:key="eventListWidgetShowOrthodoxyEvents"
+        android:icon="@drawable/pref_calendar_red"
+        android:title="@string/orthodoxyEvents" />
+    
+    <CheckBoxPreference
+        android:defaultValue="false"
+        android:key="eventListWidgetShowSMSEvents"
+        android:icon="@drawable/pref_telephone"
+        android:title="@string/SMSEvents" />
+
+    <CheckBoxPreference
+        android:defaultValue="false"
+        android:key="smsNotification"
+        android:summary="@string/smsNotificationSummary"
+        android:title="@string/notification" />
+
+	<CheckBoxPreference
+	    android:defaultValue="false"
+	    android:key="eventListWidgetShowLastCallEvents"
+	    android:icon="@drawable/pref_phone_blue"
+	    android:title="@string/lastCallEvents" />
+    
+    <CheckBoxPreference
+        android:defaultValue="false"
+        android:key="eventListWidgetShowMissedCallEvents"
+        android:icon="@drawable/pref_phone_blue"
+        android:title="@string/missedCallEvents" />
+
+        <PreferenceCategory
+        android:layout="@layout/preference_category"
+        android:icon="@drawable/pref_notification"
+        android:key="preferenceScreenEventNotify"
+        android:title="@string/notification" />
+    
+    <CheckBoxPreference
+        android:defaultValue="false"
+        android:key="eventNotificationWithSound"
+        android:title="@string/withSound" />
+    <RingtonePreference
+        android:key="eventNotificationMelody"
+        android:ringtoneType="notification"
+        android:showDefault="true"
+        android:title="@string/melody" />
+    
+
+    <PreferenceCategory
+        android:layout="@layout/preference_category"
+        android:title="@string/additional" />
+    
+    <ru.yanus171.android.handyclockwidget.free.StartActivityPreference
+        android:key="advancedSetttings"
+        android:title="@string/advancedSetttings"
+        android:summary="@string/advancedSetttingsSummary"
+        android:icon="@drawable/pref_additional"
+        startActivity:className=""
+        startActivity:oper="advancedSetttings" />
+    
+    <PreferenceCategory
+        android:layout="@layout/preference_category"
+        android:title="@string/feedback" />
+    
+    <ru.yanus171.android.handyclockwidget.free.StartActivityPreference
+        android:key="supportApp"
+        android:title="@string/supportApp"
+        startActivity:className=""
+        android:icon="@drawable/pref_school"
+        startActivity:oper="supportApp" />
+    <ru.yanus171.android.handyclockwidget.free.StartActivityPreference
+        android:key="sendDebugInfo"
+        android:summary="@string/sendDebugInfoSummary"
+        android:title="@string/sendDebugInfo"
+        startActivity:className=""
+        android:icon="@drawable/pref_help_white"
+        startActivity:oper="sendDebugInfo" />
+    <ru.yanus171.android.handyclockwidget.free.StartActivityPreference
+        android:key="aboutProgram"
+        android:title="@string/aboutProgram"
+        android:icon="@drawable/pref_about"
+        startActivity:className=""
+        startActivity:oper="about" />
+
+    
+</PreferenceScreen>

@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:id="@+id/notificationRoot"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:paddingLeft="0sp"
+    android:paddingRight="0sp"
+    android:paddingBottom="0sp"
+    android:orientation="horizontal" >
+    
+    <ImageView android:id="@+id/image"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_weight="1"
+        android:src="@android:drawable/ic_popup_reminder"
+        android:layout_marginRight="10sp"
+        android:layout_marginLeft="10sp" />
+    
+    <LinearLayout
+	    android:layout_width="fill_parent"
+	    android:layout_height="fill_parent"
+	    android:layout_weight="0.7"
+	    android:paddingLeft="0sp"
+	    android:paddingRight="0sp"
+	    android:paddingBottom="0sp"
+	    android:orientation="vertical" >
+    
+	    <TextView	
+		        android:id="@+id/notificationCaption"
+		        style="@style/NoShadow"
+		        android:layout_width="fill_parent"
+		        android:layout_height="fill_parent"
+		        android:layout_gravity="center"
+		        android:textStyle="bold"
+		        android:textSize="20sp"
+		        android:text="Caption text long text"
+		        android:singleLine="false" />
+	    <TextView	
+		        android:id="@+id/notificationDescr"
+		        style="@style/NoShadow"
+		        android:layout_width="fill_parent"
+		        android:layout_height="fill_parent"
+		        android:layout_weight="0.7"
+		        android:layout_gravity="center"
+		        android:textStyle="bold"
+		        android:textSize="10sp"
+		        android:text="Caption text long text"
+		        android:singleLine="false" />
+    
+	</LinearLayout>	
+</LinearLayout>	

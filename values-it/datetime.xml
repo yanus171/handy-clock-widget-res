@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<resources>
+	<string name="sunday">domenica</string>
+	<string name="sunday_short">dom</string>
+	<string name="monday">lunedi\'</string>
+	<string name="monday_short">lun</string>
+	<string name="tuesday">martedi\'</string>
+	<string name="tuesday_short">mar</string>
+	<string name="wednesday">mercoledi\'¬</string>
+	<string name="wednesday_short">mer</string>
+	<string name="thursday">giovedi\'</string>
+	<string name="thursday_short">gio</string>
+	<string name="friday">venerdi\'</string>
+	<string name="friday_short">ven</string>
+	<string name="saturday">sabato</string>
+	<string name="saturday_short">sab</string>
+
+	<string name="jan">gennaio</string>
+	<string name="feb">febbraio</string>
+	<string name="mar">marzo</string>
+	<string name="apr">aprile</string>
+	<string name="may">maggio</string>
+	<string name="jun">giugno</string>
+	<string name="jul">luglio</string>
+	<string name="aug">agosto</string>
+	<string name="sep">settembre</string>
+	<string name="oct">ottobre</string>
+	<string name="nov">novembre</string>
+	<string name="dec">dicembre</string>
+	
+	<string name="janRP">gennaio</string>
+	<string name="febRP">febbraio</string>
+	<string name="marRP">marzo</string>
+	<string name="aprRP">aprile</string>
+	<string name="mayRP">maggio</string>
+	<string name="junRP">giugno</string>
+	<string name="julRP">luglio</string>
+	<string name="augRP">agosto</string>
+	<string name="sepRP">settembre</string>
+	<string name="octRP">ottobre</string>
+	<string name="novRP">novembre</string>
+	<string name="decRP">dicembre</string>
+	
+	<string name="oneDay">giorno</string>
+    <string name="twoFourDay">giorni</string>
+    <string name="fiveDay">giorni</string>
+    
+    <string name="oneHour">ora</string>
+    <string name="twoFourHour">ore</string>
+    <string name="fiveHour">ore</string>
+    
+    <string name="oneMinute">minuto</string>
+    <string name="twoFourMinute">minuti</string>
+    <string name="fiveMinute">minuti</string>
+    
+    <string name="timeIntervalInFuture">fra</string>
+    <string name="timeIntervalInPast">fa</string>       
+</resources>

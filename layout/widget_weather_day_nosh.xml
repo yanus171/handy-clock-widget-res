@@ -1,0 +1,330 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/weatherDayRoot"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="1dp"
+    android:layout_marginRight="0dp"
+    android:layout_marginTop="0dp"
+    android:paddingLeft="0dp"
+    android:baselineAligned="true"
+    android:gravity="center"
+    android:layout_gravity="center"
+    android:orientation="vertical"
+    android:paddingRight="0dp"
+    android:paddingTop="0dp" >
+
+    <LinearLayout
+        android:id="@+id/dateBackground"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:orientation="vertical" >
+    	<TextView
+	        android:id="@+id/date"
+	        style="@style/NoShadow"
+	        android:layout_width="fill_parent"
+	        android:layout_height="wrap_content"
+	        android:layout_gravity="center"
+	        android:gravity="center"
+	        android:paddingLeft="0dp"
+	        android:paddingRight="0dp"
+	        android:singleLine="true"
+	        android:text="date"
+	        android:textAlignment="center"
+	        android:textColor="#ffffff"
+	        android:textSize="11sp"
+	        android:textStyle="normal"
+	        tools:ignore="HardcodedText" />
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/layoutData"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:orientation="horizontal" >
+    
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="vertical" >
+    
+	    
+	    <LinearLayout
+	        android:id="@+id/eventImageLayout"
+	        android:layout_width="fill_parent"
+	        android:layout_height="wrap_content"
+	        android:baselineAligned="true"
+	        android:gravity="center"
+	        android:orientation="horizontal"
+	        android:paddingTop="2dp" >
+
+	        <TextView
+	            android:id="@+id/wind3"
+	            style="@style/NoShadow"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:gravity="center"
+	            android:paddingLeft="1dp"
+	            android:paddingRight="0dp"
+	            android:singleLine="true"
+	            android:text="wind3"
+	            android:textColor="#ffffff"
+	            android:textSize="11sp"
+	            android:textStyle="normal"
+	            android:visibility="visible"
+	            tools:ignore="HardcodedText" />
+	    <ImageView
+	        android:id="@+id/eventImageSmall"
+	        android:layout_width="40dp"
+	        android:layout_height="40dp"
+	        android:paddingLeft="1dp"
+	        android:adjustViewBounds="false"        
+	        android:gravity="center"
+	        android:contentDescription="TODO"        
+	        android:src="@drawable/ic_weather_cloudy"
+	        android:visibility="visible" />		    	   		    		    	    
+		</LinearLayout>
+		    		        	    
+		<LinearLayout
+		    android:id="@+id/layoutDayTemperature"
+		    android:layout_width="fill_parent"
+		    android:layout_height="wrap_content"
+		    android:layout_gravity="center"
+		    android:baselineAligned="true"
+		    android:gravity="center"
+		    android:orientation="horizontal"
+		    android:paddingLeft="0dp"
+		    android:paddingTop="0dp" >
+
+			<TextView
+			    android:id="@+id/currentTemperature"
+			    style="@style/NoShadow"
+			    android:layout_width="wrap_content"
+			    android:layout_height="fill_parent"
+			    android:layout_gravity="center"
+			    android:gravity="center"
+			    android:lineSpacingMultiplier="0.9"
+			    android:paddingLeft="2dp"
+			    android:paddingRight="0dp"
+			    android:singleLine="true"
+			    android:text="current"
+			    android:textAlignment="gravity"
+			    android:textColor="#ffffff"
+			    android:textSize="11sp"
+			    android:textStyle="normal"
+			    android:visibility="visible"
+			    tools:ignore="HardcodedText" />
+
+			<TextView
+			    android:id="@+id/wind2"
+			    style="@style/NoShadow"
+			    android:layout_width="wrap_content"
+			    android:layout_height="wrap_content"
+			    android:lineSpacingMultiplier="0.9"
+			    android:paddingLeft="2dp"
+			    android:paddingRight="0dp"
+			    android:singleLine="true"
+			    android:text="wind2"
+			    android:textAlignment="gravity"
+			    android:textColor="#ffffff"
+			    android:textSize="11sp"
+			    android:textStyle="normal"
+			    android:visibility="visible"
+			    tools:ignore="HardcodedText" />
+
+		    <TextView
+		        android:id="@+id/dayTemperature"
+		        style="@style/NoShadow"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:layout_gravity="center"
+		        android:gravity="center"
+		        android:lineSpacingMultiplier="1"
+		        android:paddingLeft="2dp"
+		        android:paddingRight="0dp"
+		        android:singleLine="true"
+		        android:text="temp"
+		        android:textAlignment="center"
+		        android:textColor="#ffffff"
+		        android:textSize="18sp"
+		        android:textStyle="normal"
+		        tools:ignore="HardcodedText" />
+
+		    <TextView
+		        android:id="@+id/temperatureChange"
+		        style="@style/NoShadow"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:paddingLeft="0dp"
+		   	    android:paddingRight="0dp"
+		   	    android:lineSpacingMultiplier="0.9"        
+		        android:text="change"
+		        android:textAlignment="center"
+		        android:textColor="#ffffff"
+		        android:textSize="11sp"
+		        android:gravity="center"
+		        android:textStyle="normal"
+		        android:singleLine="true"
+		        android:visibility="visible"
+		        tools:ignore="HardcodedText" />
+
+		    <ImageView
+		        android:id="@+id/eventImageSmallRight"
+		        android:layout_width="30dp"
+		        android:layout_height="fill_parent"
+		        android:layout_marginTop="2dp"
+		        android:adjustViewBounds="false"
+		        android:contentDescription="TODO"
+		        android:gravity="center"
+		        android:paddingRight="1dp"
+		        android:scaleType="centerInside"
+		        android:src="@drawable/ic_weather_cloudy"
+		        android:visibility="visible" />
+		    
+		</LinearLayout>
+		
+		<LinearLayout
+		    android:id="@+id/layoutLowTemperature"
+		    android:layout_width="fill_parent"
+		    android:layout_height="wrap_content"
+		    android:layout_gravity="center"
+		    android:baselineAligned="true"
+		    android:gravity="center"
+		    android:orientation="horizontal"
+		    android:paddingLeft="0dp"
+		    android:paddingTop="0dp" >
+
+			<TextView
+			    android:id="@+id/pressure2"
+			    style="@style/NoShadow"
+			    android:layout_width="wrap_content"
+			    android:layout_height="wrap_content"
+			    android:gravity="center"
+			    android:paddingLeft="2dp"
+			    android:singleLine="true"
+			    android:text="pressure2"
+			    android:textColor="#ffffff"
+			    android:textSize="11dp"
+			    android:visibility="visible"
+			    tools:ignore="TextViewEdits" />
+
+		    <TextView
+		        android:id="@+id/updateTime"
+		        style="@style/NoShadow"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:paddingLeft="2dp"
+		        android:paddingRight="0dp"
+		        android:singleLine="true"
+		        android:text="time"
+		        android:textColor="#ffffff"
+		        android:textSize="11dp"
+		        android:visibility="visible"
+		        tools:ignore="TextViewEdits" />
+
+		    <TextView
+		        android:id="@+id/geo2"
+		        style="@style/NoShadow"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:lineSpacingMultiplier="0.9"
+		        android:paddingLeft="2dp"
+		        android:paddingRight="0dp"
+		        android:singleLine="true"
+		        android:text="geo2"
+		        android:textAlignment="gravity"
+		        android:textColor="#ffffff"
+		        android:textSize="11sp"
+		        android:textStyle="normal"
+		        android:visibility="visible"
+		        tools:ignore="HardcodedText" />
+
+		    <TextView
+		        android:id="@+id/lowTemperature"
+		        style="@style/NoShadow"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:paddingLeft="2dp"
+		        android:singleLine="true"
+		        android:text="low"
+		        android:textColor="#ffffff"
+		        android:textSize="11dp"
+		        android:visibility="visible"
+		        tools:ignore="TextViewEdits" />
+
+		</LinearLayout>
+
+		<TextView
+		    android:id="@+id/pressure"
+		    style="@style/NoShadow"
+		    android:layout_width="fill_parent"
+		    android:layout_height="wrap_content"
+		    android:gravity="center"
+		    android:singleLine="true"
+		    android:text="pressure"
+		    android:textColor="#ffffff"
+		    android:textSize="11dp"
+		    android:visibility="visible"
+		    tools:ignore="TextViewEdits" />
+
+		<LinearLayout
+		    android:id="@+id/layoutWeatherDetails"
+		    android:layout_width="fill_parent"
+		    android:layout_height="wrap_content"
+		    android:baselineAligned="true"
+		    android:gravity="center"
+		    android:orientation="vertical"
+		    android:paddingLeft="0dp"
+		    android:paddingTop="0dp" >
+
+			<TextView
+			    android:id="@+id/wind"
+			    style="@style/NoShadow"
+			    android:layout_width="fill_parent"
+			    android:layout_height="wrap_content"
+			    android:layout_gravity="center"
+			    android:gravity="center"
+			    android:singleLine="true"
+			    android:text="wind"
+			    android:textColor="#ffffff"
+			    android:textSize="11dp"
+			    android:visibility="visible"
+			    tools:ignore="TextViewEdits" />
+
+			<TextView
+			    android:id="@+id/comfort"
+			    style="@style/NoShadow"
+			    android:layout_width="fill_parent"
+			    android:layout_height="wrap_content"
+			    android:layout_gravity="center"
+			    android:gravity="center"
+			    android:singleLine="true"
+			    android:text="comfort"
+			    android:textColor="#ffffff"
+			    android:textSize="11dp"
+			    android:visibility="visible"
+			    tools:ignore="TextViewEdits" />
+
+			<TextView
+			    android:id="@+id/geoMagnetic"
+			    style="@style/NoShadow"
+			    android:layout_width="wrap_content"
+			    android:layout_height="wrap_content"
+			    android:layout_gravity="center"
+			    android:gravity="center"
+			    android:singleLine="true"
+			    android:text="geo"
+			    android:textColor="#ffffff"
+			    android:textSize="11dp"
+			    android:visibility="visible"
+			    tools:ignore="TextViewEdits" />
+
+		</LinearLayout>
+	</LinearLayout>
+	</LinearLayout>	    	   		    		    	    
+</LinearLayout>

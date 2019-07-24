@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools" tools:ignore="MissingTranslation">
+    <string name="CalenGoo">CalenGoo</string>       
+    <string name="confirmHelpToAddLanguage">Would you like to help the developer to translate the application to your language?</string>
+    <string name="GTasks">GTasks</string>    
+    <string name="languageAskDevToAdd">Help the developer to translate app to your language</string>
+    <string name="mailRuMoney">Деньги.Mail.ru</string>    
+    <string name="offerToHelpToAddLanguage">The application is not yet translated to your current system language (%s). So all texts are shown in english language. If you would like to help with translation, please contact the developer (from About section in settings)</string>
+    <string name="orthodoxyFastColor">Fast color</string>
+    <string name="orthodoxyFasts">Fasts</string>
+    <string name="showTropar">Тропари</string>
+    <string name="SMSEvents">SMS</string>           
+    <string name="TickTask">TickTick</string>
+    <string name="tropar">Тропарь</string>
+    <string name="hideDayHiddenEventsBack"><![CDATA[<<<<<<]]></string>
+</resources>

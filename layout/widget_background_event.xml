@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/layoutWidgetBackGroundMain"
+    android:background="#00000000"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+
+    <ImageView
+        android:id="@+id/widgetBackGroundImageView"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        
+        android:padding="@dimen/widget_margin3"
+        android:scaleType="fitXY"
+        android:visibility="gone"
+        tools:ignore="ContentDescription" />
+
+    <LinearLayout
+        android:id="@+id/widgetBackGroundLinearLayout"
+        android:orientation="horizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:visibility="gone"
+        android:background="@drawable/backgroud_solid_dark" />
+
+    <LinearLayout
+        android:id="@+id/layoutWidgetContent"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="top"
+        android:orientation="vertical"
+        android:paddingBottom="@dimen/widget_background_pad_bottom_small"
+        android:paddingLeft="@dimen/widget_margin8"
+        android:paddingRight="@dimen/widget_margin8"
+        android:paddingTop="@dimen/widget_background_pad_top_small"
+        android:weightSum="1" >
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/widgetBackgroundBottomBar"
+        android:orientation="horizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="3sp"
+        android:layout_gravity="bottom"
+        android:layout_marginBottom="@dimen/widget_background_pad_bottom_small"
+        android:layout_marginLeft="@dimen/widget_margin6"
+        android:layout_marginRight="@dimen/widget_margin6"
+        android:background="@android:drawable/bottom_bar"
+        android:visibility="gone" />
+    
+    <TextView
+        android:id="@+id/labelUpdateStared"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="@string/updaing"
+        android:visibility="gone" />
+    
+    <include layout="@layout/widget_bottom_button"/>
+    
+</FrameLayout>

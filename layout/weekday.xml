@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/layoutWeekdayTextImage"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center|bottom"
+    android:gravity="center"
+    android:paddingLeft="0sp"
+    tools:showIn="@layout/dateweek">
+
+    <TextView
+        android:id="@+id/labelWeekday"
+        style="@style/Shadow"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:includeFontPadding="false"
+        android:singleLine="true"
+        android:text="weekday"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:textColor="#ffffff"
+        tools:ignore="TextViewEdits" />
+
+    <ImageView
+        android:id="@+id/imageWeekday"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:adjustViewBounds="true"
+        android:paddingBottom="0sp"
+        android:paddingTop="0sp"
+        android:src="@android:drawable/btn_default"
+        tools:ignore="ContentDescription" />
+</FrameLayout>

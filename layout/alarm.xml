@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/layoutAlarmWithBell"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:gravity="center"
+    android:paddingLeft="5sp" 
+    android:orientation="horizontal"
+    android:visibility="visible"
+    tools:ignore="UseCompoundDrawables" >
+    
+    <ImageView
+        android:id="@+id/imageAlarm"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        
+        android:baselineAlignBottom="true"
+        android:paddingRight="3sp"
+        android:paddingBottom="2sp"
+        android:src="@android:drawable/stat_sys_phone_call"
+        tools:ignore="ContentDescription" />
+
+    <FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/layoutNextAlarm"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:paddingRight="2sp"
+        tools:showIn="@layout/widgettime">
+
+        <TextView
+            android:id="@+id/labelNextAlarm"
+            style="@style/Shadow"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:singleLine="true"
+            android:text="NextAlarm"
+            android:textColor="#ffffff"
+            android:textSize="11sp"
+            tools:ignore="TextViewEdits" />
+
+        <ImageView
+            android:id="@+id/imageNextAlarm"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:adjustViewBounds="true"
+            android:paddingBottom="0sp"
+            android:paddingTop="0sp"
+            android:src="@android:drawable/btn_default"
+            tools:ignore="ContentDescription" />
+    </FrameLayout>
+</LinearLayout>

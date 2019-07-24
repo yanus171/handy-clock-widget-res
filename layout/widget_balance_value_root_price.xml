@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/balanceValueRoot" 
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+<LinearLayout  
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:weightSum="1">
+    <TextView
+        android:id="@+id/productCaption"
+        style="@style/Shadow"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="caption long long long long long long long long long long long long long long long long long long long long long long long long "
+        android:textColor="#ffffff"
+        android:textSize="11sp"
+        android:layout_weight="1"
+        tools:ignore="HardcodedText" />
+    <LinearLayout  
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:orientation="horizontal"
+	    android:id="@+id/layoutPrice">
+        
+	    <TextView
+	        android:id="@+id/productPriceValue"
+	        style="@style/Shadow"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:text="value"
+	        android:textColor="#ffffff"
+	        android:textSize="11sp"
+	        android:layout_weight="2"
+	        tools:ignore="HardcodedText" />
+	    <TextView
+	        android:id="@+id/productPriceChange"
+	        style="@style/Shadow"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:text="change"
+	        android:textColor="#ffffff"
+	        android:textSize="11sp"
+	        android:layout_weight="2"
+	        tools:ignore="HardcodedText" />
+	    <ImageView
+	        android:id="@+id/btnSendProductToBlackList"
+	        style="@style/styleSmallImage"
+	        android:src="@android:drawable/presence_offline"
+	        android:visibility="visible" />
+	</LinearLayout>
+</LinearLayout>
+<TextView
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:text=""
+        android:textSize="11sp"
+        android:layout_weight="2"
+        android:background="#77AAAAAA"
+        tools:ignore="HardcodedText" />    
+</LinearLayout>

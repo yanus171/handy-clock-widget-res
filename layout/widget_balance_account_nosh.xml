@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/balanceAccountRoot"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:baselineAligned="true"
+    android:layout_gravity="center|left"
+    android:orientation="horizontal"
+    android:paddingLeft="0sp"
+    tools:ignore="UseCompoundDrawables" >
+    
+    
+    <ImageView
+        android:id="@+id/accountUpdating"
+        style="@style/styleSmallImage"
+        android:src="@drawable/update_green"
+        android:visibility="visible" />
+    
+    <ImageView
+        android:id="@+id/accountToUpdate"
+        style="@style/styleSmallImage"
+        android:src="@drawable/update"
+        android:visibility="visible" />
+    
+    <ImageView
+        android:id="@+id/accountUpdateError"
+        style="@style/styleSmallImage"
+        android:src="@drawable/ic_error"
+        android:visibility="visible" />
+    
+    <ImageView
+        android:id="@+id/accountImage"
+        style="@style/styleSmallImage"
+        android:src="@drawable/ic_weather_chance_of_rain"
+        android:visibility="visible" />
+    
+    <ImageView
+        android:id="@+id/accountExpandImage"
+        style="@style/styleSmallImage"
+        android:src="@drawable/arrow_right"
+        android:visibility="visible" />
+    
+    <TextView
+        android:id="@+id/balanceAccount"
+        style="@style/NoShadow"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:paddingLeft="0sp"
+        android:paddingRight="0sp"
+        android:singleLine="true"
+        android:text="balanceAccount"
+        android:textColor="#ffffff"
+        android:textSize="11sp"
+        android:textStyle="normal"
+        tools:ignore="HardcodedText" />
+    
+    <ImageView
+        android:id="@+id/accountSortImage"
+        style="@style/styleSmallImage"
+        android:src="@android:drawable/ic_menu_sort_by_size"
+        android:visibility="visible" />
+
+    <LinearLayout 
+	    android:id="@+id/balanceValueRoot" 
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:orientation="horizontal"/>      
+</LinearLayout>

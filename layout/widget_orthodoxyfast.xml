@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:gravity="right"
+    android:orientation="horizontal"
+    android:paddingBottom="2sp"
+    android:paddingTop="2sp" >
+
+    <LinearLayout
+        android:layout_width="20sp"
+        android:layout_height="fill_parent"
+        android:background="#444444"
+        android:paddingBottom="1sp"
+        android:paddingRight="1sp"
+        tools:ignore="UselessParent" >
+
+        <LinearLayout
+            android:id="@+id/eventDateLeftView"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:background="#0000ff" />
+    </LinearLayout>
+
+</LinearLayout>
