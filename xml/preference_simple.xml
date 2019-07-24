@@ -227,6 +227,10 @@
         startActivity:className=""
         android:icon="@drawable/pref_school"
         startActivity:oper="supportApp" />
+    <ru.yanus171.android.handyclockwidget.free.LinkPreference
+        android:key="donateLink"
+        android:title= "@string/donate"
+        link:HTTPLink="https://github.com/yanus171/handy-clock-widget-res/blob/master/README.md" />
     <ru.yanus171.android.handyclockwidget.free.StartActivityPreference
         android:key="sendDebugInfo"
         android:summary="@string/sendDebugInfoSummary"

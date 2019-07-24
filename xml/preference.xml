@@ -424,8 +424,8 @@
 
         <PreferenceCategory
             android:layout="@layout/preference_category"
-            android:title="@string/schoolDiary" />
-
+            android:key="schoolDiaryColorCategory"
+            android:title="@string/schoolDiary" >
         <ru.yanus171.android.handyclockwidget.free.ColorPreference
             android:defaultValue="@string/constDefaultSchoolDiaryColor"
             android:key="schoolDiaryEventDefaultColor"
@@ -468,11 +468,13 @@
             android:title="Оценка 5"
             colorPreference:background="@string/constDefaultSchoolDiaryColorBackground"
             colorPreference:istransparency="true" />
-
+        </PreferenceCategory>
 
         <PreferenceCategory
             android:layout="@layout/preference_category"
-            android:title="@string/tvShedule" />
+            android:dependency="showBalanceBYTVShedule"
+            android:key="tvSheduleColorCategory"
+            android:title="@string/tvShedule" >
         <ru.yanus171.android.handyclockwidget.free.ColorPreference
             android:defaultValue="@string/constDefaultTVSheduleColor"
             android:key="tvSheduleTypeInfoEventColor"
@@ -521,7 +523,7 @@
             android:title="Категория Фильмы"
             colorPreference:background="@string/constDefaultTVSheduleColorBackground"
             colorPreference:istransparency="true" />
-
+        </PreferenceCategory>
     </PreferenceScreen>
 
     <PreferenceScreen
@@ -1468,127 +1470,131 @@
             android:title="@string/show" />
 
     </PreferenceScreen>
+    <PreferenceScreen
+        android:key="preferenceScreenShopper"
+        android:summary="@string/preferenceScreenShopperSummary"
+        android:title="@string/preferenceScreenShopper"
+        android:icon="@drawable/pref_shopper" >
+        <ru.yanus171.android.handyclockwidget.free.BackPreference android:defaultValue="preferenceScreenShopper" />
 
-	<PreferenceScreen
+        <CheckBoxPreference
+            android:defaultValue="false"
+            android:key="eventListWidgetShowDrShopper"
+            android:summary="@string/eventListWidgetShowDrShopperSummary"
+            android:title="@string/eventListWidgetShowDrShopper" />
+
+        <PreferenceScreen
+            android:dependency="eventListWidgetShowDrShopper"
+            android:key="preferenceScreenEventsDrShopper"
+            android:title="@string/preferenceScreenEventsDrShopper" >
+            <ru.yanus171.android.handyclockwidget.free.BackPreference android:defaultValue="preferenceScreenEventsDrShopper" />
+
+            <CheckBoxPreference
+                android:defaultValue="true"
+                android:key="showListDrShopper1"
+                android:title="@string/showShopperList1" />
+
+            <ru.yanus171.android.handyclockwidget.free.DrShopperListSelectPreference
+                android:defaultValue="-1"
+                android:dependency="showListDrShopper1"
+                android:key="drShopperList1"
+                android:summary="@string/shopperListSummary"
+                android:title="@string/shopperList1" />
+
+            <CheckBoxPreference
+                android:defaultValue="false"
+                android:key="showListDrShopper2"
+                android:title="@string/showShopperList2" />
+
+            <ru.yanus171.android.handyclockwidget.free.DrShopperListSelectPreference
+                android:defaultValue="-1"
+                android:dependency="showListDrShopper2"
+                android:key="drShopperList2"
+                android:summary="@string/shopperListSummary"
+                android:title="@string/shopperList2" />
+
+            <ru.yanus171.android.handyclockwidget.free.LinkPreference
+                android:key="drShopperList"
+                android:summary="@string/drShopperLinkSummary"
+                android:title="@string/drShopperLink"
+                link:HTTPLink="http://4pda.ru/forum/index.php?showtopic=142136"
+                link:marketLink="market://details?id=com.zetriva.drshopper" />
+        </PreferenceScreen>
+
+        <CheckBoxPreference
+            android:defaultValue="false"
+            android:key="eventListWidgetShowLazyShopper"
+            android:summary="@string/eventListWidgetShowLazyShopperSummary"
+            android:title="@string/eventListWidgetShowLazyShopper" />
+
+        <PreferenceScreen
+            android:dependency="eventListWidgetShowLazyShopper"
+            android:key="preferenceScreenEventsLazyShopper"
+            android:title="@string/preferenceScreenEventsLazyShopper" >
+            <ru.yanus171.android.handyclockwidget.free.BackPreference android:defaultValue="preferenceScreenEventsLazyShopper" />
+
+            <CheckBoxPreference
+                android:defaultValue="true"
+                android:key="showListLazyShopper1"
+                android:title="@string/showShopperList1" />
+
+            <ru.yanus171.android.handyclockwidget.free.LazyShopperListSelectPreference
+                android:defaultValue="-1"
+                android:dependency="showListLazyShopper1"
+                android:key="lazyShopperList1"
+                android:summary="@string/shopperListSummary"
+                android:title="@string/shopperList1" />
+
+            <CheckBoxPreference
+                android:defaultValue="false"
+                android:key="showListLazyShopper2"
+                android:title="@string/showShopperList2" />
+
+            <ru.yanus171.android.handyclockwidget.free.LazyShopperListSelectPreference
+                android:defaultValue="-1"
+                android:dependency="showListLazyShopper2"
+                android:key="lazyShopperList2"
+                android:summary="@string/shopperListSummary"
+                android:title="@string/shopperList2" />
+
+            <ru.yanus171.android.handyclockwidget.free.LinkPreference
+                android:key="lazyShopperList"
+                android:summary="@string/lazyShopperLinkSummary"
+                android:title="@string/lazyShopperLink"
+                link:HTTPLink="http://4pda.ru/forum/index.php?showtopic=262460"
+                link:marketLink="market://details?id=com.begemota.lazyshopper" />
+        </PreferenceScreen>
+
+        <CheckBoxPreference
+            android:defaultValue="true"
+            android:key="showShopperType"
+            android:summary="@string/showShopperTypeSummary"
+            android:title="@string/showShopperType" />
+
+        <ru.yanus171.android.handyclockwidget.free.AutoSummaryEditPreference
+            android:defaultValue="0"
+            android:inputType="number"
+            android:key="shopListContentMaxItems"
+            android:summary="@string/shopListContentMaxLinesSummary"
+            android:title="@string/shopListContentMaxLines" />
+
+        <ru.yanus171.android.handyclockwidget.free.LabelPreference
+            android:key="shopperTapHint"
+            android:summary="@string/shopperTapHint" />
+    </PreferenceScreen>
+
+    <PreferenceScreen
         android:key="preferenceScreenOtherSources"
         android:summary="@string/preferenceScreenOtherSourcesSummary"
         android:title="@string/preferenceScreenOtherSources"
         android:icon="@drawable/pref_about" >
 		
 		<ru.yanus171.android.handyclockwidget.free.BackPreference android:defaultValue="preferenceScreenOtherSources" />
-		
-		<PreferenceScreen
-			android:key="preferenceScreenShopper"
-			android:summary="@string/preferenceScreenShopperSummary"
-			android:title="@string/preferenceScreenShopper"
-			android:icon="@drawable/pref_shopper" >
-			<ru.yanus171.android.handyclockwidget.free.BackPreference android:defaultValue="preferenceScreenShopper" />
 
-        <CheckBoxPreference
-				android:defaultValue="false"
-				android:key="eventListWidgetShowDrShopper"
-				android:summary="@string/eventListWidgetShowDrShopperSummary"
-				android:title="@string/eventListWidgetShowDrShopper" />
+        <ru.yanus171.android.handyclockwidget.free.LabelPreference
+            android:key="otherSourcesHint"
+            android:summary="@string/otherSourcesHint" />
 
-			<PreferenceScreen
-				android:dependency="eventListWidgetShowDrShopper"
-				android:key="preferenceScreenEventsDrShopper"
-				android:title="@string/preferenceScreenEventsDrShopper" >
-				<ru.yanus171.android.handyclockwidget.free.BackPreference android:defaultValue="preferenceScreenEventsDrShopper" />
-
-				<CheckBoxPreference
-					android:defaultValue="true"
-					android:key="showListDrShopper1"
-					android:title="@string/showShopperList1" />
-
-				<ru.yanus171.android.handyclockwidget.free.DrShopperListSelectPreference
-					android:defaultValue="-1"
-					android:dependency="showListDrShopper1"
-					android:key="drShopperList1"
-					android:summary="@string/shopperListSummary"
-					android:title="@string/shopperList1" />
-
-				<CheckBoxPreference
-					android:defaultValue="false"
-					android:key="showListDrShopper2"
-					android:title="@string/showShopperList2" />
-
-				<ru.yanus171.android.handyclockwidget.free.DrShopperListSelectPreference
-					android:defaultValue="-1"
-					android:dependency="showListDrShopper2"
-					android:key="drShopperList2"
-					android:summary="@string/shopperListSummary"
-					android:title="@string/shopperList2" />
-
-				<ru.yanus171.android.handyclockwidget.free.LinkPreference
-					android:key="drShopperList"
-					android:summary="@string/drShopperLinkSummary"
-					android:title="@string/drShopperLink"
-					link:HTTPLink="http://4pda.ru/forum/index.php?showtopic=142136"
-					link:marketLink="market://details?id=com.zetriva.drshopper" />
-			</PreferenceScreen>
-
-			<CheckBoxPreference
-				android:defaultValue="false"
-				android:key="eventListWidgetShowLazyShopper"
-				android:summary="@string/eventListWidgetShowLazyShopperSummary"
-				android:title="@string/eventListWidgetShowLazyShopper" />
-
-			<PreferenceScreen
-				android:dependency="eventListWidgetShowLazyShopper"
-				android:key="preferenceScreenEventsLazyShopper"
-				android:title="@string/preferenceScreenEventsLazyShopper" >
-				<ru.yanus171.android.handyclockwidget.free.BackPreference android:defaultValue="preferenceScreenEventsLazyShopper" />
-
-				<CheckBoxPreference
-					android:defaultValue="true"
-					android:key="showListLazyShopper1"
-					android:title="@string/showShopperList1" />
-
-				<ru.yanus171.android.handyclockwidget.free.LazyShopperListSelectPreference
-					android:defaultValue="-1"
-					android:dependency="showListLazyShopper1"
-					android:key="lazyShopperList1"
-					android:summary="@string/shopperListSummary"
-					android:title="@string/shopperList1" />
-
-				<CheckBoxPreference
-					android:defaultValue="false"
-					android:key="showListLazyShopper2"
-					android:title="@string/showShopperList2" />
-
-				<ru.yanus171.android.handyclockwidget.free.LazyShopperListSelectPreference
-					android:defaultValue="-1"
-					android:dependency="showListLazyShopper2"
-					android:key="lazyShopperList2"
-					android:summary="@string/shopperListSummary"
-					android:title="@string/shopperList2" />
-
-				<ru.yanus171.android.handyclockwidget.free.LinkPreference
-					android:key="lazyShopperList"
-					android:summary="@string/lazyShopperLinkSummary"
-					android:title="@string/lazyShopperLink"
-					link:HTTPLink="http://4pda.ru/forum/index.php?showtopic=262460"
-					link:marketLink="market://details?id=com.begemota.lazyshopper" />
-			</PreferenceScreen>
-
-			<CheckBoxPreference
-				android:defaultValue="true"
-				android:key="showShopperType"
-				android:summary="@string/showShopperTypeSummary"
-				android:title="@string/showShopperType" />
-
-			<ru.yanus171.android.handyclockwidget.free.AutoSummaryEditPreference
-				android:defaultValue="0"
-				android:inputType="number"
-				android:key="shopListContentMaxItems"
-				android:summary="@string/shopListContentMaxLinesSummary"
-				android:title="@string/shopListContentMaxLines" />
-
-			<ru.yanus171.android.handyclockwidget.free.LabelPreference
-				android:key="shopperTapHint"
-				android:summary="@string/shopperTapHint" />
-		</PreferenceScreen>
 
         <PreferenceScreen
             android:key="preferenceScreenBalance"
@@ -1988,112 +1994,8 @@
 	<!--             android:title="@string/deltaTemperatureThreshold" /> -->
 			
 		</PreferenceScreen>
-    
-		<PreferenceScreen
-			android:key="preferenceScreenTransport"
-			android:summary="@string/preferenceScreenTransportSummary"
-			android:title="@string/preferenceScreenTransport"
-			android:icon="@drawable/pref_train_green" >
-			<ru.yanus171.android.handyclockwidget.free.BackPreference android:defaultValue="preferenceScreenTransport" />
-			<ru.yanus171.android.handyclockwidget.free.LabelPreference
-				android:key="suburbanHint"
-				android:summary="@string/suburbanHint" />
-			<ru.yanus171.android.handyclockwidget.free.LinkPreference
-				android:key="balanceBYLink"
-				android:title="@string/balanceBYLink"
-				link:HTTPLink="http://4pda.ru/forum/index.php?showtopic=204464"
-				link:marketLink="market://details?id=com.vladyud.balance" />
-			<CheckBoxPreference
-				android:defaultValue="false"
-				android:key="eventListWidgetShowSuburban"
-				android:title="@string/show" />
-			<CheckBoxPreference
-				android:defaultValue="false"
-				android:key="suburbanIntervalFromPerious"
-				android:title="@string/suburbanIntervalFromPerious"
-				android:summary="@string/suburbanIntervalFromPeriousSummary" />
-			<ru.yanus171.android.handyclockwidget.free.AutoSummaryEditPreference
-				android:defaultValue="@string/constSuburbanPreviousEventShowInWidgetPeriodMin"
-				android:inputType="number"
-				android:key="suburbanPreviousEventShowInWidgetPeriodMin"
-				android:title="@string/suburbanPreviousEventShowInWidgetPeriodMin"
-				android:summary="@string/suburbanPreviousEventShowInWidgetPeriodMinSummary" />
-			<ru.yanus171.android.handyclockwidget.free.AutoSummaryEditPreference
-				android:defaultValue="@string/constSuburbanVisibleCount"
-				android:inputType="number"
-				android:key="suburbanVisibleCount"
-				android:title="@string/suburbanVisibleCount"
-				android:summary="@string/suburbanVisibleCountSummary" />
-			<PreferenceCategory
-				android:layout="@layout/preference_category"
-				android:title="@string/suburban" />
-			<CheckBoxPreference
-				android:defaultValue="false"
-				android:key="suburbanShowExpressInWidget"
-				android:title="@string/suburbanShowExpressInWidget"
-				android:summary="@string/suburbanShowExpressInWidgetSummary" />
-		</PreferenceScreen>
-
-		<PreferenceScreen
-			android:key="preferenceScreenSchoolDiary"
-			android:summary="@string/preferenceScreenSchoolDiarySummary"
-			android:icon="@drawable/pref_school"
-			android:title="@string/preferenceScreenSchoolDiary" >
-			<ru.yanus171.android.handyclockwidget.free.BackPreference android:defaultValue="preferenceScreenSchoolDiary" />
-			<ru.yanus171.android.handyclockwidget.free.LabelPreference
-				android:key="schoolDiaryHint"
-				android:summary="@string/schoolDiaryHint" />
-			<ru.yanus171.android.handyclockwidget.free.LinkPreference
-				android:key="balanceBYLink"
-				android:title="@string/balanceBYLink"
-				link:HTTPLink="http://4pda.ru/forum/index.php?showtopic=204464"
-				link:marketLink="market://details?id=com.vladyud.balance" />
-			<CheckBoxPreference
-				android:defaultValue="false"
-				android:key="showBalanceBYDairy"
-				android:title="@string/show" />
-		</PreferenceScreen>
-		
-		<PreferenceScreen
-			android:key="preferenceScreenDoc"
-			android:summary="@string/preferenceScreenDocSummary"
-			android:icon="@drawable/pref_help_white"
-			android:title="@string/preferenceScreenDoc" >
-			<ru.yanus171.android.handyclockwidget.free.BackPreference android:defaultValue="preferenceScreenDoc" />
-			<ru.yanus171.android.handyclockwidget.free.LabelPreference
-				android:key="docHint"
-				android:summary="@string/docHint" />
-			<ru.yanus171.android.handyclockwidget.free.LinkPreference
-				android:key="balanceBYLink"
-				android:title="@string/balanceBYLink"
-				link:HTTPLink="http://4pda.ru/forum/index.php?showtopic=204464"
-				link:marketLink="market://details?id=com.vladyud.balance" />
-			<CheckBoxPreference
-				android:defaultValue="false"
-				android:key="showBalanceBYDoc"
-				android:title="@string/show" />
-		</PreferenceScreen>
-		
-		<PreferenceScreen
-			android:key="preferenceScreenTVShedule"
-			android:summary="@string/preferenceScreenTVSheduleSummary"
-			android:icon="@drawable/pref_tv"
-			android:title="@string/preferenceScreenTVShedule" >
-			<ru.yanus171.android.handyclockwidget.free.BackPreference android:defaultValue="preferenceScreenTVShedule" />
-			<ru.yanus171.android.handyclockwidget.free.LabelPreference
-				android:key="tvSheduleHint"
-				android:summary="@string/tvSheduleHint" />
-			<ru.yanus171.android.handyclockwidget.free.LinkPreference
-				android:key="balanceBYLink"
-				android:title="@string/balanceBYLink"
-				link:HTTPLink="http://4pda.ru/forum/index.php?showtopic=204464"
-				link:marketLink="market://details?id=com.vladyud.balance" />
-			<CheckBoxPreference
-				android:defaultValue="false"
-				android:key="showBalanceBYTVShedule"
-				android:title="@string/show" />
-		</PreferenceScreen>
     </PreferenceScreen>
+
     <PreferenceCategory
         android:layout="@layout/preference_category"
         android:summary="@string/eventListPeriodSummary"
@@ -2495,7 +2397,6 @@
             android:title="@string/goHomeAfterAction" />
 
         <ru.yanus171.android.handyclockwidget.free.AutoSummaryEditPreference
-            android:defaultValue=""
             android:inputType="text"
             android:key="customExternalStoragePath"
             android:summary="path to external storage to save settings, logs, and pictures (empty to use standard system path)"
@@ -2634,6 +2535,120 @@
             android:key="testContentProviderData"
             android:summary="@string/testContentProviderDataSummary"
             android:title="testContentProviderData" />
+
+        <PreferenceScreen
+            android:key="preferenceScreenOtherSourcesAdditional"
+            android:summary="@string/preferenceScreenOtherSourcesSummary"
+            android:title="@string/preferenceScreenOtherSources"
+            android:icon="@drawable/pref_about" >
+
+            <ru.yanus171.android.handyclockwidget.free.BackPreference android:defaultValue="preferenceScreenOtherSourcesAdditional" />
+
+            <PreferenceScreen
+                android:key="preferenceScreenTransport"
+                android:summary="@string/preferenceScreenTransportSummary"
+                android:title="@string/preferenceScreenTransport"
+                android:icon="@drawable/pref_train_green" >
+                <ru.yanus171.android.handyclockwidget.free.BackPreference android:defaultValue="preferenceScreenTransport" />
+                <ru.yanus171.android.handyclockwidget.free.LabelPreference
+                    android:key="suburbanHint"
+                    android:summary="@string/suburbanHint" />
+                <ru.yanus171.android.handyclockwidget.free.LinkPreference
+                    android:key="balanceBYLink"
+                    android:title="@string/balanceBYLink"
+                    link:HTTPLink="http://4pda.ru/forum/index.php?showtopic=204464"
+                    link:marketLink="market://details?id=com.vladyud.balance" />
+                <CheckBoxPreference
+                    android:defaultValue="false"
+                    android:key="eventListWidgetShowSuburban"
+                    android:title="@string/show" />
+                <CheckBoxPreference
+                    android:defaultValue="false"
+                    android:key="suburbanIntervalFromPerious"
+                    android:title="@string/suburbanIntervalFromPerious"
+                    android:summary="@string/suburbanIntervalFromPeriousSummary" />
+                <ru.yanus171.android.handyclockwidget.free.AutoSummaryEditPreference
+                    android:defaultValue="@string/constSuburbanPreviousEventShowInWidgetPeriodMin"
+                    android:inputType="number"
+                    android:key="suburbanPreviousEventShowInWidgetPeriodMin"
+                    android:title="@string/suburbanPreviousEventShowInWidgetPeriodMin"
+                    android:summary="@string/suburbanPreviousEventShowInWidgetPeriodMinSummary" />
+                <ru.yanus171.android.handyclockwidget.free.AutoSummaryEditPreference
+                    android:defaultValue="@string/constSuburbanVisibleCount"
+                    android:inputType="number"
+                    android:key="suburbanVisibleCount"
+                    android:title="@string/suburbanVisibleCount"
+                    android:summary="@string/suburbanVisibleCountSummary" />
+                <PreferenceCategory
+                    android:layout="@layout/preference_category"
+                    android:title="@string/suburban" />
+                <CheckBoxPreference
+                    android:defaultValue="false"
+                    android:key="suburbanShowExpressInWidget"
+                    android:title="@string/suburbanShowExpressInWidget"
+                    android:summary="@string/suburbanShowExpressInWidgetSummary" />
+            </PreferenceScreen>
+
+            <PreferenceScreen
+                android:key="preferenceScreenSchoolDiary"
+                android:summary="@string/preferenceScreenSchoolDiarySummary"
+                android:icon="@drawable/pref_school"
+                android:title="@string/preferenceScreenSchoolDiary" >
+                <ru.yanus171.android.handyclockwidget.free.BackPreference android:defaultValue="preferenceScreenSchoolDiary" />
+                <ru.yanus171.android.handyclockwidget.free.LabelPreference
+                    android:key="schoolDiaryHint"
+                    android:summary="@string/schoolDiaryHint" />
+                <ru.yanus171.android.handyclockwidget.free.LinkPreference
+                    android:key="balanceBYLink"
+                    android:title="@string/balanceBYLink"
+                    link:HTTPLink="http://4pda.ru/forum/index.php?showtopic=204464"
+                    link:marketLink="market://details?id=com.vladyud.balance" />
+                <CheckBoxPreference
+                    android:defaultValue="false"
+                    android:key="showBalanceBYDairy"
+                    android:title="@string/show" />
+            </PreferenceScreen>
+
+            <PreferenceScreen
+                android:key="preferenceScreenDoc"
+                android:summary="@string/preferenceScreenDocSummary"
+                android:icon="@drawable/pref_help_white"
+                android:title="@string/preferenceScreenDoc" >
+                <ru.yanus171.android.handyclockwidget.free.BackPreference android:defaultValue="preferenceScreenDoc" />
+                <ru.yanus171.android.handyclockwidget.free.LabelPreference
+                    android:key="docHint"
+                    android:summary="@string/docHint" />
+                <ru.yanus171.android.handyclockwidget.free.LinkPreference
+                    android:key="balanceBYLink"
+                    android:title="@string/balanceBYLink"
+                    link:HTTPLink="http://4pda.ru/forum/index.php?showtopic=204464"
+                    link:marketLink="market://details?id=com.vladyud.balance" />
+                <CheckBoxPreference
+                    android:defaultValue="false"
+                    android:key="showBalanceBYDoc"
+                    android:title="@string/show" />
+            </PreferenceScreen>
+
+            <PreferenceScreen
+                android:key="preferenceScreenTVShedule"
+                android:summary="@string/preferenceScreenTVSheduleSummary"
+                android:icon="@drawable/pref_tv"
+                android:title="@string/preferenceScreenTVShedule" >
+                <ru.yanus171.android.handyclockwidget.free.BackPreference android:defaultValue="preferenceScreenTVShedule" />
+                <ru.yanus171.android.handyclockwidget.free.LabelPreference
+                    android:key="tvSheduleHint"
+                    android:summary="@string/tvSheduleHint" />
+                <ru.yanus171.android.handyclockwidget.free.LinkPreference
+                    android:key="balanceBYLink"
+                    android:title="@string/balanceBYLink"
+                    link:HTTPLink="http://4pda.ru/forum/index.php?showtopic=204464"
+                    link:marketLink="market://details?id=com.vladyud.balance" />
+                <CheckBoxPreference
+                    android:defaultValue="false"
+                    android:key="showBalanceBYTVShedule"
+                    android:title="@string/show" />
+            </PreferenceScreen>
+        </PreferenceScreen>
     </PreferenceScreen>
 
     <PreferenceCategory
@@ -2647,6 +2662,10 @@
         startActivity:className=""
         android:icon="@drawable/pref_school"
         startActivity:oper="supportApp" />
+    <ru.yanus171.android.handyclockwidget.free.LinkPreference
+        android:key="donateLink"
+        android:title= "@string/donate"
+        link:HTTPLink="https://github.com/yanus171/handy-clock-widget-res/blob/master/README.md" />
     <ru.yanus171.android.handyclockwidget.free.StartActivityPreference
         android:key="sendDebugInfo"
         android:summary="@string/sendDebugInfoSummary"

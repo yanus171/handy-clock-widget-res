@@ -776,5 +776,7 @@
     <string name="downloadApkWithSMS">Load app version with SMS show</string>
     <string name="text_hide_rule_list">Hide text rule list</string>
     <string name="text_hide_rule_list_summary">Regex rules to hide content text on widget (one rule per line)</string>
+    <string name="donate">Github / Donate</string>
+    <string name="otherSourcesHint"></string>
 
 </resources>
