@@ -770,13 +770,17 @@
     <string name="useGoogleRFC2445Lib">Use Google RFC-2445 Lib</string>
     <string name="useGoogleRFC2445LibSummary">for recurrent events parse. It is a bit quicker, but lasks support of some complex recurrent events. Otherwise standard API will be used (for Android 4+)</string>
     <string name="diaryColor">Цвета дневников</string>
-    <string name="abandonedSMSCallLogPertissionExplain">Google has banned access to SMS and call logs for apps in Google Play. So this app can't read such information anymore. But:
-    You can download and install a special version of the app from the link https://drive.google.com/file/d/1wQ3GbxevqIB6kX5t69r46uOjiORiv16w/view?usp=sharing to get around this limitation. But in this case, the app will be unbound from Google Play, so you'll have to update the new versions of the app manually via the link from settings.
+    <string name="abandonedSMSCallLogPertissionExplain">Google has banned access to SMS and call logs for apps in Google Play. So this app can\'t read such information anymore. But:
+    You can download and install a special version of the app from the link https://drive.google.com/file/d/1wQ3GbxevqIB6kX5t69r46uOjiORiv16w/view?usp=sharing to get around this limitation. But in this case, the app will be unbound from Google Play, so you\'ll have to update the new versions of the app manually via the link from settings.
     Another solution is to disable the display of SMS and / Or information about the last call in the application settings</string>
     <string name="downloadApkWithSMS">Load app version with SMS show</string>
     <string name="text_hide_rule_list">Hide text rule list</string>
     <string name="text_hide_rule_list_summary">Regex rules to hide content text on widget (one rule per line)</string>
     <string name="donate">Github / Donate</string>
     <string name="otherSourcesHint"></string>
-
+    <string name="orthodoxyDayStartTime"></string>
+    <string name="balanceFoldingSummary"></string>
+    <string name="balanceAtBottomSummary"></string>
+    <string name="balanceAtBottom"></string>
+    <string name="preferenceScreenTransportSummary"></string>
 </resources>
