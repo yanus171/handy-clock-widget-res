@@ -50,10 +50,10 @@
     <string name="constDefaultDayOffColorBackground">#00000000</string>
     <string name="constDefaultFontColor">#FFFFFF</string>
     <string name="constDefaultTodayBorderColor">#FFFF00</string>
-    <string name="constDefaultOrthodoxyColor">#FFFFFF</string>
+    <string name="constDefaultOrthodoxyColor">#FFA0A0</string>
     <string name="constDefaultOrthodoxyColorBackground">#960000</string>
     <string name="constDefaultOrthodoxyGreateColor">#FFFF00</string>
-    <string name="constDefaultOrthodoxyGreateColorBackground">#AA0000</string>
+    <string name="constDefaultOrthodoxyGreateColorBackground">#780000</string>
     <string name="constDefaultOrthodoxyFastColor">#0083FF</string>
     <string name="constDefaultWeekdaysColor">#CC7A7A7A</string>
     <string name="constDefaultWeekdaysColorListView">#5A5A5A</string>

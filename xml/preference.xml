@@ -2527,11 +2527,6 @@
 
         <CheckBoxPreference
             android:defaultValue="false"
-            android:key="orthodoxyFromXML"
-            android:title="orthodoxyFromXML" />
-
-        <CheckBoxPreference
-            android:defaultValue="false"
             android:key="testContentProviderData"
             android:summary="@string/testContentProviderDataSummary"
             android:title="testContentProviderData" />
