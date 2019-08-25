@@ -12,5 +12,7 @@
     <string name="SMSEvents">SMS</string>           
     <string name="TickTask">TickTick</string>
     <string name="tropar">Тропарь</string>
+    <string name="kondak">Кондак</string>
+    <string name="velichanie">Величание</string>
     <string name="hideDayHiddenEventsBack"><![CDATA[<<<<<<]]></string>
 </resources>
