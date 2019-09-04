@@ -108,7 +108,7 @@
         <item>Русский</item>
         <item>Svenska</item>
         <item>Српски</item>
-        <item>Український</item>
+        <item>Українська</item>
         <item>@string/languageAskDevToAdd</item>
     </string-array>
     <string-array name="languageValueList" tools:ignore="MissingTranslation">
