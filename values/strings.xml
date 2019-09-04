@@ -775,11 +775,13 @@
     <string name="downloadApkWithSMS">Load app version with SMS show</string>
     <string name="text_hide_rule_list">Hide text rule list</string>
     <string name="text_hide_rule_list_summary">Regex rules to hide content text on widget (one rule per line)</string>
-    <string name="donate">Github / Donate</string>
+    <string name="donate">Github / Donate / Improve translation</string>
     <string name="otherSourcesHint"></string>
     <string name="orthodoxyDayStartTime"></string>
     <string name="balanceFoldingSummary"></string>
     <string name="balanceAtBottomSummary"></string>
     <string name="balanceAtBottom"></string>
     <string name="preferenceScreenTransportSummary"></string>
+    <string name="orthodoxyFeastImprove">Добавить / редактировать праздники </string>
+    <string name="orthodoxyFeastImproveSummary">Окроется страница файла праздников на github странице проекта</string>
 </resources>

@@ -752,7 +752,7 @@
     <string name="downloadApkWithSMS">Загрузить версию приложения с отображением СМС</string>
     <string name="text_hide_rule_list">Правила скрытия текста</string>
     <string name="text_hide_rule_list_summary">Регулярные выражения для поиска текста, который необходимо скрыть на виджете</string>
-    <string name="donate">Github / Пожертвовать</string>
+    <string name="donate">Github / Пожертвовать / Улучшить перевод </string>
     <string name="otherSourcesHint">ВНИМАНИЕ !!! В текущих версиях приложений BalanceBy и Anybalance из-за ограничений Google play удалена возможность передачи данных сторонним приложениям. Соответственно Удобное время не может работать с ними. Однако Удобное время работает со старыми версиями этих приложений (6.0.221 BalanceBy и 3.10.817 Anybalance) Apk файлы этих версий можно скачать на страницах 4pda приложений. Ситуация может измениться только после того, как разработчики BalanceBy и Anybalance доработают свои приложения</string>
 
 </resources>

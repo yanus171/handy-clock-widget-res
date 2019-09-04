@@ -1377,6 +1377,12 @@
             android:defaultValue="16"
             android:key="orthodoxyDayStartTime"
             android:title="@string/orthodoxyDayStartTime" />
+
+        <ru.yanus171.android.handyclockwidget.free.LinkPreference
+            android:key="orthodoxyFeastImproveLink"
+            android:summary="@string/orthodoxyFeastImproveSummary"
+            android:title="@string/orthodoxyFeastImprove"
+            link:HTTPLink="https://github.com/yanus171/handy-clock-widget-res/blob/master/xml/orthodoxy.xml" />
     </PreferenceScreen>
     <PreferenceScreen
         android:key="preferenceScreenEventsNameDay"
