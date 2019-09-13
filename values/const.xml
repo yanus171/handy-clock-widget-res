@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools" tools:ignore="MissingTranslation">
+    <string name="constDefaultDaysInAdvance">40</string>
+    <string name="constDefaultEventListPeriodDaysAgo">10</string>
+    <string name="constDefaultEventListPeriodDaysInAdvance">200</string>
+        
+    <string name="constDefaultMainFontSize">18</string>
+<!--     <string name="constDefaultEventListViewEmptyDayFontSize">14</string> -->
+    <string name="constDefaultSmallFontSize">14</string>        
+    
+    <string name="constDefaultEventListWidgetEventNameFontSize">14</string>
+    <string name="constDefaultEventListWidgetShopperFontSize">14</string>
+    <string name="constDefaultEventListWidgetEventDateFontSize">14</string>
+    
+    <string name="constDefaultTimeFontSize">60</string>
+    <string name="constDefaultTimeFromZoneFontSize">20</string>
+    <string name="constDefaultTimeFontSize21">40</string>
+    <string name="constDefaultDateFontSize21">12</string>
+    <string name="constDefaultEventListWidgetEmptyDayFontSize">4</string>
+    <string name="constDefaultWeatherRefreshInterval">2</string>
+    <string name="constDefaultFreeStorageExternalThreshold">50</string>
+    <string name="constSuburbanPreviousEventShowInWidgetPeriodMin">3</string>
+    <string name="constSuburbanVisibleCount">3</string>
+    
+    <string name="constDefaultTimeWidgetLayout">vertical</string>
+    <string name="constDefaultTimeFont">fonts/Aabced.ttf</string>
+    
+    <string name="constDefaultBackGroundColor">#00777777</string>
+    
+    <string name="constTransparentColor">#00000000</string>
+    <string name="constDefaultTimeColor">#FFFFFF</string>
+    <string name="constDefaultAlarmColor">#99CCFF</string>
+    <string name="constDefaultGrayedColor">#AAAAAA</string>
+    <string name="constDefaultDocColor">#FFFFFF</string>
+    <string name="constDefaultDocColorBackground">#00000000</string>
+    <string name="constDefaultDateColor">#FFFFFF</string>
+    <string name="constDefaultMonthCalendarColor">#AAAAAA</string>
+    <string name="constDefaultMonthCalendarDayoffColorBackground">#505050</string>
+    <string name="constDefaultMonthCalendarTodayColor">#AAAAAA</string>
+    <string name="constDefaultMonthCalendarTodayColorBackground">#999999</string>
+    <string name="constDefaultBatteryColor">#00FF00</string>
+    <string name="constDefaultFreeStorageExternalColor">#777777</string>
+    <string name="constDefaultFreeStorageInternalColor">#0077FF</string>
+    <string name="constDefaultSMSBorderColor">#00FF00</string>
+    <string name="constDefaultLastCallBorderColor">#AAAAAA</string>
+    <string name="constDefaultMailBorderColor">#0000FF</string>
+    <string name="constDefaultContactColor">#FFFFFF</string>
+    <string name="constDefaultContactColorBackground">#00000000</string>
+    <string name="constDefaultDayOffColor">#BE0000</string>
+    <string name="constDefaultDayOffColorBackground">#00000000</string>
+    <string name="constDefaultFontColor">#FFFFFF</string>
+    <string name="constDefaultTodayBorderColor">#FFFF00</string>
+    <string name="constDefaultOrthodoxyColor">#FFA0A0</string>
+    <string name="constDefaultOrthodoxyColorBackground">#960000</string>
+    <string name="constDefaultOrthodoxyGreateColor">#FFFF00</string>
+    <string name="constDefaultOrthodoxyGreateColorBackground">#780000</string>
+    <string name="constDefaultOrthodoxyFastColor">#0083FF</string>
+    <string name="constDefaultWeekdaysColor">#CC7A7A7A</string>
+    <string name="constDefaultWeekdaysColorListView">#5A5A5A</string>
+    <string name="constDefaultNameDayColor">#99CCFF</string>
+    <string name="constDefaultNameDayColorBackground">#000000</string>
+    <string name="constDefaultStatusColor">#0000FF</string>
+    <string name="constDefaultSuburbanColor">#FFFFFF</string>
+    <string name="constDefaultSuburbanColorBackground">#00000000</string>
+    <string name="constDefaultSuburbanSecondColor">#FFFFFF</string>
+    <string name="constDefaultSuburbanSecondColorBackground">#75357235</string>
+    <string name="constDefaultSuburbanExpressColor">#AAAAAA</string>
+    <string name="constDefaultSchoolDiaryColor">#FFFFFF</string>
+    <string name="constDefaultSchoolDiaryColorBackground">#00000000</string>
+    <string name="constDefaultTaskColor">#FFFFFF</string>
+    <string name="constDefaultTaskOccuredColor">#FF0000</string>
+    <string name="constDefaultTaskHighPriorityColor">#FF0000</string>
+    <string name="constDefaultTaskMediumPriorityColor">#FFFF00</string>
+    <string name="constDefaultTaskLowPriorityColor">#909090</string>
+    <string name="constDefaultTaskColorBackground">#00000000</string>
+    <string name="constDefaultTVSheduleColor">#BBBBBB</string>
+    <string name="constDefaultTVSheduleColorBackground">#00000000</string>
+    <string name="constDefaultWeatherColor">#FFFFFF</string>
+    <string name="constDefaultCalendarEventColor">#FFFFFF</string>
+    <string name="constDefaultCalendarEventColorBackground">#00000000</string>
+    <string name="constWeatherGenieWidgetHourlyColor">#CCCCCC</string>
+    <string name="constWeatherGenieWidgetHourlyColorBackground">#00000000</string>
+    <string name="constWeatherGenieWidgetColor">#FFFFFF</string>
+    <string name="constWeatherGenieWidgetColorBackground">#00000000</string>
+    <string name="constDefaultNewlyAddedBackgroundColor">#FF00AA00</string>
+    <string name="constDefaultBalanceAccountColor">#CCCCCC</string>
+    <string name="constDefaultBalanceValueColor">#FFFFFF</string>
+    <string name="constDefaultBalanceValueWarningColor">#FFFFFF</string>
+    <string name="constDefaultBalanceValueWarningColorBackground">#FF0000</string>
+    <string name="constDefaultBalancePerDayMinusColor">#FFFFFF</string>
+    <string name="constDefaultBalancePerDayPlusColor">#FFFFFF</string>
+    <string name="constDefaultBalanceLastChangePlusColor">#969696</string>
+    <string name="constDefaultBalanceLastChangeMinusColor">#969696</string>
+    <string name="constDefaultEventFilterGroupColorBackground">#4A4A4A</string>    
+    
+    
+    <string name="constDefaultTransparentColor">#00000000</string>
+    
+    <string name="constDefaultLastCallMinutesToShow">5</string>
+    <string name="constGenieWidgetLink">http://forum.xda-developers.com/attachment.php?attachmentid=1215728</string>
+    
+    <string name="constDefaultChancePrecipitationThreshold">30</string>
+    
+    <string name="constDefaultWarningBorderMoney">10</string>
+    <string name="constDefaultWarningBorderTraffic">100</string>
+</resources>

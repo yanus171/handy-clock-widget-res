@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/layoutWeather"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:gravity="center"
+    android:paddingLeft="5sp" 
+    android:orientation="horizontal"
+    android:visibility="gone"
+    tools:ignore="UseCompoundDrawables" >
+    
+    <TextView
+        android:id="@+id/labelCurrentWeather"
+        style="@style/Shadow"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text=""
+        android:textColor="#ffffff"
+        android:textSize="11sp"
+        android:visibility="gone"
+        tools:ignore="TextViewEdits" />
+    
+    <ImageView
+        android:id="@+id/imageWeather"
+        android:layout_width="22sp"
+        android:layout_height="22sp"
+        android:layout_gravity="center"
+        
+        android:baselineAlignBottom="true"
+        android:src="@drawable/ic_weather_chance_snow"
+        tools:ignore="ContentDescription" />
+
+    <TextView
+        android:id="@+id/labelWeather"
+        style="@style/Shadow"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:singleLine="true"
+        android:text=""
+        android:textColor="#ffffff"
+        android:textSize="11sp"
+        android:paddingRight="1sp"
+        tools:ignore="TextViewEdits" />
+
+</LinearLayout>

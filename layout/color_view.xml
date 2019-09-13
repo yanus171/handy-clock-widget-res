@@ -1,0 +1,16 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/viewColorLayout"
+    android:layout_width="5sp"
+    android:layout_height="fill_parent"
+    android:background="#AAAAAA"
+    android:padding="0sp"
+    android:layout_marginRight="5sp"
+    android:layout_marginLeft="5sp"
+    android:layout_marginTop="2sp"
+    android:layout_marginBottom="2sp"
+    android:visibility="gone" >
+    <TextView android:id="@+id/viewColor"
+	    android:layout_width="fill_parent"
+	    android:layout_height="fill_parent" 
+	    android:background="#AAAAAA"/>
+</LinearLayout>    

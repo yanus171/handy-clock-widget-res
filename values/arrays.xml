@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools" tools:ignore="ExtraTranslation">
+   
+    <string-array name="fontSizeValueList" tools:ignore="MissingTranslation">
+        <item>1</item>
+        <item>1.5</item>
+        <item>2</item>
+        <item>2.5</item>
+        <item>3</item>
+        <item>3.5</item>
+        <item>4</item>
+        <item>5</item>
+    	<item>6</item>
+    	<item>6.5</item>
+    	<item>7</item>
+    	<item>7.5</item>
+        <item>8</item>
+        <item>8.5</item>
+        <item>9</item>
+        <item>9.5</item>
+        <item>10</item>
+        <item>10.5</item>
+        <item>11</item>
+    	<item>12</item>
+    	<item>13</item>
+    	<item>14</item>
+    	<item>15</item>
+    	<item>16</item>
+    	<item>17</item>
+    	<item>18</item>
+    	<item>19</item>
+        <item>20</item>
+        <item>21</item>
+        <item>22</item>
+        <item>23</item>
+        <item>24</item>
+        <item>25</item>
+        <item>26</item>
+        <item>28</item>
+        <item>30</item>        
+        <item>32</item>
+        <item>34</item>
+        <item>36</item>
+        <item>40</item>
+        <item>42</item>
+        <item>44</item>
+        <item>46</item>
+        <item>48</item>
+        <item>50</item>
+        <item>52</item>
+        <item>54</item>
+        <item>56</item>
+        <item>58</item>
+        <item>60</item>
+        <item>61</item>
+        <item>62</item>
+        <item>63</item>
+        <item>64</item>
+        <item>65</item>
+        <item>66</item>
+        <item>67</item>
+        <item>68</item>
+        <item>69</item>
+        <item>70</item>
+        <item>71</item>
+        <item>72</item>
+        <item>73</item>
+        <item>74</item>
+        <item>75</item>
+        <item>76</item>
+        <item>77</item>
+        <item>78</item>
+        <item>80</item>
+        <item>85</item>
+        <item>90</item>
+        <item>95</item>
+        <item>100</item>
+        <item>110</item>
+        <item>120</item>
+        <item>130</item>
+        <item>140</item>
+    </string-array>
+    
+    <string-array name="clickActionList" tools:ignore="MissingTranslation">
+        <item>@string/openSetup</item>
+        <item>@string/startAlarmApp</item>
+    </string-array>
+    <string-array name="clickActionValueList" tools:ignore="MissingTranslation">
+        <item>Setup</item>
+        <item>Alarm</item>
+    </string-array>
+    
+    
+    <string-array name="languageList" tools:ignore="MissingTranslation">
+        <item>@string/languageSystem</item>
+        <item>Български</item>
+        <item>Català</item>
+        <item>Český</item>
+        <item>Deutsch</item>
+        <item>English</item>
+        <item>Español</item>
+        <item>Eesti</item>
+        <item>Français</item>
+        <item>Italiano</item>
+        <item>Dutch (Nederlands)</item>
+        <item>Polski</item>
+        <item>Português</item>
+        <item>Русский</item>
+        <item>Svenska</item>
+        <item>Српски</item>
+        <item>Українська</item>
+        <item>@string/languageAskDevToAdd</item>
+    </string-array>
+    <string-array name="languageValueList" tools:ignore="MissingTranslation">
+        <item>System</item>
+        <item>bg</item>
+        <item>ca</item>
+        <item>cs</item>
+        <item>de</item>
+        <item>en</item>
+        <item>es</item>
+        <item>et</item>
+        <item>fr</item>
+        <item>it</item>
+        <item>nl</item>
+        <item>pl</item>
+        <item>pt</item>
+        <item>ru</item>
+        <item>sv</item>
+        <item>sr</item>
+        <item>uk</item>
+        <item>askDevToAdd</item>
+    </string-array>
+    
+    <string-array name="dateFormat" tools:ignore="MissingTranslation">
+        <item>D MMMMMM</item>
+        <item>DD MMMMMM</item>
+        <item>MMMMMM D</item>
+        <item>MMMMMM DD</item>
+        <item>DD.MM</item>
+        <item>D.M</item>
+    </string-array>
+    
+    <string-array name="timeWidgetLayoutValueList" tools:ignore="MissingTranslation">
+        <item>vertical</item>
+<!--         <item>horRightTime</item> -->
+        <item>horLeftTime</item>
+    </string-array>
+
+    <string-array name="timeWidgetLayoutList" tools:ignore="MissingTranslation">
+        <item>@string/layoutVertical</item>
+<!--         <item>@string/layoutHorizontalRightTime</item> -->
+        <item>@string/layoutHorizontalLeftTime</item>
+    </string-array>
+    
+    <string-array name="widgetTapActionValues" tools:ignore="MissingTranslation">
+        <item>doNothing</item>
+        <item>showContextMenu</item>
+        <item>eventListView</item>
+        <item>setup</item>
+        <item>startApp</item>
+    </string-array>
+
+    <string-array name="widgetTapActionEntry" tools:ignore="MissingTranslation">
+        <item>@string/doNothing</item>
+        <item>@string/showContextMenu</item>
+        <item>@string/eventListView</item>
+        <item>@string/setup</item>
+        <item>@string/startApp</item>
+    </string-array>        
+
+    
+    <string-array name="themeValueList" tools:ignore="MissingTranslation">
+        <item>Light</item>
+        <item>Dark</item>
+    </string-array>
+    
+    <string-array name="themeList" tools:ignore="MissingTranslation">
+        <item>Light</item>
+        <item>Dark</item>
+    </string-array>
+    
+</resources>

@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center"
+    android:layout_gravity="center"
+    android:orientation="vertical" >
+
+	<LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_gravity="center"
+        android:orientation="horizontal" >
+
+	    <LinearLayout
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_gravity="center"
+	        android:gravity="center"
+	        android:orientation="vertical" >
+	
+	        <LinearLayout
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:gravity="center"
+	            android:layout_gravity="center"
+	            android:orientation="horizontal" >
+	
+	            <FrameLayout
+	                android:layout_width="wrap_content"
+	                android:layout_height="wrap_content"
+	                android:layout_gravity="center"
+	                android:gravity="center" >
+	
+	                <TextView
+	                    android:id="@+id/labelTime"
+	                    style="@style/Shadow"
+	                    android:layout_width="wrap_content"
+	                    android:layout_height="wrap_content"
+	                    android:layout_marginTop="-0sp"
+	                    android:includeFontPadding="false"
+	                    android:lineSpacingMultiplier="0.9"
+	                    android:scrollY="0sp"
+	                    android:text="12:00"
+	                    android:textColor="#ffffff"
+	                    android:textSize="63sp"
+	                    android:textStyle="bold" />
+	
+	                <ImageView
+	                    android:id="@+id/imageTime"
+	                    android:layout_width="wrap_content"
+	                    android:layout_height="wrap_content"
+	                    
+	                    android:paddingBottom="5sp"
+	                    android:paddingTop="0sp"
+	                    android:src="@android:drawable/btn_default"
+	                    tools:ignore="ContentDescription" />
+	            </FrameLayout>
+	
+	            <TextView
+	                android:id="@+id/labelAMPM"
+	                style="@style/Shadow"
+	                android:layout_width="wrap_content"
+	                android:layout_height="wrap_content"
+	                android:layout_gravity="bottom"
+	                android:text="AM"
+	                android:textColor="#ffffff"
+	                android:textSize="12sp"
+	                android:textStyle="bold" />
+	        </LinearLayout>
+	
+	        <TextView
+	            android:id="@+id/labelTimeFromZone"
+	            style="@style/Shadow"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:layout_gravity="center"
+	            android:singleLine="true"
+	            android:text="13:00"
+	            android:textColor="#ffffff"
+	            tools:ignore="TextViewEdits" />
+	
+			<LinearLayout
+	            android:id="@+id/layoutDate"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:layout_gravity="center"
+	            android:gravity="center"
+	            android:orientation="horizontal" >
+
+				<include layout="@layout/weekday" />
+	
+	            <TextView
+	                android:id="@+id/labelWeekNum"
+	                style="@style/Shadow"
+	                android:layout_width="wrap_content"
+	                android:layout_height="wrap_content"
+	                android:gravity="center"
+	                android:paddingLeft="5sp"
+	                android:singleLine="true"
+	                android:text="WeekNum"
+	                android:textAppearance="?android:attr/textAppearanceSmall"
+	                android:textColor="#ffffff" />
+				
+	            <LinearLayout
+	                android:id="@+id/dateSeparator"
+	                android:layout_width="8sp"
+					android:visibility="gone"
+	                android:layout_height="fill_parent"
+	                android:orientation="horizontal" />
+	            
+	            <include layout="@layout/system_info" />
+
+				<include layout="@layout/date" />
+			</LinearLayout>
+	        
+	        <include layout="@layout/alarm" />
+	        <include layout="@layout/memory_used" />
+
+	    </LinearLayout>
+	    
+		<LinearLayout
+	        android:id="@+id/layoutMonthCalendar"
+	        android:layout_width="fill_parent"
+	        android:layout_height="wrap_content"
+	        android:layout_gravity="center"
+	        android:paddingLeft="5sp"
+	        android:gravity="center"
+	        android:visibility="visible"
+	        android:orientation="vertical" >
+	        <TextView
+	            style="@style/Shadow"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:text="calendar"
+	            android:visibility="gone" />
+		</LinearLayout>
+	</LinearLayout>
+    <include layout="@layout/alarm_rest" />
+</LinearLayout>

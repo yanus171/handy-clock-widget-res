@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingBottom="5sp"
+        android:paddingLeft="10sp"
+        android:paddingRight="10sp" >
+
+        <LinearLayout
+            android:id="@+id/layoutMonthCalendar"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="right"
+            android:orientation="vertical" />
+            
+        <LinearLayout
+            android:id="@+id/layoutDate"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:orientation="vertical" >
+
+            <include layout="@layout/system_info" />
+
+            <LinearLayout
+                style="@style/Shadow"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:paddingLeft="10sp"
+                android:paddingRight="10sp" >
+
+                <include layout="@layout/dateweek" />
+
+	            <include layout="@layout/alarm" />	            
+	        </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center|right"
+            android:gravity="center|right"
+            android:orientation="horizontal"
+            android:paddingLeft="5sp" >
+
+            <FrameLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" >
+
+                <TextView
+                    android:id="@+id/labelTime"
+                    style="@style/Shadow"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="-0sp"
+                    android:includeFontPadding="false"
+                    android:lineSpacingMultiplier="0.9"
+                    android:scrollY="0sp"
+                    android:text="12:00"
+                    android:textColor="#ffffff"
+                    android:textSize="63sp"
+                    android:textStyle="bold" />
+
+                <ImageView
+                    android:id="@+id/imageTime"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingBottom="5sp"
+                    android:paddingTop="10sp"
+                    android:src="@android:drawable/btn_default"
+                    tools:ignore="ContentDescription" />
+            </FrameLayout>
+
+            <TextView
+                android:id="@+id/labelAMPM"
+                style="@style/Shadow"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom"
+                android:paddingLeft="2sp"
+                android:text="AM"
+                android:textColor="#ffffff"
+                android:textSize="12sp"
+                android:textStyle="bold" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <include layout="@layout/alarm_rest" />
+
+</LinearLayout>

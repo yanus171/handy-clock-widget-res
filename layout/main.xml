@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/root"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    android:weightSum="1" >
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        tools:ignore="UselessParent" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/mainDecr"
+                android:textAppearance="?android:attr/textAppearanceMedium" />
+
+            <Button
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:onClick="ShowEventListView"
+                android:text="@string/eventListView"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/btnSetupWidget"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:onClick="SetupWidget"
+                android:text="@string/setup" />
+
+            <Button
+                android:id="@+id/btnThrowUnhandledException"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:onClick="ThrowUnhandledException"
+                android:text="@string/throwUnhandledException" />
+
+            <Button
+                android:id="@+id/btnSendDebugInfo"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:onClick="SendDebugInfo"
+                android:text="@string/sendDebugInfo"
+                android:textStyle="bold" />
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:weightSum="2" >
+
+                <Button
+                    android:id="@+id/btnAboutProgram"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1"
+                    android:onClick="AboutProgram"
+                	android:text="@string/aboutProgram" />
+
+                <Button
+                    android:id="@+id/btnSupportApp"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:onClick="SupportApp"
+                	android:text="@string/supportApp" />
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/btnBack"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:onClick="Back"
+                android:text="@string/back" />
+
+            <Button
+                android:id="@+id/btnTest"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:onClick="Test"
+                android:text="Test" />
+            
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>
