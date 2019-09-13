@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<appwidget-provider xmlns:android="http://schemas.android.com/apk/res/android"
+    android:initialLayout="@layout/widgetloading"
+    android:minHeight="40sp"
+    android:minWidth="110sp"
+    android:updatePeriodMillis="0"
+    android:widgetCategory="home_screen|keyguard"
+    android:resizeMode="horizontal|vertical"
+    android:previewImage="@drawable/widget_preview_monthcalendar21"
+     >
+
+</appwidget-provider>

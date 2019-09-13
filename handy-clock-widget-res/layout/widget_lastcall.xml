@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/lastCallLayout"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:paddingBottom="5sp"
+    android:paddingLeft="5sp"
+    android:paddingRight="5sp" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+	    <TextView
+	        android:id="@+id/lastCallTitle"
+	        style="@style/Shadow"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:text="@string/lastCallEvents" />
+    	<TextView
+            android:id="@+id/lastCallDuration"
+            style="@style/Shadow"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="right"
+            android:paddingLeft="10sp"
+            android:text="duration" />
+    </LinearLayout>
+    
+    <TextView
+        android:id="@+id/lastCallContact"
+        style="@style/Shadow"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="left"
+        android:text="contact"
+        android:textStyle="bold"
+        tools:ignore="HardcodedText" />
+
+    
+
+</LinearLayout>

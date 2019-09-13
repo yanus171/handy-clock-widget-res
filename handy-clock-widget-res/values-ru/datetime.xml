@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<resources>
+	<string name="sunday">воскресенье</string>
+	<string name="sunday_short">вс</string>
+	<string name="monday">понедельник</string>
+	<string name="monday_short">пн</string>
+	<string name="tuesday">вторник</string>
+	<string name="tuesday_short">вт</string>
+	<string name="wednesday">среда</string>
+	<string name="wednesday_short">ср</string>
+	<string name="thursday">четверг</string>
+	<string name="thursday_short">чт</string>
+	<string name="friday">пятница</string>
+	<string name="friday_short">пт</string>
+	<string name="saturday">суббота</string>
+	<string name="saturday_short">сб</string>
+
+	<string name="jan">январь</string>
+	<string name="feb">февраль</string>
+	<string name="mar">март</string>
+	<string name="apr">апрель</string>
+	<string name="may">май</string>
+	<string name="jun">июнь</string>
+	<string name="jul">июль</string>
+	<string name="aug">август</string>
+	<string name="sep">сентябрь</string>
+	<string name="oct">октябрь</string>
+	<string name="nov">ноябрь</string>
+	<string name="dec">декабрь</string>
+	
+	<string name="janShort">янв</string>
+	<string name="febShort">фев</string>
+	<string name="marShort">мар</string>
+	<string name="aprShort">апр</string>
+	<string name="mayShort">май</string>
+	<string name="junShort">июн</string>
+	<string name="julShort">июл</string>
+	<string name="augShort">авг</string>
+	<string name="sepShort">сен</string>
+	<string name="octShort">окт</string>
+	<string name="novShort">ноя</string>
+	<string name="decShort">дек</string>
+	
+	<string name="janRP">января</string>
+	<string name="febRP">февраля</string>
+	<string name="marRP">марта</string>
+	<string name="aprRP">апреля</string>
+	<string name="mayRP">мая</string>
+	<string name="junRP">июня</string>
+	<string name="julRP">июля</string>
+	<string name="augRP">августа</string>
+	<string name="sepRP">сентября</string>
+	<string name="octRP">октября</string>
+	<string name="novRP">ноября</string>
+	<string name="decRP">декабря</string>
+	
+    <string name="rightNow">прямо сейчас</string>
+
+    <string name="oneMonth">месяц</string>
+    <string name="twoFourMonth">месяца</string>
+    <string name="fiveMonth">месяцев</string>
+    
+    <string name="oneWeek">неделя</string>
+    <string name="twoFourWeek">недели</string>
+    <string name="fiveWeek">недель</string>
+    
+    <string name="oneDay">день</string>
+    <string name="twoFourDay">дня</string>
+    <string name="fiveDay">дней</string>
+    
+	<string name="oneHour">час</string>
+    <string name="twoFourHour">часа</string>
+    <string name="fiveHour">часов</string>
+    
+    <string name="oneMinute">минуту</string>
+    <string name="twoFourMinute">минуты</string>
+    <string name="fiveMinute">минут</string>
+        
+    
+    <string name="monthsShort">мес</string>
+    <string name="weeksShort">нд</string>
+    <string name="daysShort">дн</string>
+    <string name="hoursShort">ч</string>
+    <string name="minutesShort">м</string>
+    
+    <string name="timeIntervalInFuture">через</string>
+    <string name="timeIntervalInPast">назад</string>
+    
+    <string name="morning">Утром</string>
+    <string name="evening">Вечером</string>
+    <string name="day">Днем</string>
+    
+    <string name="in">в</string>
+        
+</resources>

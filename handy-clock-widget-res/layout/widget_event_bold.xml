@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/eventLayoutRoot"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:baselineAligned="true"
+    android:gravity="center_vertical"
+    android:orientation="vertical"
+    android:paddingRight="0sp"
+    android:paddingLeft="0sp"
+    android:paddingTop="0sp" >
+
+    <LinearLayout
+        android:id="@+id/topBorder"
+        android:layout_width="fill_parent"
+        android:layout_height="2sp"
+        android:background="#FFFF00" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:baselineAligned="false"
+        android:orientation="horizontal"
+        android:weightSum="3" >
+
+        <LinearLayout
+            android:id="@+id/leftBorder"
+            android:layout_width="6sp"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:background="#FFFF00" />
+        <LinearLayout
+            android:id="@+id/eventLayout"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:layout_marginLeft="2sp"
+            android:layout_marginRight="2sp"
+            android:padding="0sp" >
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal" >
+
+                <include layout="@layout/color_view" />
+
+                <include layout="@layout/image_view" />
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:orientation="vertical" >
+                    <TextView
+                        android:id="@+id/eventName"
+                        style="@style/Shadow"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical|left"
+                        android:text="eventName"
+                        android:textColor="#ffffff"
+                        android:textSize="11sp"
+                        android:textStyle="bold"
+                        tools:ignore="HardcodedText" />
+                    <TextView
+                        android:id="@+id/eventSecondName"
+                        style="@style/Shadow"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical|left"
+                        android:text="eventSecondName"
+                        android:textColor="#ffffff"
+                        android:textSize="11sp"
+                        android:textStyle="bold"
+                        tools:ignore="HardcodedText" />
+                    <TextView
+                        android:id="@+id/eventInfo"
+                        style="@style/Shadow"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical|left"
+                        android:layout_marginLeft="5sp"
+                        android:text="eventInfo"
+                        android:textColor="#ffffff"
+                        android:textSize="11sp"
+                        android:textStyle="bold"
+                        tools:ignore="HardcodedText" />
+                </LinearLayout>
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/rightBorder"
+            android:layout_width="6sp"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:background="#FFFF00" />
+    </LinearLayout>
+
+    <include layout="@layout/border_bottom"/>
+
+</LinearLayout>

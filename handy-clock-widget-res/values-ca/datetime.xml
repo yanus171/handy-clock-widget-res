@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<resources>
+	<string name="sunday">diumenge</string>
+	<string name="sunday_short">dg.</string>
+	<string name="monday">dilluns</string>
+	<string name="monday_short">dl.</string>
+	<string name="tuesday">dimarts</string>
+	<string name="tuesday_short">dt.</string>
+	<string name="wednesday">dimecres</string>
+	<string name="wednesday_short">dc.</string>
+	<string name="thursday">dijous</string>
+	<string name="thursday_short">dj.</string>
+	<string name="friday">divendres</string>
+	<string name="friday_short">dv.</string>
+	<string name="saturday">dissabte</string>
+	<string name="saturday_short">ds.</string>
+
+	<string name="jan">Gener</string>
+	<string name="feb">Febrer</string>
+	<string name="mar">Març</string>
+	<string name="apr">Abril</string>
+	<string name="may">Maig</string>
+	<string name="jun">Juny</string>
+	<string name="jul">Juliol</string>
+	<string name="aug">Agost</string>
+	<string name="sep">Setembre</string>
+	<string name="oct">Octubre</string>
+	<string name="nov">Novembre</string>
+	<string name="dec">Desembre</string>
+	
+	<string name="janRP">Gener</string>
+	<string name="febRP">Febrer</string>
+	<string name="marRP">Mar�</string>
+	<string name="aprRP">Abril</string>
+	<string name="mayRP">Maig</string>
+	<string name="junRP">Juny</string>
+	<string name="julRP">Juliol</string>
+	<string name="augRP">Agost</string>
+	<string name="sepRP">Setembre</string>
+	<string name="octRP">Octubre</string>
+	<string name="novRP">Novembre</string>
+	<string name="decRP">Desembre</string>
+	
+	<string name="rightNow">ara mateix</string>
+	
+	<string name="oneDay">dia</string>
+    <string name="twoFourDay">dies</string>
+    <string name="fiveDay">dies</string>
+    
+    <string name="oneHour">hora</string>
+    <string name="twoFourHour">hores</string>
+    <string name="fiveHour">hores</string>
+    
+    <string name="oneMinute">minut</string>
+    <string name="twoFourMinute">minuts</string>
+    <string name="fiveMinute">minuts</string>
+
+    <string name="daysShort">d</string>
+    
+    <string name="timeIntervalInFuture">a</string>
+    <string name="timeIntervalInPast">fa</string>
+    
+</resources>

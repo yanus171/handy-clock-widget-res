@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools" tools:ignore="ExtraTranslation">   
+    <string-array name="nameDaysList" tools:ignore="MissingTranslation,InconsistentArrays">
+        <item>01.01;Name1</item>        
+        <item>01.02;Name2</item>
+        <item>01.03;Name2</item>
+    </string-array>       
+</resources>

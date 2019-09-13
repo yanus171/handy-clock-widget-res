@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/missedCallLayout"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal" >
+    <ImageView
+	    android:layout_width="25sp"
+	    android:layout_height="25sp"
+	    android:paddingRight="3sp"        
+	    
+	    android:adjustViewBounds="true"
+	    android:baselineAlignBottom="true"
+	    android:src="@android:drawable/stat_notify_missed_call"/>
+    <TextView
+        android:id="@+id/missedCallDate"
+        style="@style/Shadow"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:paddingRight="3sp"
+        android:text="date" />
+
+    <TextView	
+        android:id="@+id/missedCallSender"
+        style="@style/Shadow"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:paddingRight="3sp"
+        android:text="sender" />
+
+        
+</LinearLayout>    

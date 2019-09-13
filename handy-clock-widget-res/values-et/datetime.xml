@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<resources>
+	<string name="sunday">pühapäev</string>
+	<string name="sunday_short">pü</string>
+	<string name="monday">esmaspäev</string>
+	<string name="monday_short">es</string>
+	<string name="tuesday">teisipäev</string>
+	<string name="tuesday_short">te</string>
+	<string name="wednesday">kolmapäev</string>
+	<string name="wednesday_short">ko</string>
+	<string name="thursday">neljapäev</string>
+	<string name="thursday_short">ne</string>
+	<string name="friday">reede</string>
+	<string name="friday_short">re</string>
+	<string name="saturday">laupäev</string>
+	<string name="saturday_short">la</string>
+
+	<string name="jan">Jaanuar</string>
+	<string name="feb">Veebruar</string>
+	<string name="mar">Märts</string>
+	<string name="apr">Aprill</string>
+	<string name="may">Mai</string>
+	<string name="jun">Juuni</string>
+	<string name="jul">Juuli</string>
+	<string name="aug">August</string>
+	<string name="sep">September</string>
+	<string name="oct">Oktoober</string>
+	<string name="nov">November</string>
+	<string name="dec">Detsember</string>
+	
+	<string name="janRP">Jaanuar</string>
+	<string name="febRP">Veebruar</string>
+	<string name="marRP">Märts</string>
+	<string name="aprRP">Aprill</string>
+	<string name="mayRP">Mai</string>
+	<string name="junRP">Juuni</string>
+	<string name="julRP">Juuli</string>
+	<string name="augRP">August</string>
+	<string name="sepRP">September</string>
+	<string name="octRP">Oktoober</string>
+	<string name="novRP">November</string>
+	<string name="decRP">Detsember</string>
+	
+	<string name="oneDay">päev</string>
+    <string name="twoFourDay">päeva</string>
+    <string name="fiveDay">päeva</string>
+       
+    <string name="timeIntervalInFuture">peale</string>
+    <string name="timeIntervalInPast">enne</string>
+</resources>
