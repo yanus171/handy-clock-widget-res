@@ -38,7 +38,7 @@
     <string name="alarmRecognize">Alarm time recognition</string>
     <string name="alarmRecognizeSummary">To recognize the alarm time all the weekday captions should be set as they are displayed in the next alarm time string</string>
     <string name="alarmSetup">Alarm clock …</string>
-    <string name="alarmTextParsingFailed">"Alarm text '%s' parsing failed. Try to set weekday captions in setup (Clock-Alarm-Alarm time )"</string>
+    <string name="alarmTextParsingFailed">Alarm text \'%s\' parsing failed. Try to set weekday captions in setup (Clock-Alarm-Alarm time )</string>
     <string name="allDay">all day</string>
     <string name="allwaysShowToday">Show today date</string>
     <string name="allwaysShowTodaySummary">Show today date, even if there are no events today</string>
