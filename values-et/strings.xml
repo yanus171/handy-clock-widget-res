@@ -315,8 +315,8 @@
     <string name="alarmPeriod">Äratuse periood</string>
     <string name="alarmSetup">Äratuskell …</string>
     <string name="alarmTextParsingFailed">Äratuse teksti parsimine nurjus. Kontakteeru arendajaga.</string>
-    <string name="allwaysShowToday">Näita tänast kuupäeva</string>
-    <string name="allwaysShowTodaySummary">Näita tänast kuupäeva, isegi kui täna ei ole ühtegi sündmust</string>
+    <string name="alwaysShowToday">Näita tänast kuupäeva</string>
+    <string name="alwaysShowTodaySummary">Näita tänast kuupäeva, isegi kui täna ei ole ühtegi sündmust</string>
     <string name="appListLoading">Laeb rakenduste nimekirja</string>
     <string name="confirmHelpToAddLanguage">Kas soovid aidata arendajal rakendusele lisada oma keelt?</string>
     <string name="CalenGoo">CalenGoo</string>   

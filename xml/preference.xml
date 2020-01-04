@@ -876,6 +876,74 @@
             android:defaultValue="false"
             android:key="showMonthCalendarLocker"
             android:title="@string/show" />
+        <PreferenceCategory
+            android:layout="@layout/preference_category"
+            android:title="@string/shiftSchedule" />
+        <ru.yanus171.android.handyclockwidget.free.AutoSummaryEditPreference
+            android:defaultValue="2019.01.30"
+            android:key="shiftScheduleStart"
+            android:summary="@string/shiftScheduleStartSummary"
+            android:title="@string/shiftScheduleStart" />
+
+        <ru.yanus171.android.handyclockwidget.free.ColorPreference
+            android:defaultValue="@string/constTransparentColor"
+            android:key="shiftScheduleColorDay1"
+            android:title="@string/shiftScheduleDay1Color"
+            colorPreference:istransparency="true" />
+        <ru.yanus171.android.handyclockwidget.free.AutoSummaryListPreference
+            android:defaultValue="0"
+            android:entries="@array/shiftScheduleDayCount"
+            android:entryValues="@array/shiftScheduleDayCountValues"
+            android:key="shiftScheduleDayCount1"
+            android:title="@string/shiftScheduleDay1Count" />
+
+        <ru.yanus171.android.handyclockwidget.free.ColorPreference
+            android:defaultValue="@string/constTransparentColor"
+            android:key="shiftScheduleColorDay2"
+            android:title="@string/shiftScheduleDay2Color"
+            colorPreference:istransparency="true" />
+        <ru.yanus171.android.handyclockwidget.free.AutoSummaryListPreference
+            android:defaultValue="0"
+            android:entries="@array/shiftScheduleDayCount"
+            android:entryValues="@array/shiftScheduleDayCountValues"
+            android:key="shiftScheduleDayCount2"
+            android:title="@string/shiftScheduleDay2Count" />
+
+        <ru.yanus171.android.handyclockwidget.free.ColorPreference
+            android:defaultValue="@string/constTransparentColor"
+            android:key="shiftScheduleColorDay3"
+            android:title="@string/shiftScheduleDay3Color"
+            colorPreference:istransparency="true" />
+        <ru.yanus171.android.handyclockwidget.free.AutoSummaryListPreference
+            android:defaultValue="0"
+            android:entries="@array/shiftScheduleDayCount"
+            android:entryValues="@array/shiftScheduleDayCountValues"
+            android:key="shiftScheduleDayCount3"
+            android:title="@string/shiftScheduleDay3Count" />
+
+        <ru.yanus171.android.handyclockwidget.free.ColorPreference
+            android:defaultValue="@string/constTransparentColor"
+            android:key="shiftScheduleColorDay4"
+            android:title="@string/shiftScheduleDay4Color"
+            colorPreference:istransparency="true" />
+        <ru.yanus171.android.handyclockwidget.free.AutoSummaryListPreference
+            android:defaultValue="0"
+            android:entries="@array/shiftScheduleDayCount"
+            android:entryValues="@array/shiftScheduleDayCountValues"
+            android:key="shiftScheduleDayCount4"
+            android:title="@string/shiftScheduleDay4Count" />
+
+        <ru.yanus171.android.handyclockwidget.free.ColorPreference
+            android:defaultValue="@string/constTransparentColor"
+            android:key="shiftScheduleColorDay5"
+            android:title="@string/shiftScheduleDay5Color"
+            colorPreference:istransparency="true" />
+        <ru.yanus171.android.handyclockwidget.free.AutoSummaryListPreference
+            android:defaultValue="0"
+            android:entries="@array/shiftScheduleDayCount"
+            android:entryValues="@array/shiftScheduleDayCountValues"
+            android:key="shiftScheduleDayCount5"
+            android:title="@string/shiftScheduleDay5Count" />
     </PreferenceScreen>
     
     <PreferenceScreen
@@ -2084,8 +2152,8 @@
         <CheckBoxPreference
             android:defaultValue="true"
             android:key="eventListWidgetTodayEvent"
-            android:summary="@string/allwaysShowTodaySummary"
-            android:title="@string/allwaysShowToday" />
+            android:summary="@string/alwaysShowTodaySummary"
+            android:title="@string/alwaysShowToday" />
         <ru.yanus171.android.handyclockwidget.free.AutoSummaryEditPreference
             android:defaultValue="1"
             android:inputType="number"

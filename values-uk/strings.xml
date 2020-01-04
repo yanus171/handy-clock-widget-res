@@ -116,9 +116,9 @@
     <string name="alarmTextParsingFailed">"Текст будильника '%s' не розпізнаний. Спробуйте заповнити назви днів тижня в налаштуваннях (Години-Будильник-Розпізнавання часу будильника)"</string>
     <string name="all">Всі</string>
     <string name="allDay">Увесь день</string>
-    <string name="allways">Завжди</string>
-    <string name="allwaysShowToday">Показувати сегоднішню дату</string>
-    <string name="allwaysShowTodaySummary">Показувати сегоднішню дату, навіть якщо сьогодні немає подій</string>
+    <string name="always">Завжди</string>
+    <string name="alwaysShowToday">Показувати сегоднішню дату</string>
+    <string name="alwaysShowTodaySummary">Показувати сегоднішню дату, навіть якщо сьогодні немає подій</string>
     <string name="andMoreNEvents">та ще %d поки схованих</string>
     <string name="anniversaryType">рік.</string>
     <string name="anyBalanceLink">Встановити Any Balance</string>

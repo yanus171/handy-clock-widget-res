@@ -17,8 +17,8 @@
   <string name="alarmPeriod">Време аларма</string> 
   <string name="alarmSetup">Аларм …</string> 
   <string name="alarmTextParsingFailed">Неуспешно уношење текста аларма. Контактирајте програмера</string> 
-  <string name="allwaysShowToday">Прикажи данашњи датум</string> 
-  <string name="allwaysShowTodaySummary">Прикажи данашњи датум, чак и ако нема догађаја</string> 
+  <string name="alwaysShowToday">Прикажи данашњи датум</string>
+  <string name="alwaysShowTodaySummary">Прикажи данашњи датум, чак и ако нема догађаја</string>
   <string name="anniversaryType">ann</string> 
   <string name="app">Application</string> 
   <string name="app1">Application 1</string> 

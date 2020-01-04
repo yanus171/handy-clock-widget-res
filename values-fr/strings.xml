@@ -17,8 +17,8 @@
     <string name="alarmPeriod">Durée de l\'alarme</string>
     <string name="alarmSetup">Alarme …</string>
     <string name="alarmTextParsingFailed">Echec d\'analyse syntaxique du texte de l\'alarme. Contactez le développeur </string>
-    <string name="allwaysShowToday">Afficher la date d\'aujourd\'hui</string>
-    <string name="allwaysShowTodaySummary">Affiche la date d\'aujourd\'hui, même si il n\'y a aucun événement</string>
+    <string name="alwaysShowToday">Afficher la date d\'aujourd\'hui</string>
+    <string name="alwaysShowTodaySummary">Affiche la date d\'aujourd\'hui, même si il n\'y a aucun événement</string>
     <string name="anniversaryType">ann</string>
     <string name="app">Application</string>
 	<string name="app1">Application 1</string>

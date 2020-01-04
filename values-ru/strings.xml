@@ -37,9 +37,9 @@
     <string name="alarmSetup">Будильник …</string>
     <string name="alarmTextParsingFailed">Текст будильника \'%s\' не распознан. Попробуйте заполнить название дней недели в настроках (Часы-Будильник-Распознавание времени будильника)</string>
     <string name="allDay">Весь день</string>
-    <string name="allways">Всегда</string>
-    <string name="allwaysShowToday">Показывать дату сегодня</string>
-    <string name="allwaysShowTodaySummary">Показывать дату сегодняшнего дня, даже если в нем нет событий</string>       
+    <string name="always">Всегда</string>
+    <string name="alwaysShowToday">Показывать дату сегодня</string>
+    <string name="alwaysShowTodaySummary">Показывать дату сегодняшнего дня, даже если в нем нет событий</string>
     <string name="anniversaryType">год.</string>
     <string name="app">Приложение</string>
     <string name="app1">Приложение 1</string>
@@ -755,4 +755,19 @@
     <string name="donate">Github / Пожертвовать / Улучшить перевод </string>
     <string name="otherSourcesHint">ВНИМАНИЕ !!! В текущих версиях приложений BalanceBy и Anybalance из-за ограничений Google play удалена возможность передачи данных сторонним приложениям. Соответственно Удобное время не может работать с ними. Однако Удобное время работает со старыми версиями этих приложений (6.0.221 BalanceBy и 3.10.817 Anybalance) Apk файлы этих версий можно скачать на страницах 4pda приложений. Ситуация может измениться только после того, как разработчики BalanceBy и Anybalance доработают свои приложения</string>
 
+    <string name="shiftSchedule">Посменный график</string>
+    <string name="shiftScheduleStart">Дата начала</string>
+    <string name="shiftScheduleStartSummary">в формате YYYY.MM.DD</string>
+    <string name="shiftScheduleDay1Count">Число дней периода 1</string>
+    <string name="shiftScheduleDay1Color">Цвет периода 1</string>
+    <string name="shiftScheduleDay2Count">Число дней периода 2</string>
+    <string name="shiftScheduleDay2Color">Цвет периода 2</string>
+    <string name="shiftScheduleDay3Count">Число дней периода 3</string>
+    <string name="shiftScheduleDay3Color">Цвет периода 3</string>
+    <string name="shiftScheduleDay4Count">Число дней периода 4</string>
+    <string name="shiftScheduleDay4Color">Цвет периода 4</string>
+    <string name="shiftScheduleDay5Count">Число дней периода 5</string>
+    <string name="shiftScheduleDay5Color">Цвет периода 5</string>
+    <string name="shiftScheduleOff">Выкл.</string>
+    <string name="saveSMSasCalendarEventConfirm">Сохранить СМС как событие календаря?</string>
 </resources>

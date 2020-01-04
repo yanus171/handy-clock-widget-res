@@ -22,8 +22,8 @@
     <string name="alarmRecognizeSummary">To recognize the alarm time all the weekday captions should be set as they are displayed in the next alarm time string</string>
     <string name="alarmSetup">Ébresztő óra …</string>
     <string name="alarmTextParsingFailed">Riasztás szöveg \'%s\' formázási hiba. Próbálja beállítani a hétköznap feliratokat a beállításokban(Óra-Ébresztés-Ébresztési idő )</string>
-    <string name="allwaysShowToday">Mai nap mutatása</string>
-    <string name="allwaysShowTodaySummary">Mai nap mutatása, akkor is ha nincs hozzá esemény</string>
+    <string name="alwaysShowToday">Mai nap mutatása</string>
+    <string name="alwaysShowTodaySummary">Mai nap mutatása, akkor is ha nincs hozzá esemény</string>
     <string name="anniversaryType">ann</string>
     <string name="app">Alkalmazás</string>
 	<string name="app1">Alkalmazás 1</string>
@@ -162,7 +162,7 @@
 	<string name="eventNameFontSize">Event name font size</string>	
     <string name="eventVisibility">Special visibility</string>
 	<string name="eventVisibilityByDefault">No</string>
-    <string name="eventVisibilityDoShow">Allways</string>
+    <string name="eventVisibilityDoShow">Always</string>
     <string name="eventVisibilityHide">Hide</string>
     <string name="expressWishes">Express wishes</string>
     <string name="feedback">Feedback</string>

@@ -17,8 +17,8 @@
     <string name="alarmPeriod">Período de alarme</string>
     <string name="alarmSetup">Despertador…</string>
     <string name="alarmTextParsingFailed">Análise de texto de alarme falhou. Contate o desenvolvedor</string>
-    <string name="allwaysShowToday">Mostrar a data de hoje</string>
-    <string name="allwaysShowTodaySummary">Mostrar a data de hoje, mesmo se não houver eventos para hoje</string>
+    <string name="alwaysShowToday">Mostrar a data de hoje</string>
+    <string name="alwaysShowTodaySummary">Mostrar a data de hoje, mesmo se não houver eventos para hoje</string>
     <string name="anniversaryType">ta</string>
     <string name="app">Aplicativo</string>
 	<string name="app1">Aplicativo 1</string>

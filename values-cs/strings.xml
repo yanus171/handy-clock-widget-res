@@ -43,8 +43,8 @@
     <string name="alarmRecognizeSummary">To recognize the alarm time all the weekday captions should be set as they are displayed in the next alarm time string</string>
     <string name="alarmSetup">Budík …</string>
     <string name="alarmTextParsingFailed">Rozdělení textu budíku se nepovedlo. Kontaktujte vývojáře </string>
-    <string name="allwaysShowToday">Zobrazit aktuální den</string>
-    <string name="allwaysShowTodaySummary">Zobrazit aktuální den, přestože v něm nejsou události</string>
+    <string name="alwaysShowToday">Zobrazit aktuální den</string>
+    <string name="alwaysShowTodaySummary">Zobrazit aktuální den, přestože v něm nejsou události</string>
     <string name="back">Zpět</string>
     <string name="background">Pozadí</string>
     <string name="backgroundColor">Barva a průhlednost pozadí</string>

@@ -28,8 +28,8 @@
     <string name="alarmSetup">Wecker …</string>
     <string name="alarmTextParsingFailed">"Die Wecker-Text '%s' wurde nicht erkannt. Füllen Sie alle Wochentagnamen in den Einstellungen (Uhrzeit-Wecker-Weckzeiterkennung)."</string>
     <string name="allDay">Ganzer Tag</string>
-    <string name="allwaysShowToday">Heutiges Datum anzeigen</string>
-    <string name="allwaysShowTodaySummary">Datum des heutigen Tages trotzdem anzeigen, auch wenn an diesem Tag keine Ereignisse gibt.</string>
+    <string name="alwaysShowToday">Heutiges Datum anzeigen</string>
+    <string name="alwaysShowTodaySummary">Datum des heutigen Tages trotzdem anzeigen, auch wenn an diesem Tag keine Ereignisse gibt.</string>
     <string name="anniversaryType">J</string>
     <string name="app">Anwendung</string>
     <string name="app1">Anwendung 1</string>

@@ -25,7 +25,7 @@
     <string name="afterEventEditing">Event is edited</string>
     <string name="all">All</string>
     <string name="allEventList">allEventList</string>
-    <string name="allways">Allways</string>
+    <string name="always">Always</string>
     <string name="alarmIs">alarm clock</string>
     <string name="alarm">Alarm clock</string>
     <string name="alarmApp">Alarm clock application</string>
@@ -40,8 +40,8 @@
     <string name="alarmSetup">Alarm clock …</string>
     <string name="alarmTextParsingFailed">Alarm text \'%s\' parsing failed. Try to set weekday captions in setup (Clock-Alarm-Alarm time )</string>
     <string name="allDay">all day</string>
-    <string name="allwaysShowToday">Show today date</string>
-    <string name="allwaysShowTodaySummary">Show today date, even if there are no events today</string>
+    <string name="alwaysShowToday">Show today date</string>
+    <string name="alwaysShowTodaySummary">Show today date, even if there are no events today</string>
     <string name="anniversaryType">ann</string>
     <string name="anyBalanceLink">Install Any Balance</string>
     <string name="app">Application</string>
@@ -207,7 +207,7 @@
     <string name="deleteAllSeria">Delete the entire series</string>
     <string name="deleteCalendarEventFailed">Failed to delete calendar event</string>
     <string name="deltaTemperatureThreshold">Temp change threshold</string>
-	<string name="deltaTemperatureThresholdSummary">If the day temperature difference from yesterday is smaller than the threshold, then the temperature of that day on the widget would be hidden (today weather is allways visible)</string>	
+	<string name="deltaTemperatureThresholdSummary">If the day temperature difference from yesterday is smaller than the threshold, then the temperature of that day on the widget would be hidden (today weather is always visible)</string>
     <string name="descr">Description</string>
     <string name="descrFontSize">Description font size</string>
     <string name="doc"></string>
@@ -305,7 +305,7 @@
     <string name="eventTitle">"include event's title"</string>
     <string name="eventVisibility">Special visibility</string>
     <string name="eventVisibilityByDefault">No</string>
-    <string name="eventVisibilityDoShow">Allways</string>
+    <string name="eventVisibilityDoShow">Always</string>
     <string name="eventVisibilityHide">Hide</string>
     <string name="expressWishes">Express wishes</string>
     <string name="feedback">Feedback</string>
@@ -421,7 +421,7 @@
     <string name="notificantionIconEmptySummary">in persistent notification</string>
     <string name="notificantionWithWidget">With widget</string>
     <string name="notificantionWithWidgetSummary">draw widget in persistent notification (usefull in Android 5+ which lack lockcreen widgets)</string>
-    <string name="notifyIconText">Dear system! Do not kill me, please! I am very important app that allways should be loaded in a memory!</string>
+    <string name="notifyIconText">Dear system! Do not kill me, please! I am very important app that always should be loaded in a memory!</string>
     <string name="or">or</string>
     <string name="open">Open</string>
     <string name="openContact">Open contact</string>
@@ -784,4 +784,20 @@
     <string name="preferenceScreenTransportSummary"></string>
     <string name="orthodoxyFeastImprove">Добавить / редактировать праздники </string>
     <string name="orthodoxyFeastImproveSummary">Окроется страница файла праздников на github странице проекта</string>
+
+    <string name="shiftSchedule">Shift Schedule</string>
+    <string name="shiftScheduleStart">Start date</string>
+    <string name="shiftScheduleStartSummary">in YYYY.MM.DD format</string>
+    <string name="shiftScheduleDay1Count">Day 1 count</string>
+    <string name="shiftScheduleDay1Color">Day 1 color</string>
+    <string name="shiftScheduleDay2Count">Day 2 count</string>
+    <string name="shiftScheduleDay2Color">Day 2 color</string>
+    <string name="shiftScheduleDay3Count">Day 3 count</string>
+    <string name="shiftScheduleDay3Color">Day 3 color</string>
+    <string name="shiftScheduleDay4Count">Day 4 count</string>
+    <string name="shiftScheduleDay4Color">Day 4 color</string>
+    <string name="shiftScheduleDay5Count">Day 5 count</string>
+    <string name="shiftScheduleDay5Color">Day 5 color</string>
+    <string name="shiftScheduleOff">Off</string>
+    <string name="saveSMSasCalendarEventConfirm">Save SMS as calendar event?</string>
 </resources>

@@ -98,8 +98,15 @@
 	                android:paddingRight="1sp">		        
 			   		<include layout="@layout/weather_nosh" />
 			   		
-			   		<include layout="@layout/alarm_nosh" />		   				   		
-			   		
+			   		<include layout="@layout/alarm_nosh" />
+
+					<ProgressBar
+						android:id="@+id/progressBar"
+						android:layout_width="wrap_content"
+						android:layout_height="30dp"
+						android:layout_gravity="center"
+						android:indeterminate="true"
+						/>
 			    </LinearLayout>
 	        </FrameLayout>
 	    </LinearLayout>

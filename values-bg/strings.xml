@@ -27,8 +27,8 @@
     <string name="alarmSetup">Будилник …</string>
     <string name="alarmTextParsingFailed">Текстът на будильника не е разпознат. Съобщете за проблема на разработчика </string>
     <string name="allDay">През целия ден</string>
-    <string name="allwaysShowToday">Покажи днешна дата</string>
-    <string name="allwaysShowTodaySummary">Показва днешната дата дори да няма събития за деня</string>       
+    <string name="alwaysShowToday">Покажи днешна дата</string>
+    <string name="alwaysShowTodaySummary">Показва днешната дата дори да няма събития за деня</string>
 	<string name="anniversaryType">год.</string>
 	<string name="app">Приложение</string>
     <string name="app1">Приложение 1</string>

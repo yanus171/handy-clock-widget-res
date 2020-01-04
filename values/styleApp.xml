@@ -3,6 +3,6 @@
     <style name="styleApp" parent="@android:style/Theme.Black.NoTitleBar"/>
     <style name="styleLight" parent="@android:style/Theme.Light"/>
     <style name="styleDark" parent="@android:style/Theme.Black"/>
-    <style name="styleDarkDialog" parent="@android:style/Theme.Black"/>
-    <style name="styleLightDialog" parent="@android:style/Theme.Light"/>
+    <style name="styleDarkDialog" parent="@android:style/Theme.Holo.Dialog"/>
+    <style name="styleLightDialog" parent="@android:style/Theme.Holo.Light.Dialog"/>
 </resources>
