@@ -785,7 +785,7 @@
     <string name="orthodoxyFeastImprove">Добавить / редактировать праздники </string>
     <string name="orthodoxyFeastImproveSummary">Окроется страница файла праздников на github странице проекта</string>
 
-    <string name="shiftSchedule">Shift Schedule</string>
+    <string name="shiftSchedule">Shift schedule</string>
     <string name="shiftScheduleStart">Start date</string>
     <string name="shiftScheduleStartSummary">in YYYY.MM.DD format</string>
     <string name="shiftScheduleDay1Count">Day 1 count</string>
@@ -799,5 +799,8 @@
     <string name="shiftScheduleDay5Count">Day 5 count</string>
     <string name="shiftScheduleDay5Color">Day 5 color</string>
     <string name="shiftScheduleOff">Off</string>
+    <string name="colorMonthCalendarDayInTimeSchedule">Color day background</string>
+    <string name="colorMonthCalendarDayInTimeScheduleSummary">in shift schedule color. Otherwise draw an additional small square</string>
     <string name="saveSMSasCalendarEventConfirm">Save SMS as calendar event?</string>
+    <string name="customOrthodoxyXMLFileName">Пусть к XML файлу с праздниками</string>
 </resources>

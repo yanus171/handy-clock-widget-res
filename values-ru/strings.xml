@@ -769,5 +769,8 @@
     <string name="shiftScheduleDay5Count">Число дней периода 5</string>
     <string name="shiftScheduleDay5Color">Цвет периода 5</string>
     <string name="shiftScheduleOff">Выкл.</string>
+    <string name="colorMonthCalendarDayInTimeSchedule">Раскрашивать фон дня</string>
+    <string name="colorMonthCalendarDayInTimeScheduleSummary">цветом графика. Иначе рисовать дополнительный маленький квадратик</string>
+
     <string name="saveSMSasCalendarEventConfirm">Сохранить СМС как событие календаря?</string>
 </resources>

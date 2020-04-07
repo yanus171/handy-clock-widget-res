@@ -12,14 +12,14 @@
     android:background="#555555">
 
     <TextView
-        android:id="@+android:id/title"
+        android:id="@android:id/title"
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
         android:textColor="#ffffff"
         android:textSize="20sp"
         android:textStyle="normal" />
     <TextView
-        android:id="@+android:id/summary"
+        android:id="@android:id/summary"
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
         android:textColor="#AAffffff"

@@ -2,23 +2,50 @@
 <FrameLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
 	xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/dayRoot"
     android:layout_width="fill_parent"
     android:layout_height="fill_parent"
     android:layout_weight="1"
     tools:ignore="InefficientWeight" >
 
-    <TextView
-        android:id="@+id/day"
-        style="@style/Shadow"        
-        android:textSize="16sp"
+    <LinearLayout
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
-        android:layout_gravity="center"
-        android:lineSpacingMultiplier="1"
-        android:gravity="center"
+        android:layout_gravity="bottom|center"
+        android:gravity="bottom|center"
         android:paddingLeft="1sp"
-        android:paddingRight="1sp"        
-        android:text="1" />
+        android:paddingRight="1sp"
+        android:baselineAligned="false"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/day"
+            style="@style/Shadow"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:gravity="bottom"
+            android:lineSpacingMultiplier="1"
+            android:text="1"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/timeScheduleColor"
+            style="@style/Shadow"
+            android:layout_width="5dp"
+            android:layout_height="5dp"
+            android:layout_gravity="bottom"
+            android:gravity="bottom"
+            android:background="#FF2020"
+            android:layout_marginRight="3sp"
+            android:layout_marginLeft="1sp"
+            android:layout_marginBottom="3sp"
+            android:text=""
+            android:textSize="16sp"
+            android:layout_marginEnd="3sp"
+            android:layout_marginStart="1sp" />
+    </LinearLayout>
+
     <LinearLayout
         android:id="@+id/leftBorder"
         android:layout_width="2sp"
@@ -47,12 +74,4 @@
         android:layout_gravity="bottom"
         android:visibility="gone"
         android:background="#FFFF00" />
-<!--     <TextView -->
-<!--         android:id="@+id/border" -->
-<!--         android:layout_width="fill_parent" -->
-<!--         android:layout_height="fill_parent" -->
-<!--         android:visibility="gone" -->
-<!--         style="@style/styleCalendarDay" -->
-<!--         android:text="1" -->
-<!--         android:background="@drawable/border_yellow" /> -->
 </FrameLayout>

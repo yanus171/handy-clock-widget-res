@@ -885,6 +885,11 @@
             android:summary="@string/shiftScheduleStartSummary"
             android:title="@string/shiftScheduleStart" />
 
+        <CheckBoxPreference
+            android:defaultValue="false"
+            android:key="colorMonthCalendarDayInTimeSchedule"
+            android:title="@string/colorMonthCalendarDayInTimeSchedule"
+            android:summary="@string/colorMonthCalendarDayInTimeScheduleSummary"/>
         <ru.yanus171.android.handyclockwidget.free.ColorPreference
             android:defaultValue="@string/constTransparentColor"
             android:key="shiftScheduleColorDay1"
@@ -1451,6 +1456,14 @@
             android:summary="@string/orthodoxyFeastImproveSummary"
             android:title="@string/orthodoxyFeastImprove"
             link:HTTPLink="https://github.com/yanus171/handy-clock-widget-res/blob/master/xml/orthodoxy.xml" />
+
+        <ru.yanus171.android.handyclockwidget.free.AutoSummaryEditPreference
+            android:inputType="text"
+            android:defaultValue=""
+            android:key="customOrthodoxyXMLFileName"
+            android:title="@string/customOrthodoxyXMLFileName" />
+
+
     </PreferenceScreen>
     <PreferenceScreen
         android:key="preferenceScreenEventsNameDay"
