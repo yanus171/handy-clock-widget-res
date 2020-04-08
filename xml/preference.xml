@@ -1461,7 +1461,8 @@
             android:inputType="text"
             android:defaultValue=""
             android:key="customOrthodoxyXMLFileName"
-            android:title="@string/customOrthodoxyXMLFileName" />
+            android:title="@string/customOrthodoxyXMLFileName"
+            android:summary="@string/customOrthodoxyXMLFileNameSummary"/>
 
 
     </PreferenceScreen>

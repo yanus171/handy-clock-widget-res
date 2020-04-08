@@ -803,4 +803,7 @@
     <string name="colorMonthCalendarDayInTimeScheduleSummary">in shift schedule color. Otherwise draw an additional small square</string>
     <string name="saveSMSasCalendarEventConfirm">Save SMS as calendar event?</string>
     <string name="customOrthodoxyXMLFileName">Пусть к XML файлу с праздниками</string>
+    <string name="customOrthodoxyXMLFileNameSummary">Исходный файл можно скачать по ссылке https://github.com/yanus171/handy-clock-widget-res/blob/master/xml/orthodoxy.xml</string>
+    <string name="tropar2">Ин тропарь</string>
+    <string name="kondak2">Ин кондак</string>
 </resources>
