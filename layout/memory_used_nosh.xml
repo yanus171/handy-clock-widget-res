@@ -9,7 +9,7 @@
     android:orientation="horizontal"
     android:visibility="visible"
     tools:ignore="UseCompoundDrawables" >
-    
+    <include layout="@layout/system_info_nosh" />
     <TextView
         android:id="@+id/labelMemoryUsed"
         style="@style/NoShadow"

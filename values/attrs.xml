@@ -11,7 +11,7 @@
     <declare-styleable name="ru.yanus171.android.handyclockwidget.free.ColorPreference">
         <attr name="istransparency" format="boolean" />
         <attr name="text" format="string" />
-        <attr name="background" format="string" />
+        <attr name="background1" format="string" />
     </declare-styleable>
     
     

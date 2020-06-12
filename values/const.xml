@@ -42,6 +42,7 @@
     <string name="constDefaultFreeStorageExternalColor">#777777</string>
     <string name="constDefaultFreeStorageInternalColor">#0077FF</string>
     <string name="constDefaultSMSBorderColor">#00FF00</string>
+    <string name="constDefaultSMSInactiveColor">#777777</string>
     <string name="constDefaultLastCallBorderColor">#AAAAAA</string>
     <string name="constDefaultMailBorderColor">#0000FF</string>
     <string name="constDefaultContactColor">#FFFFFF</string>
