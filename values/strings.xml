@@ -84,7 +84,7 @@
     <string name="balanceByNotInstalled">It seems, that Balance BY app is not installed. Link to install can be found in settings. If it is installed indeed, try to reinstall current app and then reload the device</string>
     <string name="balanceByUseNotificationForVisibility">Use color notification</string>
     <string name="balanceByUseNotificationForVisibilitySummary">Use color notification of BalanceBy app for balance visibility and color</string>
-    <string name="balanceBYWordWrapSummary">Show text in multiline mode. There will be no special color in case of balance value below the threshold</string>    
+    <string name="balanceBYWordWrapSummary">Show text in multiline mode. There will be no special color in case of balance value below the threshold</string>
     <string name="balanceBYWeatherShowRainWarning">Rain warnings</string>
     <string name="balanceBYWeatherShowRainWarningSummary">Show hourly rainy weather in widget</string>
     <string name="balanceConvertBalanceCaption">Shorten caption</string>
@@ -97,10 +97,10 @@
     <string name="balanceNoFractionalInWidgetSummary">Do not display in widget fractional digits of balance values</string>
     <string name="balanceLastChangeMinus">Last change -</string>
     <string name="balanceLastChangePlus">Last change +</string>
-    <string name="balanceShortCaptionLen">Короткая длина названия баланса</string>    
-    <string name="balanceShortCaptionLenSummary">...</string>    
-    <string name="balanceLongCaptionLen">Длинная длина :) названия баланса</string>    
-    <string name="balanceLongCaptionLenSummary">...</string>    
+    <string name="balanceShortCaptionLen">Короткая длина названия баланса</string>
+    <string name="balanceShortCaptionLenSummary">...</string>
+    <string name="balanceLongCaptionLen">Длинная длина :) названия баланса</string>
+    <string name="balanceLongCaptionLenSummary">...</string>
     <string name="balancePerDayMinus">Per day minus</string>
     <string name="balancePerDayPlus">Per day plus</string>
     <string name="balanceShowCaption">Balance caption</string>
@@ -132,7 +132,7 @@
     <string name="calendarEventSaved">Event is saved</string>
     <string name="calendarRecurrentEventsMaxCount">Recurrent max count</string>
     <string name="calendarRecurrentEventsMaxCountSummary">Limit the count of recurrent event instances (0 - no limit)</string>
-    <string name="calendarRecurrentOptimize">Recurrent optimization</string>    
+    <string name="calendarRecurrentOptimize">Recurrent optimization</string>
     <string name="calendarRecurrentOptimizeSummary">Speeds up events loading. Turn off if some of calendar events are absent</string>
     <string name="CalenGooLink">Install CalenGoo</string>
     <string name="CalenGooLinkSummary">Warning: paid application</string>
@@ -207,11 +207,11 @@
     <string name="deleteAllSeria">Delete the entire series</string>
     <string name="deleteCalendarEventFailed">Failed to delete calendar event</string>
     <string name="deltaTemperatureThreshold">Temp change threshold</string>
-	<string name="deltaTemperatureThresholdSummary">If the day temperature difference from yesterday is smaller than the threshold, then the temperature of that day on the widget would be hidden (today weather is always visible)</string>
+    <string name="deltaTemperatureThresholdSummary">If the day temperature difference from yesterday is smaller than the threshold, then the temperature of that day on the widget would be hidden (today weather is always visible)</string>
     <string name="descr">Description</string>
     <string name="descrFontSize">Description font size</string>
     <string name="doc"></string>
-    <string name="docHint"></string>    
+    <string name="docHint"></string>
     <string name="schoolDiary"></string>
     <string name="schoolDiaryHint"></string>
     <string name="dirCreated">Directory %s was created</string>
@@ -333,7 +333,7 @@
     <string name="genieWidgetAppNotInstalled">"You should install 'News and weather' (Genie widget) app to display the weather. Tap this message to download install file from the internet"</string>
     <string name="genieWidgetCursorIsEmpty">No weather info. Check that both location setting value in this app and in weather app match. Check that weather app has info. Tap to open a weather app</string>
     <string name="goHomeAfterAction">Homescreen after action</string>
-	<string name="goHomeAfterActionSummary">Return to home screen after action on widget</string>
+    <string name="goHomeAfterActionSummary">Return to home screen after action on widget</string>
     <string name="hideAlarmOnTime">Hide entirely</string>
     <string name="hideAlarmOnTimeSummary">Hide the alarm clock completely when no alarm period</string>
     <string name="hideAlarmWhenNotSet">Hide if not set</string>
@@ -343,8 +343,8 @@
     <string name="hideWithoutChanges">Hide without changes</string>
     <string name="highlightDayOffColor">Highlight day off color</string>
     <string name="highlightDayOffColorSummary">Brush days off with individual color</string>
-    <string name="ignoreWeatherErrors">Ignore errors</string>    
-    <string name="ignoreWeatherErrorsSummary">Do not notify about weather data absence, weather app not installed</string>    
+    <string name="ignoreWeatherErrors">Ignore errors</string>
+    <string name="ignoreWeatherErrorsSummary">Do not notify about weather data absence, weather app not installed</string>
     <string name="inEventDay">In the event day</string>
     <string name="inEventList">In event list</string>
     <string name="infoSources">Source of information</string>
@@ -378,7 +378,7 @@
     <string name="minuteCount">Number of minutes</string>
     <string name="minuteCountSummary">after the call, during which to display information</string>
     <string name="minimalDaysInFirstWeek">Minimal days in first week</string>
-    <string name="monthCalendar">Month calendar</string>    
+    <string name="monthCalendar">Month calendar</string>
     <string name="monthCalendarHeader">Header with weekdays</string>
     <string name="monthCalendarHint">Hint: tap on letf/right age of month calendar shows the next/previous month, tap on the middle returns to the current month</string>
     <string name="monthCalendarSetup">Month calendar ...</string>
@@ -404,7 +404,7 @@
     <string name="moveToTomorrow">Move to tomorrow</string>
     <string name="miscellaneous">Miscellaneous</string>
     <string name="missedCallEvents">Missed calls</string>
-    <string name="missedCallEventsSummary"></string>   
+    <string name="missedCallEventsSummary"></string>
     <string name="nameDay">Nameday</string>
     <string name="nameDaySetup">Namedays …</string>
     <string name="nameDayHint">Nameday are not realized in this language. Mail the developer if you want to help to add namedays</string>
@@ -442,7 +442,8 @@
     <string name="permitionRequired">Permission required to read</string>
     <string name="permitionRequiredDesc">Either grant this permission in app security settings or turn off the show of that type of information in app settings</string>
     <string name="phoneEventsSetup">Phone events …</string>
-    <string name="phoneEventsSummary">Sms came text, the duration of last call …</string>    
+    <string name="SMSEventsSummary">Incoming SMS texts …</string>
+    <string name="phoneEventsSummary">Duration of last call, missed calls …</string>
     <string name="preferenceScreenBalance">Balance …</string>
     <string name="preferenceScreenBalanceBY">Balance …</string>
     <string name="preferenceScreenBalanceSummary">Balance BY, AnyBalance …</string>
@@ -460,9 +461,9 @@
     <string name="preferenceScreenOtherSourcesSummary"></string>
     <string name="preferenceScreenShopper">Shopping list …</string>
     <string name="preferenceScreenShopperSummary">DrShopper, LazyShopper, select shoplist</string>
-    <string name="preferenceScreenTransport">Transport</string>    
+    <string name="preferenceScreenTransport">Transport</string>
     <string name="preferenceScreenTrasportSummary">from Balance BY provider</string>
-	<string name="preferenceScreenTVShedule">Teleprogram"</string>    
+    <string name="preferenceScreenTVShedule">Teleprogram"</string>
     <string name="preferenceScreenTVSheduleSummary">from Balance BY provider</string>
     <string name="preferenceTitle">Settings</string>
     <string name="prefsRestoreComlete">Preferences were restored from SD card. The program well be restarted to update preferences</string>
@@ -527,7 +528,7 @@
     <string name="shoppingList">Shopping list</string>
     <string name="shortDaysIntervalCaption">Short days caption</string>
     <string name="show">Show</string>
-<!--     <string name="showAddEventCalendarButtonWithDate">Add event button</string> -->
+    <!--     <string name="showAddEventCalendarButtonWithDate">Add event button</string> -->
     <string name="showAddEventCalendarButtonWithDateSummary">Show add calendar event button near date in widget and all event list screen</string>
     <string name="showAlarmSystemText">Alarm time</string>
     <string name="showAlarmSystemTextSummary">Show text, formed by the system alarm</string>
@@ -580,6 +581,7 @@
     <string name="smartCalendarEndDateHide">Hide end time</string>
     <string name="smartCalendarEndDateHideSummary">if it is equal to start time or the duration of event is one hour</string>
     <string name="SMSEventsBorderColor">SMS border color</string>
+    <string name="SMSEventsInactiveColor">SMS and Mail inactive color</string>
     <string name="smsNotificationSummary">Show notification of incoming SMS in status bar</string>
     <string name="smsNotificationHint">It is recommended to turn off standard incoming sms notification and check the notification on this preference page. This will allow to remove the notification by tap on sms text on widget</string>
     <string name="solidDateBackgroundColor">Solid date color</string>
@@ -621,7 +623,7 @@
     <string name="taskManagers">Task managers</string>
     <string name="testContentProviderDataSummary">Do no check it !!!  :) (it is only for developer purpose)</string>
     <string name="text">Text</string>
-    <string name="textWithShadow">Text with shadow</string>    
+    <string name="textWithShadow">Text with shadow</string>
     <string name="theme">Theme</string>
     <string name="threshold">Threshold</string>
     <string name="thresholdMoney">Money threshold</string>
@@ -646,8 +648,8 @@
     <string name="timeSetup">Time …</string>
     <string name="timeZone">Time zone</string>
     <string name="timeFormatTwoDigitHour">Two digit hour</string>
-    <string name="timeWidgetLayoutSummary">time and weekday or month calendar</string>    
-    <string name="title">Title</string>    
+    <string name="timeWidgetLayoutSummary">time and weekday or month calendar</string>
+    <string name="title">Title</string>
     <string name="to">to</string>
     <string name="toastAppCrashed">The application unexpectedly failed: (Please send a mail to developer)</string>
     <string name="today">Today</string>
@@ -658,13 +660,13 @@
     <string name="eventListTodayEventsBoldSummary">Show today events with bold font</string>
     <string name="tomorrow">Tomorrow</string>
     <string name="transparency">Transparency</string>
-    <string name="tvShedule">TV Shedule</string>    
+    <string name="tvShedule">TV Shedule</string>
     <string name="tvSheduleHint">TV Shedule is acquired from the account of Balance By application</string>
     <string name="updaing">Updating …</string>
     <string name="contextMenuTapActionSummary">Action instead of context menu show. May require replacing widget on home screen to apply changes</string>
     <string name="unableToEditCalendarEvent">Unable to edit calendar events</string>
     <string name="updateData">Update data</string>
-    <string name="updateIsSheduled">Update data is sheduled </string>   
+    <string name="updateIsSheduled">Update data is sheduled </string>
     <string name="unableToCopyFile">Unable to copy file %s</string>
     <string name="unableToCreateDir">Unable to create directory %s</string>
     <string name="unableToSaveFile">Unable to save file %s</string>
@@ -694,7 +696,7 @@
     <string name="weatherTimeStartToShowTomorrowSummary">Start time to show tomoorow weather desciption instead of today</string>
     <string name="weatherUpdate">Weather update</string>
     <string name="weatherWidgetInEventList">In event list</string>
-    <string name="weatherWidgetInEventListSummary">Show wether near the date in event list in widget</string>  
+    <string name="weatherWidgetInEventListSummary">Show wether near the date in event list in widget</string>
     <string name="weatherWidgetPanel">Panel on widget</string>
     <string name="weatherWidgetPanelColorTemperature">Temp color</string>
     <string name="weatherWidgetPanelColorTemperatureSummary"></string>
@@ -806,4 +808,112 @@
     <string name="customOrthodoxyXMLFileNameSummary">Исходный файл можно скачать по ссылке https://github.com/yanus171/handy-clock-widget-res/blob/master/xml/orthodoxy.xml</string>
     <string name="tropar2">Ин тропарь</string>
     <string name="kondak2">Ин кондак</string>
+    <string name="monthCalendarFromMonthStart">From the month start</string>
+    <string name="monthCalendarFromMonthStartSummary">"Otherwise two weeks from pervious month are visible "</string>
+    <string name="title_activity_web_load_account_list">WebLoadAccountList</string>
+    <string name="large_text">
+        "Material is the metaphor.\n\n"
+
+        "A material metaphor is the unifying theory of a rationalized space and a system of motion."
+        "The material is grounded in tactile reality, inspired by the study of paper and ink, yet "
+        "technologically advanced and open to imagination and magic.\n"
+        "Surfaces and edges of the material provide visual cues that are grounded in reality. The "
+        "use of familiar tactile attributes helps users quickly understand affordances. Yet the "
+        "flexibility of the material creates new affordances that supercede those in the physical "
+        "world, without breaking the rules of physics.\n"
+        "The fundamentals of light, surface, and movement are key to conveying how objects move, "
+        "interact, and exist in space and in relation to each other. Realistic lighting shows "
+        "seams, divides space, and indicates moving parts.\n\n"
+
+        "Bold, graphic, intentional.\n\n"
+
+        "The foundational elements of print based design typography, grids, space, scale, color, "
+        "and use of imagery guide visual treatments. These elements do far more than please the "
+        "eye. They create hierarchy, meaning, and focus. Deliberate color choices, edge to edge "
+        "imagery, large scale typography, and intentional white space create a bold and graphic "
+        "interface that immerse the user in the experience.\n"
+        "An emphasis on user actions makes core functionality immediately apparent and provides "
+        "waypoints for the user.\n\n"
+
+        "Motion provides meaning.\n\n"
+
+        "Motion respects and reinforces the user as the prime mover. Primary user actions are "
+        "inflection points that initiate motion, transforming the whole design.\n"
+        "All action takes place in a single environment. Objects are presented to the user without "
+        "breaking the continuity of experience even as they transform and reorganize.\n"
+        "Motion is meaningful and appropriate, serving to focus attention and maintain continuity. "
+        "Feedback is subtle yet clear. Transitions are efﬁcient yet coherent.\n\n"
+
+        "3D world.\n\n"
+
+        "The material environment is a 3D space, which means all objects have x, y, and z "
+        "dimensions. The z-axis is perpendicularly aligned to the plane of the display, with the "
+        "positive z-axis extending towards the viewer. Every sheet of material occupies a single "
+        "position along the z-axis and has a standard 1dp thickness.\n"
+        "On the web, the z-axis is used for layering and not for perspective. The 3D world is "
+        "emulated by manipulating the y-axis.\n\n"
+
+        "Light and shadow.\n\n"
+
+        "Within the material environment, virtual lights illuminate the scene. Key lights create "
+        "directional shadows, while ambient light creates soft shadows from all angles.\n"
+        "Shadows in the material environment are cast by these two light sources. In Android "
+        "development, shadows occur when light sources are blocked by sheets of material at "
+        "various positions along the z-axis. On the web, shadows are depicted by manipulating the "
+        "y-axis only. The following example shows the card with a height of 6dp.\n\n"
+
+        "Resting elevation.\n\n"
+
+        "All material objects, regardless of size, have a resting elevation, or default elevation "
+        "that does not change. If an object changes elevation, it should return to its resting "
+        "elevation as soon as possible.\n\n"
+
+        "Component elevations.\n\n"
+
+        "The resting elevation for a component type is consistent across apps (e.g., FAB elevation "
+        "does not vary from 6dp in one app to 16dp in another app).\n"
+        "Components may have different resting elevations across platforms, depending on the depth "
+        "of the environment (e.g., TV has a greater depth than mobile or desktop).\n\n"
+
+        "Responsive elevation and dynamic elevation offsets.\n\n"
+
+        "Some component types have responsive elevation, meaning they change elevation in response "
+        "to user input (e.g., normal, focused, and pressed) or system events. These elevation "
+        "changes are consistently implemented using dynamic elevation offsets.\n"
+        "Dynamic elevation offsets are the goal elevation that a component moves towards, relative "
+        "to the component’s resting state. They ensure that elevation changes are consistent "
+        "across actions and component types. For example, all components that lift on press have "
+        "the same elevation change relative to their resting elevation.\n"
+        "Once the input event is completed or cancelled, the component will return to its resting "
+        "elevation.\n\n"
+
+        "Avoiding elevation interference.\n\n"
+
+        "Components with responsive elevations may encounter other components as they move between "
+        "their resting elevations and dynamic elevation offsets. Because material cannot pass "
+        "through other material, components avoid interfering with one another any number of ways, "
+        "whether on a per component basis or using the entire app layout.\n"
+        "On a component level, components can move or be removed before they cause interference. "
+        "For example, a floating action button (FAB) can disappear or move off screen before a "
+        "user picks up a card, or it can move if a snackbar appears.\n"
+        "On the layout level, design your app layout to minimize opportunities for interference. "
+        "For example, position the FAB to one side of stream of a cards so the FAB won’t interfere "
+        "when a user tries to pick up one of cards.\n\n"
+    </string>
+    <string name="action_settings">Settings</string>
+    <string name="sms_price_rule_list">Price extract rules ...</string>
+    <string name="sms_price_rule_list_summary">"Extract  text from price SMS and calculate price sum per day grouped by categories  "</string>
+    <string name="sms_price_category1">Category 1</string>
+    <string name="sms_price_category2">Category 2</string>
+    <string name="sms_price_cat_show">Enabled</string>
+    <string name="sms_price_cat_caption">Category caption</string>
+    <string name="sms_price_cat_dimension">Currency</string>
+    <string name="sms_price_cat_dimension_summary">Of the price sum</string>
+    <string name="sms_price_cat_caption_summary"></string>
+    <string name="sms_price_cat_dimension_default">$</string>
+    <string name="sms_price_cat_rule_list_default">Payment.(\d+).+?SHOP1_NAME
+Payment.(\d+).+?SHOP2_NAME</string>
+    <string name="sms_price_cat_rule_list">Price text extract rules</string>
+    <string name="sms_price_cat_rule_list_summary">"Each line is the regex with () where to find the price "</string>
+
 </resources>

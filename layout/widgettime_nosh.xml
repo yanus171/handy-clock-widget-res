@@ -109,8 +109,6 @@
 	                android:layout_width="8sp"
 	                android:layout_height="fill_parent"
 	                android:orientation="horizontal" />
-	            
-	            <include layout="@layout/system_info_nosh" />
 
 				<include layout="@layout/date_nosh" />
 			</LinearLayout>

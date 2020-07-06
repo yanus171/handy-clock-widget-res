@@ -283,6 +283,11 @@
             android:title="@string/SMSEventsBorderColor"
             colorPreference:istransparency="true" />
         <ru.yanus171.android.handyclockwidget.free.ColorPreference
+            android:defaultValue="@string/constDefaultSMSInactiveColor"
+            android:key="eventListWidgetSMSInactiveColor"
+            android:title="@string/SMSEventsInactiveColor"
+            colorPreference:istransparency="true" />
+        <ru.yanus171.android.handyclockwidget.free.ColorPreference
             android:defaultValue="@string/constDefaultLastCallBorderColor"
             android:key="eventListWidgetLastCallBorderColor"
             android:title="@string/lastCallBorderColor"
@@ -830,6 +835,12 @@
             android:dependency="showMonthCalendar"
             android:key="showMonthCalendarHeader"
             android:title="@string/monthCalendarHeader" />
+        <CheckBoxPreference
+            android:defaultValue="false"
+            android:dependency="showMonthCalendar"
+            android:key="monthCalendarFromMonthStart"
+            android:title="@string/monthCalendarFromMonthStart"
+            android:summary="@string/monthCalendarFromMonthStartSummary"/>
         <CheckBoxPreference
             android:defaultValue="true"
             android:dependency="showMonthCalendar"
@@ -1476,16 +1487,13 @@
             android:key="eventListWidgetShowNameDayEvents"
             android:title="@string/show" />
     </PreferenceScreen>
-    <PreferenceScreen
-        android:key="preferenceScreenEventsPhone"
-        android:summary="@string/phoneEventsSummary"
-        android:title="@string/phoneEventsSetup"
-        android:icon="@drawable/pref_phone_blue" >
-        <ru.yanus171.android.handyclockwidget.free.BackPreference android:defaultValue="preferenceScreenEventsPhone" />
-
-        <PreferenceCategory
-            android:layout="@layout/preference_category"
-            android:title="@string/SMSEvents" />
+    
+	<PreferenceScreen
+        android:key="preferenceScreenSMS"
+        android:summary="@string/SMSEventsSummary"
+        android:title="@string/SMSEvents"
+        android:icon="@drawable/pref_sms" >
+        <ru.yanus171.android.handyclockwidget.free.BackPreference android:defaultValue="preferenceScreenSMS" />
 
         <CheckBoxPreference
             android:defaultValue="false"
@@ -1528,6 +1536,75 @@
             android:title="@string/text_hide_rule_list"
             android:inputType="text|textMultiLine"
             android:summary="@string/text_hide_rule_list_summary"/>
+
+        <PreferenceScreen
+			android:key="sms_price_rule_list"
+			android:dependency="eventListWidgetShowSMSEvents"
+			android:title="@string/sms_price_rule_list"
+			android:summary="@string/sms_price_rule_list_summary" >
+			<ru.yanus171.android.handyclockwidget.free.BackPreference android:defaultValue="sms_price_rule_list" />
+
+            <ru.yanus171.android.handyclockwidget.free.AutoSummaryEditPreference
+                android:defaultValue="@string/sms_price_cat_dimension_default"
+				android:dependency="sms_price_cat1_show"
+                android:inputType="text"
+                android:key="sms_price_cat_dimension"
+                android:summary="@string/sms_price_cat_dimension_summary"
+                android:title="@string/sms_price_cat_dimension" />
+            <PreferenceCategory
+				android:layout="@layout/preference_category"
+				android:title="@string/sms_price_category1" />
+			<CheckBoxPreference
+				android:defaultValue="false"
+				android:dependency="eventListWidgetShowSMSEvents"
+				android:key="sms_price_cat1_show"
+				android:title="@string/sms_price_cat_show" />
+			<ru.yanus171.android.handyclockwidget.free.AutoSummaryEditPreference
+				android:defaultValue="Category 1"
+				android:dependency="sms_price_cat1_show"
+				android:inputType="text"
+				android:key="sms_price_cat1_caption"
+				android:summary="@string/sms_price_cat_caption_summary"
+				android:title="@string/sms_price_cat_caption" />
+			<ru.yanus171.android.handyclockwidget.free.AutoSummaryEditPreference
+				android:key="sms_price_cat1_rule_list"
+				android:dependency="sms_price_cat1_show"
+				android:title="@string/sms_price_cat_rule_list"
+				android:inputType="text|textMultiLine"
+				android:defaultValue="@string/sms_price_cat_rule_list_default"
+				android:summary="@string/sms_price_cat_rule_list_summary"/>
+			
+			<PreferenceCategory
+				android:layout="@layout/preference_category"
+				android:title="@string/sms_price_category2" />
+			<CheckBoxPreference
+				android:defaultValue="false"
+				android:dependency="eventListWidgetShowSMSEvents"
+				android:key="sms_price_cat2_show"
+				android:title="@string/sms_price_cat_show" />
+			<ru.yanus171.android.handyclockwidget.free.AutoSummaryEditPreference
+				android:defaultValue="Category 2"
+				android:dependency="sms_price_cat2_show"
+				android:inputType="text"
+				android:key="sms_price_cat2_caption"
+				android:summary="@string/sms_price_cat_caption_summary"
+				android:title="@string/sms_price_cat_caption" />
+			<ru.yanus171.android.handyclockwidget.free.AutoSummaryEditPreference
+				android:key="sms_price_cat2_rule_list"
+				android:dependency="sms_price_cat2_show"
+				android:title="@string/sms_price_cat_rule_list"
+				android:inputType="text|textMultiLine"
+				android:defaultValue="@string/sms_price_cat_rule_list_default"
+				android:summary="@string/sms_price_cat_rule_list_summary"/>
+		</PreferenceScreen>
+	</PreferenceScreen>    
+	
+	<PreferenceScreen
+        android:key="preferenceScreenEventsPhone"
+        android:summary="@string/phoneEventsSummary"
+        android:title="@string/phoneEventsSetup"
+        android:icon="@drawable/pref_phone_blue" >
+        <ru.yanus171.android.handyclockwidget.free.BackPreference android:defaultValue="preferenceScreenEventsPhone" />
 
         <PreferenceCategory
             android:layout="@layout/preference_category"

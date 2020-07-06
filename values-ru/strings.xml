@@ -432,8 +432,9 @@
     <string name="orthodoxyFastColor">Цвет постных дней</string>
     <string name="output">Выводить</string>    
     <string name="paste">Вставить</string>
-    <string name="phoneEventsSetup">События телефона</string>            
-    <string name="phoneEventsSummary">SMS, длительность последнего звонка, …</string>
+    <string name="phoneEventsSetup">События телефона</string>
+    <string name="SMSEventsSummary">Тексты входящих сообщений …</string>
+    <string name="phoneEventsSummary">Длительность последнего звонка, …</string>
     <string name="permitionRequired">Требутся разрешение, чтобы прочитать </string>
     <string name="permitionRequiredDesc">Либо дайте это разрешение в системных настройках разрешений приложения, либо отключите отображения этого в вида информации в настройках приложения</string>
     <string name="preferenceScreenBalance">Баланс</string>
@@ -773,4 +774,31 @@
     <string name="colorMonthCalendarDayInTimeScheduleSummary">цветом графика. Иначе рисовать дополнительный маленький квадратик</string>
 
     <string name="saveSMSasCalendarEventConfirm">Сохранить СМС как событие календаря?</string>
+    <string name="monthCalendarFromMonthStart">С начала месяца</string>
+    <string name="monthCalendarFromMonthStartSummary">Иначе видны две недели предыдущего месяца</string>
+
+    <string name="sms_price_rule_list">Правила выделния цен …</string>
+    <string name="sms_price_rule_list_summary">Из текстов SMS для подсчета сумм на каждую дату</string>
+    <string name="sms_price_category1">Категория 1</string>
+    <string name="sms_price_category2">Категория 2</string>
+    <string name="sms_price_cat_show">Включить</string>
+    <string name="sms_price_cat_caption">Название категории</string>
+    <string name="sms_price_cat_dimension">Валюта цен</string>
+    <string name="sms_price_cat_dimension_summary"></string>
+    <string name="sms_price_cat_caption_summary"></string>
+    <string name="sms_price_cat_dimension_default">р.</string>
+    <string name="sms_price_cat_rule_list">Правила выделения цены</string>
+    <string name="sms_price_cat_rule_list_summary">из текста SMS. Каждая строка - регулярное выражение, где цена заключена в скобки (). Если оно найдено в тексте SMS, то его цена велючается в сумму категории</string>
+
+    <string name="sms_price_cat_rule_list_default">Покупка.(\d+).+?DIXY
+Покупка.(\d+).+?MAGNIT
+Покупка.(\d+).+?PEREKRESTOK
+Покупка.(\d+).+?PIROZH
+Покупка.(\d+).+?REMIT
+Покупка.(\d+).+?STOLOVAYA
+Покупка.(\d+).+?FRUKTY
+Покупка.(\d+).+?VYPECHKA
+Покупка.(\d+).+?MAGNOLIYA
+Покупка.(\d+).+?GASTRONOM
+Покупка.(\d+).+?PYATEROCHKA</string>
 </resources>

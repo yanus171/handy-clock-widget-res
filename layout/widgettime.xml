@@ -111,11 +111,10 @@
 	                android:layout_height="fill_parent"
 	                android:orientation="horizontal" />
 	            
-	            <include layout="@layout/system_info" />
 
 				<include layout="@layout/date" />
 			</LinearLayout>
-	        
+
 	        <include layout="@layout/alarm" />
 	        <include layout="@layout/memory_used" />
 
