@@ -22,31 +22,31 @@
         startActivity:oper="simpleSetttings" />
 
     <ru.yanus171.android.handyclockwidget.free.AutoSummaryListPreference
-            android:defaultValue="Dark"
-            android:entries="@array/themeList"
-            android:entryValues="@array/themeValueList"
-            android:key="theme"
-            android:title="@string/theme" />
-        
+        android:defaultValue="Dark"
+        android:entries="@array/themeList"
+        android:entryValues="@array/themeValueList"
+        android:key="theme"
+        android:title="@string/theme" />
+
     <CheckBoxPreference
         android:defaultValue="false"
         android:key="fontColorsNotFromTheme"
         android:summary="@string/fontColorsNotFromThemeSummary"
         android:title="@string/fontColorsNotFromTheme" />
-    
+
     <PreferenceScreen
         android:key="preferenceScreenEventColor"
         android:title="@string/colors"
         android:dependency="fontColorsNotFromTheme"
         android:icon="@drawable/pref_color" >
         <ru.yanus171.android.handyclockwidget.free.BackPreference android:defaultValue="preferenceScreenEventColor" />
-		
-        		
+
+
         <CheckBoxPreference
-	        android:defaultValue="true"
-	        android:key="textWithShadow"
-	        android:title="@string/textWithShadow" />
-        
+            android:defaultValue="true"
+            android:key="textWithShadow"
+            android:title="@string/textWithShadow" />
+
         <ru.yanus171.android.handyclockwidget.free.ColorPreference
             android:defaultValue="#FFFFFF"
             android:key="fontColor"
@@ -57,7 +57,7 @@
             android:key="widgetBackGround"
             android:summary="@string/widgetBackGroundSummary"
             android:title="@string/widgetBackGround" />
-        
+
         <CheckBoxPreference
             android:defaultValue="false"
             android:dependency="widgetBackGround"
@@ -71,7 +71,7 @@
             android:key="backgroundColor"
             android:title="@string/backgroundColor"
             colorPreference:istransparency="true" />
-        
+
         <ru.yanus171.android.handyclockwidget.free.ColorPreference
             android:defaultValue="@string/constDefaultBackGroundColor"
             android:key="notificationBackgroundColor"
@@ -83,8 +83,8 @@
             android:key="colorNotificationText"
             android:summary="@string/colorNotificationTextSummary"
             android:title="@string/colorNotificationText" />
-        
-        
+
+
         <PreferenceCategory
             android:layout="@layout/preference_category"
             android:title="@string/events" />
@@ -95,7 +95,7 @@
             android:title="@string/contactEvents"
             colorPreference:background="@string/constDefaultContactColorBackground"
             colorPreference:istransparency="true" />
-        
+
         <ru.yanus171.android.handyclockwidget.free.ColorPreference
             android:dependency="eventListWidgetShowOrthodoxyEvents"
             android:key="orthodoxyColor"
@@ -124,25 +124,25 @@
             android:title="@string/nameDay"
             colorPreference:background="@string/constDefaultNameDayColorBackground"
             colorPreference:istransparency="true" />
-		<ru.yanus171.android.handyclockwidget.free.ColorPreference
+        <ru.yanus171.android.handyclockwidget.free.ColorPreference
             android:defaultValue="@string/constDefaultSuburbanColor"
             android:key="suburbanEventDefaultColor"
             android:title="@string/suburban"
             colorPreference:background="@string/constDefaultSuburbanColorBackground"
             colorPreference:istransparency="true" />
-		<ru.yanus171.android.handyclockwidget.free.ColorPreference
+        <ru.yanus171.android.handyclockwidget.free.ColorPreference
             android:defaultValue="@string/constDefaultSuburbanColor"
             android:key="suburbanEventExpressColor"
             android:title="@string/suburbanExpressColor"
             colorPreference:background="@string/constDefaultSuburbanColorBackground"
             colorPreference:istransparency="true" />
-		<ru.yanus171.android.handyclockwidget.free.ColorPreference
+        <ru.yanus171.android.handyclockwidget.free.ColorPreference
             android:defaultValue="@string/constDefaultSuburbanColor"
             android:key="suburbanEventSecondColor"
             android:title="@string/suburbanSecondColor"
             colorPreference:background="@string/constDefaultSuburbanSecondColorBackground"
             colorPreference:istransparency="true" />
-		<ru.yanus171.android.handyclockwidget.free.ColorPreference
+        <ru.yanus171.android.handyclockwidget.free.ColorPreference
             android:defaultValue="@string/constDefaultDocColor"
             android:key="docEventDefaultColor"
             android:title="@string/doc"
@@ -360,7 +360,7 @@
             android:defaultValue="@string/constDefaultBalancePerDayPlusColor"
             colorPreference:background="@string/constDefaultTransparentColor"
             colorPreference:istransparency="true" />
-        
+
         <PreferenceCategory
             android:layout="@layout/preference_category"
             android:title="@string/monthCalendar" />
@@ -410,7 +410,7 @@
             android:dependency="customTimeComponentsColor"
             android:key="dateColor"
             android:title="@string/date" />
-        
+
         <ru.yanus171.android.handyclockwidget.free.ColorPreference
             android:defaultValue="@string/constDefaultBatteryColor"
             android:dependency="customTimeComponentsColor"
@@ -431,48 +431,48 @@
             android:layout="@layout/preference_category"
             android:key="schoolDiaryColorCategory"
             android:title="@string/schoolDiary" >
-        <ru.yanus171.android.handyclockwidget.free.ColorPreference
-            android:defaultValue="@string/constDefaultSchoolDiaryColor"
-            android:key="schoolDiaryEventDefaultColor"
-            android:title="@string/schoolDiary"
-            colorPreference:background="@string/constDefaultSchoolDiaryColorBackground"
-            colorPreference:istransparency="true" />
-        <ru.yanus171.android.handyclockwidget.free.BalanceByDiaryColorPreference
-            android:key="diaryColor"
-            android:title="@string/diaryColor" />
-        <CheckBoxPreference
-            android:key="colorDiaryMarks"
-            android:dependency="showBalanceBYDairy"
-            android:defaultValue="true"
-            android:title="Раскрашивать оценнки" />
-        <ru.yanus171.android.handyclockwidget.free.ColorPreference
-            android:defaultValue="#000000"
-            android:key="schoolDiaryEventMark2"
-            android:dependency="colorDiaryMarks"
-            android:title="Оценка 2"
-            colorPreference:background="#AA0000"
-            colorPreference:istransparency="true" />
-        <ru.yanus171.android.handyclockwidget.free.ColorPreference
-            android:defaultValue="#000000"
-            android:dependency="colorDiaryMarks"
-            android:key="schoolDiaryEventMark3Color"
-            android:title="Оценка 3"
-            colorPreference:background="#DCDC00"
-            colorPreference:istransparency="true" />
-        <ru.yanus171.android.handyclockwidget.free.ColorPreference
-            android:defaultValue="#000000"
-            android:dependency="colorDiaryMarks"
-            android:key="schoolDiaryEventMark4Color"
-            android:title="Оценка 4"
-            colorPreference:background="#7DD9FF"
-            colorPreference:istransparency="true" />
-        <ru.yanus171.android.handyclockwidget.free.ColorPreference
-            android:defaultValue="#000000"
-            android:dependency="colorDiaryMarks"
-            android:key="schoolDiaryEventMark5Color"
-            android:title="Оценка 5"
-            colorPreference:background="@string/constDefaultSchoolDiaryColorBackground"
-            colorPreference:istransparency="true" />
+            <ru.yanus171.android.handyclockwidget.free.ColorPreference
+                android:defaultValue="@string/constDefaultSchoolDiaryColor"
+                android:key="schoolDiaryEventDefaultColor"
+                android:title="@string/schoolDiary"
+                colorPreference:background="@string/constDefaultSchoolDiaryColorBackground"
+                colorPreference:istransparency="true" />
+            <ru.yanus171.android.handyclockwidget.free.BalanceByDiaryColorPreference
+                android:key="diaryColor"
+                android:title="@string/diaryColor" />
+            <CheckBoxPreference
+                android:key="colorDiaryMarks"
+                android:dependency="showBalanceBYDairy"
+                android:defaultValue="true"
+                android:title="Раскрашивать оценнки" />
+            <ru.yanus171.android.handyclockwidget.free.ColorPreference
+                android:defaultValue="#000000"
+                android:key="schoolDiaryEventMark2"
+                android:dependency="colorDiaryMarks"
+                android:title="Оценка 2"
+                colorPreference:background="#AA0000"
+                colorPreference:istransparency="true" />
+            <ru.yanus171.android.handyclockwidget.free.ColorPreference
+                android:defaultValue="#000000"
+                android:dependency="colorDiaryMarks"
+                android:key="schoolDiaryEventMark3Color"
+                android:title="Оценка 3"
+                colorPreference:background="#DCDC00"
+                colorPreference:istransparency="true" />
+            <ru.yanus171.android.handyclockwidget.free.ColorPreference
+                android:defaultValue="#000000"
+                android:dependency="colorDiaryMarks"
+                android:key="schoolDiaryEventMark4Color"
+                android:title="Оценка 4"
+                colorPreference:background="#7DD9FF"
+                colorPreference:istransparency="true" />
+            <ru.yanus171.android.handyclockwidget.free.ColorPreference
+                android:defaultValue="#000000"
+                android:dependency="colorDiaryMarks"
+                android:key="schoolDiaryEventMark5Color"
+                android:title="Оценка 5"
+                colorPreference:background="@string/constDefaultSchoolDiaryColorBackground"
+                colorPreference:istransparency="true" />
         </PreferenceCategory>
 
         <PreferenceCategory
@@ -480,54 +480,54 @@
             android:dependency="showBalanceBYTVShedule"
             android:key="tvSheduleColorCategory"
             android:title="@string/tvShedule" >
-        <ru.yanus171.android.handyclockwidget.free.ColorPreference
-            android:defaultValue="@string/constDefaultTVSheduleColor"
-            android:key="tvSheduleTypeInfoEventColor"
-            android:title="Категория Инфо"
-            colorPreference:background="@string/constDefaultTVSheduleColorBackground"
-            colorPreference:istransparency="true" />
-        <ru.yanus171.android.handyclockwidget.free.ColorPreference
-            android:defaultValue="@string/constDefaultTVSheduleColor"
-            android:key="tvSheduleTypeOtherEventColor"
-            android:title="Категория Другое"
-            colorPreference:background="@string/constDefaultTVSheduleColorBackground"
-            colorPreference:istransparency="true" />
-        <ru.yanus171.android.handyclockwidget.free.ColorPreference
-            android:defaultValue="@string/constDefaultTVSheduleColor"
-            android:key="tvSheduleTypeSportEventColor"
-            android:title="Категория Спорт"
-            colorPreference:background="@string/constDefaultTVSheduleColorBackground"
-            colorPreference:istransparency="true" />
-        <ru.yanus171.android.handyclockwidget.free.ColorPreference
-            android:defaultValue="@string/constDefaultTVSheduleColor"
-            android:key="tvSheduleTypeLeisureEventColor"
-            android:title="Категория Досуг"
-            colorPreference:background="@string/constDefaultTVSheduleColorBackground"
-            colorPreference:istransparency="true" />
-        <ru.yanus171.android.handyclockwidget.free.ColorPreference
-            android:defaultValue="@string/constDefaultTVSheduleColor"
-            android:key="tvSheduleTypeSerialEventColor"
-            android:title="Категория Сериалы"
-            colorPreference:background="@string/constDefaultTVSheduleColorBackground"
-            colorPreference:istransparency="true" />
-        <ru.yanus171.android.handyclockwidget.free.ColorPreference
-            android:defaultValue="@string/constDefaultTVSheduleColor"
-            android:key="tvSheduleTypeChildEventColor"
-            android:title="Категория Детям"
-            colorPreference:background="@string/constDefaultTVSheduleColorBackground"
-            colorPreference:istransparency="true" />
-        <ru.yanus171.android.handyclockwidget.free.ColorPreference
-            android:defaultValue="@string/constDefaultTVSheduleColor"
-            android:key="tvSheduleTypeCuriousEventColor"
-            android:title="Категория Позновательное"
-            colorPreference:background="@string/constDefaultTVSheduleColorBackground"
-            colorPreference:istransparency="true" />
-        <ru.yanus171.android.handyclockwidget.free.ColorPreference
-            android:defaultValue="@string/constDefaultTVSheduleColor"
-            android:key="tvSheduleTypeFilmEventColor"
-            android:title="Категория Фильмы"
-            colorPreference:background="@string/constDefaultTVSheduleColorBackground"
-            colorPreference:istransparency="true" />
+            <ru.yanus171.android.handyclockwidget.free.ColorPreference
+                android:defaultValue="@string/constDefaultTVSheduleColor"
+                android:key="tvSheduleTypeInfoEventColor"
+                android:title="Категория Инфо"
+                colorPreference:background="@string/constDefaultTVSheduleColorBackground"
+                colorPreference:istransparency="true" />
+            <ru.yanus171.android.handyclockwidget.free.ColorPreference
+                android:defaultValue="@string/constDefaultTVSheduleColor"
+                android:key="tvSheduleTypeOtherEventColor"
+                android:title="Категория Другое"
+                colorPreference:background="@string/constDefaultTVSheduleColorBackground"
+                colorPreference:istransparency="true" />
+            <ru.yanus171.android.handyclockwidget.free.ColorPreference
+                android:defaultValue="@string/constDefaultTVSheduleColor"
+                android:key="tvSheduleTypeSportEventColor"
+                android:title="Категория Спорт"
+                colorPreference:background="@string/constDefaultTVSheduleColorBackground"
+                colorPreference:istransparency="true" />
+            <ru.yanus171.android.handyclockwidget.free.ColorPreference
+                android:defaultValue="@string/constDefaultTVSheduleColor"
+                android:key="tvSheduleTypeLeisureEventColor"
+                android:title="Категория Досуг"
+                colorPreference:background="@string/constDefaultTVSheduleColorBackground"
+                colorPreference:istransparency="true" />
+            <ru.yanus171.android.handyclockwidget.free.ColorPreference
+                android:defaultValue="@string/constDefaultTVSheduleColor"
+                android:key="tvSheduleTypeSerialEventColor"
+                android:title="Категория Сериалы"
+                colorPreference:background="@string/constDefaultTVSheduleColorBackground"
+                colorPreference:istransparency="true" />
+            <ru.yanus171.android.handyclockwidget.free.ColorPreference
+                android:defaultValue="@string/constDefaultTVSheduleColor"
+                android:key="tvSheduleTypeChildEventColor"
+                android:title="Категория Детям"
+                colorPreference:background="@string/constDefaultTVSheduleColorBackground"
+                colorPreference:istransparency="true" />
+            <ru.yanus171.android.handyclockwidget.free.ColorPreference
+                android:defaultValue="@string/constDefaultTVSheduleColor"
+                android:key="tvSheduleTypeCuriousEventColor"
+                android:title="Категория Позновательное"
+                colorPreference:background="@string/constDefaultTVSheduleColorBackground"
+                colorPreference:istransparency="true" />
+            <ru.yanus171.android.handyclockwidget.free.ColorPreference
+                android:defaultValue="@string/constDefaultTVSheduleColor"
+                android:key="tvSheduleTypeFilmEventColor"
+                android:title="Категория Фильмы"
+                colorPreference:background="@string/constDefaultTVSheduleColorBackground"
+                colorPreference:istransparency="true" />
         </PreferenceCategory>
     </PreferenceScreen>
 
@@ -542,25 +542,25 @@
             android:entryValues="@array/fontSizeValueList"
             android:key="labelTimeFontSizeMain"
             android:title="@string/time" />
-    	<ru.yanus171.android.handyclockwidget.free.AutoSummaryListPreference
+        <ru.yanus171.android.handyclockwidget.free.AutoSummaryListPreference
             android:key="labelTimeFontSizeMain21"
             android:defaultValue="@string/constDefaultTimeFontSize21"
             android:entries="@array/fontSizeValueList"
             android:entryValues="@array/fontSizeValueList"
             android:title="@string/fontSize21" />
-    	<ru.yanus171.android.handyclockwidget.free.AutoSummaryListPreference
+        <ru.yanus171.android.handyclockwidget.free.AutoSummaryListPreference
             android:defaultValue="@string/constDefaultMainFontSize"
             android:entries="@array/fontSizeValueList"
             android:entryValues="@array/fontSizeValueList"
             android:key="mainFontSize"
             android:title="@string/fontSizeMainText" />
-    	<ru.yanus171.android.handyclockwidget.free.AutoSummaryListPreference
+        <ru.yanus171.android.handyclockwidget.free.AutoSummaryListPreference
             android:defaultValue="@string/constDefaultSmallFontSize"
             android:entries="@array/fontSizeValueList"
             android:entryValues="@array/fontSizeValueList"
             android:key="smallFontSize"
             android:title="@string/fontSizeSmallText" />
-    	<CheckBoxPreference
+        <CheckBoxPreference
             android:defaultValue="false"
             android:key="customFontSize"
             android:title="@string/customFontSize"
@@ -573,102 +573,102 @@
             android:key="notificationFontSize"
             android:title="@string/notification" />
         <PreferenceCategory
-	        android:layout="@layout/preference_category"
-	        android:title="@string/widget" />
-            <ru.yanus171.android.handyclockwidget.free.AutoSummaryListPreference
-                android:defaultValue="@string/constDefaultMainFontSize"
-                android:entries="@array/fontSizeValueList"
-                android:entryValues="@array/fontSizeValueList"
-                android:dependency="customFontSize"
-                android:key="dateFontSize"
-                android:title="@string/dateAndWeekDay" />
-            <ru.yanus171.android.handyclockwidget.free.AutoSummaryListPreference
-                android:defaultValue="@string/constDefaultSmallFontSize"
-                android:entries="@array/fontSizeValueList"
-                android:entryValues="@array/fontSizeValueList"
-                android:dependency="customFontSize"
-                android:key="monthCalendarFontSize"
-                android:title="@string/monthCalendar" />
-            <ru.yanus171.android.handyclockwidget.free.AutoSummaryListPreference
-                android:defaultValue="@string/constDefaultMainFontSize"
-                android:entries="@array/fontSizeValueList"
-                android:entryValues="@array/fontSizeValueList"
-                android:dependency="customFontSize"
-                android:key="alarmFontSize"
-                android:title="@string/alarm" />
-            <ru.yanus171.android.handyclockwidget.free.AutoSummaryListPreference
-                android:defaultValue="@string/constDefaultMainFontSize"
-                android:entries="@array/fontSizeValueList"
-                android:entryValues="@array/fontSizeValueList"
-                android:dependency="customFontSize"
-                android:key="balanceFontSize"
-                android:title="@string/balance" />
-            <ru.yanus171.android.handyclockwidget.free.AutoSummaryListPreference
-                android:defaultValue="@string/constDefaultMainFontSize"
-                android:entries="@array/fontSizeValueList"
-                android:entryValues="@array/fontSizeValueList"
-                android:dependency="customFontSize"
-                android:key="phoneEventsFontSize"
-                android:title="@string/phoneEventsSetup"
-                android:summary="@string/phoneEventsSummary" />
-            <ru.yanus171.android.handyclockwidget.free.AutoSummaryListPreference
-                android:defaultValue="@string/constDefaultMainFontSize"
-                android:entries="@array/fontSizeValueList"
-                android:entryValues="@array/fontSizeValueList"
-                android:dependency="customFontSize"
-                android:key="systemInfoFontSize"
-                android:title="@string/systemInfoSetup"
-                android:summary="@string/systemInfoSummary" />
-            <ru.yanus171.android.handyclockwidget.free.AutoSummaryListPreference
-                android:defaultValue="@string/constDefaultMainFontSize"
-                android:entries="@array/fontSizeValueList"
-                android:entryValues="@array/fontSizeValueList"
-                android:dependency="customFontSize"
-                android:key="weatherFontSize"
-                android:title="@string/weather" />
+            android:layout="@layout/preference_category"
+            android:title="@string/widget" />
+        <ru.yanus171.android.handyclockwidget.free.AutoSummaryListPreference
+            android:defaultValue="@string/constDefaultMainFontSize"
+            android:entries="@array/fontSizeValueList"
+            android:entryValues="@array/fontSizeValueList"
+            android:dependency="customFontSize"
+            android:key="dateFontSize"
+            android:title="@string/dateAndWeekDay" />
+        <ru.yanus171.android.handyclockwidget.free.AutoSummaryListPreference
+            android:defaultValue="@string/constDefaultSmallFontSize"
+            android:entries="@array/fontSizeValueList"
+            android:entryValues="@array/fontSizeValueList"
+            android:dependency="customFontSize"
+            android:key="monthCalendarFontSize"
+            android:title="@string/monthCalendar" />
+        <ru.yanus171.android.handyclockwidget.free.AutoSummaryListPreference
+            android:defaultValue="@string/constDefaultMainFontSize"
+            android:entries="@array/fontSizeValueList"
+            android:entryValues="@array/fontSizeValueList"
+            android:dependency="customFontSize"
+            android:key="alarmFontSize"
+            android:title="@string/alarm" />
+        <ru.yanus171.android.handyclockwidget.free.AutoSummaryListPreference
+            android:defaultValue="@string/constDefaultMainFontSize"
+            android:entries="@array/fontSizeValueList"
+            android:entryValues="@array/fontSizeValueList"
+            android:dependency="customFontSize"
+            android:key="balanceFontSize"
+            android:title="@string/balance" />
+        <ru.yanus171.android.handyclockwidget.free.AutoSummaryListPreference
+            android:defaultValue="@string/constDefaultMainFontSize"
+            android:entries="@array/fontSizeValueList"
+            android:entryValues="@array/fontSizeValueList"
+            android:dependency="customFontSize"
+            android:key="phoneEventsFontSize"
+            android:title="@string/phoneEventsSetup"
+            android:summary="@string/phoneEventsSummary" />
+        <ru.yanus171.android.handyclockwidget.free.AutoSummaryListPreference
+            android:defaultValue="@string/constDefaultMainFontSize"
+            android:entries="@array/fontSizeValueList"
+            android:entryValues="@array/fontSizeValueList"
+            android:dependency="customFontSize"
+            android:key="systemInfoFontSize"
+            android:title="@string/systemInfoSetup"
+            android:summary="@string/systemInfoSummary" />
+        <ru.yanus171.android.handyclockwidget.free.AutoSummaryListPreference
+            android:defaultValue="@string/constDefaultMainFontSize"
+            android:entries="@array/fontSizeValueList"
+            android:entryValues="@array/fontSizeValueList"
+            android:dependency="customFontSize"
+            android:key="weatherFontSize"
+            android:title="@string/weather" />
         <PreferenceCategory
-	        android:layout="@layout/preference_category"
-	        android:title="@string/appViews"
-	        android:summary="@string/appViewsSummary" />
-            <ru.yanus171.android.handyclockwidget.free.AutoSummaryListPreference
-                android:defaultValue="@string/constDefaultMainFontSize"
-                android:entries="@array/fontSizeValueList"
-                android:entryValues="@array/fontSizeValueList"
-                android:dependency="customFontSize"
-                android:key="mainFontSizeEventListView"
-                android:title="@string/fontSizeMainText" />
-            <ru.yanus171.android.handyclockwidget.free.AutoSummaryListPreference
-                android:defaultValue="@string/constDefaultSmallFontSize"
-                android:entries="@array/fontSizeValueList"
-                android:entryValues="@array/fontSizeValueList"
-                android:dependency="customFontSize"
-                android:key="smallFontSizeEventListView"
-                android:title="@string/fontSizeSmallText" />
-    	<PreferenceCategory
+            android:layout="@layout/preference_category"
+            android:title="@string/appViews"
+            android:summary="@string/appViewsSummary" />
+        <ru.yanus171.android.handyclockwidget.free.AutoSummaryListPreference
+            android:defaultValue="@string/constDefaultMainFontSize"
+            android:entries="@array/fontSizeValueList"
+            android:entryValues="@array/fontSizeValueList"
+            android:dependency="customFontSize"
+            android:key="mainFontSizeEventListView"
+            android:title="@string/fontSizeMainText" />
+        <ru.yanus171.android.handyclockwidget.free.AutoSummaryListPreference
+            android:defaultValue="@string/constDefaultSmallFontSize"
+            android:entries="@array/fontSizeValueList"
+            android:entryValues="@array/fontSizeValueList"
+            android:dependency="customFontSize"
+            android:key="smallFontSizeEventListView"
+            android:title="@string/fontSizeSmallText" />
+        <PreferenceCategory
             android:layout="@layout/preference_category"
             android:title="@string/lockerWidget" />
-            <ru.yanus171.android.handyclockwidget.free.AutoSummaryListPreference
-                android:defaultValue="@string/constDefaultTimeFontSize"
-                android:entries="@array/fontSizeValueList"
-                android:entryValues="@array/fontSizeValueList"
-                android:key="labelTimeFontSizeMain_Locker"
-                android:title="@string/time" />
-            <ru.yanus171.android.handyclockwidget.free.AutoSummaryListPreference
-                android:defaultValue="@string/constDefaultMainFontSize"
-                android:entries="@array/fontSizeValueList"
-                android:entryValues="@array/fontSizeValueList"
-                android:key="labelAlarmFontSizeMain_Locker"
-                android:title="@string/alarm" />
-            <ru.yanus171.android.handyclockwidget.free.AutoSummaryListPreference
-                android:defaultValue="@string/constDefaultMainFontSize"
-                android:entries="@array/fontSizeValueList"
-                android:entryValues="@array/fontSizeValueList"
-                android:dependency="customFontSize"
-                android:key="dateFontSize_Locker"
-                android:title="@string/dateAndWeekDay" />
-        
+        <ru.yanus171.android.handyclockwidget.free.AutoSummaryListPreference
+            android:defaultValue="@string/constDefaultTimeFontSize"
+            android:entries="@array/fontSizeValueList"
+            android:entryValues="@array/fontSizeValueList"
+            android:key="labelTimeFontSizeMain_Locker"
+            android:title="@string/time" />
+        <ru.yanus171.android.handyclockwidget.free.AutoSummaryListPreference
+            android:defaultValue="@string/constDefaultMainFontSize"
+            android:entries="@array/fontSizeValueList"
+            android:entryValues="@array/fontSizeValueList"
+            android:key="labelAlarmFontSizeMain_Locker"
+            android:title="@string/alarm" />
+        <ru.yanus171.android.handyclockwidget.free.AutoSummaryListPreference
+            android:defaultValue="@string/constDefaultMainFontSize"
+            android:entries="@array/fontSizeValueList"
+            android:entryValues="@array/fontSizeValueList"
+            android:dependency="customFontSize"
+            android:key="dateFontSize_Locker"
+            android:title="@string/dateAndWeekDay" />
+
     </PreferenceScreen>
-    
+
 
     <CheckBoxPreference
         android:defaultValue="false"
@@ -680,8 +680,8 @@
         android:key="notificantionWithWidget"
         android:summary="@string/notificantionWithWidgetSummary"
         android:title="@string/notificantionWithWidget" />
-	    
-    
+
+
     <PreferenceCategory
         android:layout="@layout/preference_category"
         android:title="@string/preferenceScreenClock" />
@@ -713,12 +713,12 @@
             android:key="timeIsBold"
             android:title="@string/timeIsBold" />
 
-<!--         <ru.yanus171.android.handyclockwidget.free.AutoSummaryListPreference -->
-<!--             android:defaultValue="@string/constDefaultTimeFontSize" -->
-<!--             android:entries="@array/fontSizeValueList" -->
-<!--             android:entryValues="@array/fontSizeValueList" -->
-<!--             android:key="labelTimeFontSizeKeyGuard" -->
-<!--             android:title="@string/fontSizeKeyGuard" /> -->
+        <!--         <ru.yanus171.android.handyclockwidget.free.AutoSummaryListPreference -->
+        <!--             android:defaultValue="@string/constDefaultTimeFontSize" -->
+        <!--             android:entries="@array/fontSizeValueList" -->
+        <!--             android:entryValues="@array/fontSizeValueList" -->
+        <!--             android:key="labelTimeFontSizeKeyGuard" -->
+        <!--             android:title="@string/fontSizeKeyGuard" /> -->
         <!-- <ru.yanus171.android.handyclockwidget.free.AutoSummaryListPreference android:title="@string/clickAction" -->
         <!-- android:key="clickAction" android:entryValues="@array/clickActionValueList" -->
         <!-- android:defaultValue="Setup" android:entries="@array/clickActionList"/> -->
@@ -747,14 +747,14 @@
             android:entryValues="@array/fontSizeValueList"
             android:key="labelTimeFromZoneFontSizeMain"
             android:title="@string/fontSize" />
-        
+
         <CheckBoxPreference
             android:defaultValue="true"
             android:key="timeFormatTwoDigitHour"
             android:title="@string/timeFormatTwoDigitHour" />
-        
+
     </PreferenceScreen>
-    
+
     <PreferenceScreen
         android:key="preferenceScreenWidgetDateSetup"
         android:title="@string/dateAndWeekDaySetup"
@@ -800,12 +800,12 @@
             android:inputType="number"
             android:title="@string/minimalDaysInFirstWeek"
             android:summary="1..7" />
-                        
+
         <ru.yanus171.android.handyclockwidget.free.AppSelectPreference
             android:defaultValue="openContextMenu"
             android:key="calendarTapAction"
             android:title="@string/tapAction" />
-        
+
         <PreferenceCategory
             android:layout="@layout/preference_category"
             android:title="@string/lockerWidget" />
@@ -818,9 +818,9 @@
             android:key="showWeekdayLocker"
             android:summary="@string/showWeekdaySummary"
             android:title="@string/showWeekday" />
-        
+
     </PreferenceScreen>
-    
+
     <PreferenceScreen
         android:key="preferenceScreenWidgetMonthCalendarSetup"
         android:title="@string/monthCalendarSetup"
@@ -829,7 +829,7 @@
         <CheckBoxPreference
             android:defaultValue="true"
             android:key="showMonthCalendar"
-            android:title="@string/show" />        
+            android:title="@string/show" />
         <CheckBoxPreference
             android:defaultValue="true"
             android:dependency="showMonthCalendar"
@@ -864,22 +864,22 @@
             android:key="showMonthCalendarEvents"
             android:title="@string/showMonthCalendarEvents"
             android:summary="@string/showMonthCalendarEventsSummary" />
-       	<CheckBoxPreference
+        <CheckBoxPreference
             android:defaultValue="false"
             android:dependency="showMonthCalendarEvents"
             android:key="showMonthCalendarEventsSelected"
             android:title="@string/showMonthCalendarEventsSelected"
             android:summary="@string/showMonthCalendarEventsSelectedSummary" />
-<!--        	<CheckBoxPreference -->
-<!--             android:defaultValue="true" -->
-<!--             android:dependency="showMonthCalendar" -->
-<!--             android:key="monthCalendarTodayBorder" -->
-<!--             android:title="@string/monthCalendarTodayBorder" />  -->
+        <!--        	<CheckBoxPreference -->
+        <!--             android:defaultValue="true" -->
+        <!--             android:dependency="showMonthCalendar" -->
+        <!--             android:key="monthCalendarTodayBorder" -->
+        <!--             android:title="@string/monthCalendarTodayBorder" />  -->
         <ru.yanus171.android.handyclockwidget.free.LabelPreference
             android:key="monthCalendarHint"
             android:summary="@string/monthCalendarHint" />
 
-        
+
         <PreferenceCategory
             android:layout="@layout/preference_category"
             android:title="@string/lockerWidget" />
@@ -961,7 +961,7 @@
             android:key="shiftScheduleDayCount5"
             android:title="@string/shiftScheduleDay5Count" />
     </PreferenceScreen>
-    
+
     <PreferenceScreen
         android:key="preferenceScreenWidgetAlarmSetup"
         android:title="@string/alarmSetup"
@@ -992,7 +992,7 @@
             android:key="alarmMoreThanOneDay"
             android:summary="@string/moreThanOneDaySummary"
             android:title="@string/moreThanOneDay" />
-        
+
         <PreferenceCategory
             android:layout="@layout/preference_category"
             android:title="@string/showInEventList" />
@@ -1075,7 +1075,7 @@
             android:key="alarmRecognizeSunday"
             android:title="@string/sunday" />
     </PreferenceScreen>
-    
+
     <PreferenceScreen
         android:key="preferenceScreenWidgetBatterySetup"
         android:summary="@string/systemInfoSummary"
@@ -1114,7 +1114,7 @@
             android:key="showMemoryUsed"
             android:title="Used memory [uptime]" />
 
-        </PreferenceScreen>
+    </PreferenceScreen>
 
     <ru.yanus171.android.handyclockwidget.free.AutoSummaryListPreference
         android:defaultValue="@string/constDefaultTimeWidgetLayout"
@@ -1174,8 +1174,8 @@
             android:dependency="eventListWidgetContactNotify"
             android:key="eventListWidgetContactNotificationTime"
             android:title="@string/time" />
-        
-        
+
+
 
         <PreferenceCategory
             android:layout="@layout/preference_category"
@@ -1245,7 +1245,7 @@
             android:key="quickCalendarEventEditDialog"
             android:summary="@string/quickCalendarEventEditDialogSummary"
             android:title="@string/quickCalendarEventEditDialog" />
-        
+
         <PreferenceCategory
             android:layout="@layout/preference_category"
             android:title="@string/showInWidget" />
@@ -1261,7 +1261,7 @@
             android:defaultValue="false"
             android:key="showCalendarEventEndTime"
             android:title="@string/showCalendarEventEndTime" />
-        
+
         <PreferenceCategory
             android:layout="@layout/preference_category"
             android:title="@string/additional" />
@@ -1277,11 +1277,11 @@
             android:summary="@string/editEventsWithoutAccountSummary"
             android:title="@string/editEventsWithoutAccount" />
 
-<!--         <CheckBoxPreference -->
-<!--             android:defaultValue="false" -->
-<!--             android:key="addCalendarEventIntentExtras1" -->
-<!--             android:summary="@string/addCalendarEventIntentExtrasSummary" -->
-<!--             android:title="@string/addCalendarEventIntentExtras" /> -->
+        <!--         <CheckBoxPreference -->
+        <!--             android:defaultValue="false" -->
+        <!--             android:key="addCalendarEventIntentExtras1" -->
+        <!--             android:summary="@string/addCalendarEventIntentExtrasSummary" -->
+        <!--             android:title="@string/addCalendarEventIntentExtras" /> -->
         <CheckBoxPreference
             android:defaultValue="true"
             android:key="hideCalendarEventStartTimeDuringEvent"
@@ -1289,7 +1289,7 @@
             android:summary="@string/hideCalendarEventStartTimeDuringEventSummary" />
 
     </PreferenceScreen>
-    
+
     <PreferenceScreen
         android:key="preferenceScreenEventsTask"
         android:summary="@string/tasksEventsSummary"
@@ -1301,7 +1301,7 @@
             android:layout="@layout/preference_category"
             android:title="@string/taskManagers" />
 
-		<CheckBoxPreference
+        <CheckBoxPreference
             android:defaultValue="false"
             android:key="eventListWidgetShowTickTasks"
             android:title="@string/TickTask" />
@@ -1315,7 +1315,7 @@
             android:title="@string/TickTasksLink"
             link:HTTPLink="http://4pda.ru/forum/index.php?showtopic=478412"
             link:marketLink="market://details?id=com.ticktick.task" />
-        
+
         <CheckBoxPreference
             android:defaultValue="false"
             android:key="eventListWidgetShowGTasks"
@@ -1444,12 +1444,12 @@
             android:dependency="eventListWidgetShowOrthodoxyEvents"
             android:key="showOrthodoxyTropar"
             android:title="@string/showTropar" />
-        
+
         <CheckBoxPreference
             android:defaultValue="false"
             android:dependency="eventListWidgetShowOrthodoxyEvents"
             android:key="showOrthodoxyService"
-            android:title="@string/showOrthodoxyService" 
+            android:title="@string/showOrthodoxyService"
             android:summary="@string/showOrthodoxyServiceSummary"/>
 
         <ru.yanus171.android.handyclockwidget.free.CalendarSingleSelectPreference
@@ -1487,8 +1487,8 @@
             android:key="eventListWidgetShowNameDayEvents"
             android:title="@string/show" />
     </PreferenceScreen>
-    
-	<PreferenceScreen
+
+    <PreferenceScreen
         android:key="preferenceScreenSMS"
         android:summary="@string/SMSEventsSummary"
         android:title="@string/SMSEvents"
@@ -1500,7 +1500,7 @@
             android:key="eventListWidgetShowSMSEvents"
             android:title="@string/show" />
 
-		<CheckBoxPreference
+        <CheckBoxPreference
             android:defaultValue="true"
             android:dependency="eventListWidgetShowSMSEvents"
             android:key="SMS.controlButtons"
@@ -1538,68 +1538,68 @@
             android:summary="@string/text_hide_rule_list_summary"/>
 
         <PreferenceScreen
-			android:key="sms_price_rule_list"
-			android:dependency="eventListWidgetShowSMSEvents"
-			android:title="@string/sms_price_rule_list"
-			android:summary="@string/sms_price_rule_list_summary" >
-			<ru.yanus171.android.handyclockwidget.free.BackPreference android:defaultValue="sms_price_rule_list" />
+            android:key="sms_price_rule_list"
+            android:dependency="eventListWidgetShowSMSEvents"
+            android:title="@string/sms_price_rule_list"
+            android:summary="@string/sms_price_rule_list_summary" >
+            <ru.yanus171.android.handyclockwidget.free.BackPreference android:defaultValue="sms_price_rule_list" />
 
             <ru.yanus171.android.handyclockwidget.free.AutoSummaryEditPreference
                 android:defaultValue="@string/sms_price_cat_dimension_default"
-				android:dependency="sms_price_cat1_show"
+                android:dependency="sms_price_cat1_show"
                 android:inputType="text"
                 android:key="sms_price_cat_dimension"
                 android:summary="@string/sms_price_cat_dimension_summary"
                 android:title="@string/sms_price_cat_dimension" />
             <PreferenceCategory
-				android:layout="@layout/preference_category"
-				android:title="@string/sms_price_category1" />
-			<CheckBoxPreference
-				android:defaultValue="false"
-				android:dependency="eventListWidgetShowSMSEvents"
-				android:key="sms_price_cat1_show"
-				android:title="@string/sms_price_cat_show" />
-			<ru.yanus171.android.handyclockwidget.free.AutoSummaryEditPreference
-				android:defaultValue="Category 1"
-				android:dependency="sms_price_cat1_show"
-				android:inputType="text"
-				android:key="sms_price_cat1_caption"
-				android:summary="@string/sms_price_cat_caption_summary"
-				android:title="@string/sms_price_cat_caption" />
-			<ru.yanus171.android.handyclockwidget.free.AutoSummaryEditPreference
-				android:key="sms_price_cat1_rule_list"
-				android:dependency="sms_price_cat1_show"
-				android:title="@string/sms_price_cat_rule_list"
-				android:inputType="text|textMultiLine"
-				android:defaultValue="@string/sms_price_cat_rule_list_default"
-				android:summary="@string/sms_price_cat_rule_list_summary"/>
-			
-			<PreferenceCategory
-				android:layout="@layout/preference_category"
-				android:title="@string/sms_price_category2" />
-			<CheckBoxPreference
-				android:defaultValue="false"
-				android:dependency="eventListWidgetShowSMSEvents"
-				android:key="sms_price_cat2_show"
-				android:title="@string/sms_price_cat_show" />
-			<ru.yanus171.android.handyclockwidget.free.AutoSummaryEditPreference
-				android:defaultValue="Category 2"
-				android:dependency="sms_price_cat2_show"
-				android:inputType="text"
-				android:key="sms_price_cat2_caption"
-				android:summary="@string/sms_price_cat_caption_summary"
-				android:title="@string/sms_price_cat_caption" />
-			<ru.yanus171.android.handyclockwidget.free.AutoSummaryEditPreference
-				android:key="sms_price_cat2_rule_list"
-				android:dependency="sms_price_cat2_show"
-				android:title="@string/sms_price_cat_rule_list"
-				android:inputType="text|textMultiLine"
-				android:defaultValue="@string/sms_price_cat_rule_list_default"
-				android:summary="@string/sms_price_cat_rule_list_summary"/>
-		</PreferenceScreen>
-	</PreferenceScreen>    
-	
-	<PreferenceScreen
+                android:layout="@layout/preference_category"
+                android:title="@string/sms_price_category1" />
+            <CheckBoxPreference
+                android:defaultValue="false"
+                android:dependency="eventListWidgetShowSMSEvents"
+                android:key="sms_price_cat1_show"
+                android:title="@string/sms_price_cat_show" />
+            <ru.yanus171.android.handyclockwidget.free.AutoSummaryEditPreference
+                android:defaultValue="Category 1"
+                android:dependency="sms_price_cat1_show"
+                android:inputType="text"
+                android:key="sms_price_cat1_caption"
+                android:summary="@string/sms_price_cat_caption_summary"
+                android:title="@string/sms_price_cat_caption" />
+            <ru.yanus171.android.handyclockwidget.free.AutoSummaryEditPreference
+                android:key="sms_price_cat1_rule_list"
+                android:dependency="sms_price_cat1_show"
+                android:title="@string/sms_price_cat_rule_list"
+                android:inputType="text|textMultiLine"
+                android:defaultValue="@string/sms_price_cat_rule_list_default"
+                android:summary="@string/sms_price_cat_rule_list_summary"/>
+
+            <PreferenceCategory
+                android:layout="@layout/preference_category"
+                android:title="@string/sms_price_category2" />
+            <CheckBoxPreference
+                android:defaultValue="false"
+                android:dependency="eventListWidgetShowSMSEvents"
+                android:key="sms_price_cat2_show"
+                android:title="@string/sms_price_cat_show" />
+            <ru.yanus171.android.handyclockwidget.free.AutoSummaryEditPreference
+                android:defaultValue="Category 2"
+                android:dependency="sms_price_cat2_show"
+                android:inputType="text"
+                android:key="sms_price_cat2_caption"
+                android:summary="@string/sms_price_cat_caption_summary"
+                android:title="@string/sms_price_cat_caption" />
+            <ru.yanus171.android.handyclockwidget.free.AutoSummaryEditPreference
+                android:key="sms_price_cat2_rule_list"
+                android:dependency="sms_price_cat2_show"
+                android:title="@string/sms_price_cat_rule_list"
+                android:inputType="text|textMultiLine"
+                android:defaultValue="@string/sms_price_cat_rule_list_default"
+                android:summary="@string/sms_price_cat_rule_list_summary"/>
+        </PreferenceScreen>
+    </PreferenceScreen>
+
+    <PreferenceScreen
         android:key="preferenceScreenEventsPhone"
         android:summary="@string/phoneEventsSummary"
         android:title="@string/phoneEventsSetup"
@@ -1753,8 +1753,8 @@
         android:summary="@string/preferenceScreenOtherSourcesSummary"
         android:title="@string/preferenceScreenOtherSources"
         android:icon="@drawable/pref_about" >
-		
-		<ru.yanus171.android.handyclockwidget.free.BackPreference android:defaultValue="preferenceScreenOtherSources" />
+
+        <ru.yanus171.android.handyclockwidget.free.BackPreference android:defaultValue="preferenceScreenOtherSources" />
 
         <ru.yanus171.android.handyclockwidget.free.LabelPreference
             android:key="otherSourcesHint"
@@ -1767,6 +1767,18 @@
             android:title="@string/preferenceScreenBalance"
             android:icon="@drawable/pref_balance" >
             <ru.yanus171.android.handyclockwidget.free.BackPreference android:defaultValue="preferenceScreenBalance" />
+
+            <PreferenceCategory
+                android:layout="@layout/preference_category"
+                android:title="Web load" />
+            <CheckBoxPreference
+                android:defaultValue="false"
+                android:key="eventListWidgetShowWebLoadBalance"
+                android:summary="@string/eventListWidgetShowWebLoadBalanceSummary"
+                android:title="@string/show" />
+            <ru.yanus171.android.handyclockwidget.free.webload.WebLoadBalanceValueSelectPreference
+                android:dependency="eventListWidgetShowWebLoadBalance"
+                android:title="@string/selectBalanceValues" />
 
             <PreferenceCategory
                 android:layout="@layout/preference_category"
@@ -1955,210 +1967,210 @@
         </PreferenceScreen>
 
         <PreferenceScreen
-			android:key="preferenceScreenEventsWeather"
-			android:summary="@string/weatherSetupSummary"
-			android:title="@string/weatherSetup"
-			android:icon="@drawable/pref_sun" >
-			<ru.yanus171.android.handyclockwidget.free.BackPreference android:defaultValue="preferenceScreenEventsWeather" />
-			
-			<PreferenceCategory
-				android:key="weatherBalanceBY"
-				android:layout="@layout/preference_category"
-				android:title="Balance BY" />
-			<ru.yanus171.android.handyclockwidget.free.LabelPreference
-				android:key="weatherBalanceBYHint"
-				android:summary="@string/weatherBalanceBYHint" />        
-			<CheckBoxPreference
-				android:defaultValue="false"
-				android:key="showBalanceBYWeather"
-				android:title="@string/show" />
-			<ru.yanus171.android.handyclockwidget.free.LinkPreference
-				android:key="balanceBYLink"
-				android:title="@string/balanceBYLink"
-				link:HTTPLink="http://4pda.ru/forum/index.php?showtopic=204464"
-				link:marketLink="market://details?id=com.vladyud.balance" />
-			<ru.yanus171.android.handyclockwidget.free.AppSelectPreference
-				android:defaultValue="weatherDetails"
-				android:key="weatherPanelTapAction"
-				android:title="@string/tapWeatherPanelAction" />
-			<CheckBoxPreference
-				android:defaultValue="true"
-				android:key="balanceBYWeatherShowRainWarning"
-				android:title="@string/balanceBYWeatherShowRainWarning"
-				android:summary="@string/balanceBYWeatherShowRainWarningSummary" />
+            android:key="preferenceScreenEventsWeather"
+            android:summary="@string/weatherSetupSummary"
+            android:title="@string/weatherSetup"
+            android:icon="@drawable/pref_sun" >
+            <ru.yanus171.android.handyclockwidget.free.BackPreference android:defaultValue="preferenceScreenEventsWeather" />
 
-			<!--<PreferenceCategory
-				android:layout="@layout/preference_category"
-				android:key="genieWidgetCategory"
-				android:title="Genie widget" >        
-				<CheckBoxPreference
-					android:defaultValue="false"
-					android:key="eventListWidgetShowWeatherGenieWidget"
-					android:title="@string/show" />
-				<ru.yanus171.android.handyclockwidget.free.LabelPreference
-					android:key="weatherSetupHint"
-					android:summary="@string/weatherSetupHint" />
-				<ru.yanus171.android.handyclockwidget.free.LinkPreference
-					android:key="GenieWidgetLink"
-					android:title="@string/installGenieWidget"
-					link:HTTPLink="http://forum.xda-developers.com/attachment.php?attachmentid=1215728" />
-				<ru.yanus171.android.handyclockwidget.free.AutoSummaryEditPreference
-					android:defaultValue=""
-					android:dependency="eventListWidgetShowWeatherGenieWidget"
-					android:key="eventListWidgetWeatherLocation"
-					android:summary="@string/weatherLocationSummary"
-					android:title="@string/weatherLocation" />
-				<CheckBoxPreference
-					android:defaultValue="false"
-					android:dependency="eventListWidgetShowWeatherGenieWidget"
-					android:key="weatherGenieWidgetHourly"
-					android:title="@string/weatherGenieWidgetHourly" />
-				<ru.yanus171.android.handyclockwidget.free.AutoSummaryEditPreference
-					android:defaultValue="@string/constDefaultChancePrecipitationThreshold"
-					android:dependency="eventListWidgetShowWeatherGenieWidget"
-					android:dialogMessage="@string/chancePrecipitationThresholdSummary"
-					android:inputType="number"
-					android:key="chancePrecipitationThreshold"
-					android:summary="@string/chancePrecipitationThresholdSummary"
-					android:title="@string/chancePrecipitationThreshold" />
-			</PreferenceCategory> -->        
+            <PreferenceCategory
+                android:key="weatherBalanceBY"
+                android:layout="@layout/preference_category"
+                android:title="Balance BY" />
+            <ru.yanus171.android.handyclockwidget.free.LabelPreference
+                android:key="weatherBalanceBYHint"
+                android:summary="@string/weatherBalanceBYHint" />
+            <CheckBoxPreference
+                android:defaultValue="false"
+                android:key="showBalanceBYWeather"
+                android:title="@string/show" />
+            <ru.yanus171.android.handyclockwidget.free.LinkPreference
+                android:key="balanceBYLink"
+                android:title="@string/balanceBYLink"
+                link:HTTPLink="http://4pda.ru/forum/index.php?showtopic=204464"
+                link:marketLink="market://details?id=com.vladyud.balance" />
+            <ru.yanus171.android.handyclockwidget.free.AppSelectPreference
+                android:defaultValue="weatherDetails"
+                android:key="weatherPanelTapAction"
+                android:title="@string/tapWeatherPanelAction" />
+            <CheckBoxPreference
+                android:defaultValue="true"
+                android:key="balanceBYWeatherShowRainWarning"
+                android:title="@string/balanceBYWeatherShowRainWarning"
+                android:summary="@string/balanceBYWeatherShowRainWarningSummary" />
 
-			<PreferenceCategory
-				android:layout="@layout/preference_category"
-				android:summary="@string/eventListPeriodWidgetSummary"
-				android:title="@string/eventListPeriodWidget" />
-			<ru.yanus171.android.handyclockwidget.free.AutoSummaryEditPreference
-				android:defaultValue="@string/constDefaultDaysInAdvance"
-				android:inputType="number"
-				android:key="eventListWidgetWeatherDaysBefore"
-				android:title="@string/eventListPeriodDaysInAdvance" />
-			
-			<PreferenceCategory
-				android:layout="@layout/preference_category"
-				android:title="@string/weatherWidgetPanel" />
-			<CheckBoxPreference
-				android:defaultValue="true"
-				android:key="weatherWidgetPanel"
-				android:title="@string/show"
-				android:summary="@string/weatherWidgetPanelSummary" />
-			<CheckBoxPreference
-				android:defaultValue="true"
-				android:dependency="weatherWidgetPanel" 
-				android:key="weatherWidgetPanelShowDate"
-				android:title="@string/weatherWidgetPanelShowDate"
-				android:summary="@string/weatherWidgetPanelShowDateSummary" />
-			<CheckBoxPreference
-				android:defaultValue="true"
-				android:dependency="weatherWidgetPanel" 
-				android:key="weatherWidgetPanelShowImage"
-				android:title="@string/weatherWidgetPanelShowImage"
-				android:summary="@string/weatherWidgetPanelShowImageSummary" />
-			<CheckBoxPreference
-				android:defaultValue="true"
-				android:dependency="weatherWidgetPanel" 
-				android:key="weatherWidgetPanelShowLowTemp"
-				android:title="@string/weatherWidgetPanelShowLowTemp"
-				android:summary="@string/weatherWidgetPanelShowLowTempSummary" />                        
-			<CheckBoxPreference
-				android:defaultValue="false"
-				android:dependency="weatherWidgetPanel" 
-				android:key="weatherWidgetPanelShowPressure"
-				android:title="@string/weatherWidgetPanelShowPressure"
-				android:summary="@string/weatherWidgetPanelShowPressureSummary" />
-			<CheckBoxPreference
-				android:defaultValue="false"
-				android:dependency="weatherWidgetPanel" 
-				android:key="weatherWidgetPanelShowLocation"
-				android:title="@string/location"
-				android:summary="@string/weatherWidgetPanelShowLocationSummary" />
-			<CheckBoxPreference
-				android:defaultValue="true"
-				android:dependency="weatherWidgetPanel" 
-				android:key="weatherWidgetPanelShowTodayDetails"
-				android:title="@string/weatherWidgetPanelShowTodayDetails"
-				android:summary="@string/weatherWidgetPanelShowTodayDetailsSummary" />
-			<ru.yanus171.android.handyclockwidget.free.AutoSummaryEditPreference
-				android:defaultValue="12"
-				android:dependency="weatherWidgetPanel"
-				android:inputType="number"
-				android:key="weatherWidgetPanelDayCount"
-				android:title="@string/weatherWidgetPanelDayCount"
-				android:summary="@string/weatherWidgetPanelDayCountSummary" />
-			<CheckBoxPreference
-				android:defaultValue="true"
-				android:dependency="weatherWidgetPanel" 
-				android:key="colorTemperature"
-				android:title="@string/weatherWidgetPanelColorTemperature"
-				android:summary="@string/weatherWidgetPanelColorTemperatureSummary" />
-			<CheckBoxPreference
-				android:defaultValue="false"
-				android:dependency="weatherWidgetPanel" 
-				android:key="weatherWidgetPanelShowComfort"
-				android:title="@string/weatherWidgetPanelShowComfort"
-				android:summary="@string/weatherWidgetPanelShowComfortSummary" />
-			
-			<PreferenceCategory
-				android:layout="@layout/preference_category"
-				android:title="@string/miscellaneous" />               
-			<CheckBoxPreference
-				android:defaultValue="false"
-				android:key="weatherWidgetInEventList"
-				android:title="@string/weatherWidgetInEventList"
-				android:summary="@string/weatherWidgetInEventListSummary" />        
-			<CheckBoxPreference
-				android:defaultValue="true"
-				android:key="todayWeatherEventInfoInWidget"
-				android:summary="@string/todayWeatherEventInfoInWidgetSummary"
-				android:title="@string/todayWeatherEventInfoInWidget" />
-			<ru.yanus171.android.handyclockwidget.free.TimePreference
-				android:defaultValue="20"
-				android:key="weatherTimeStartToShowTomorrow"
-				android:title="@string/weatherTimeStartToShowTomorrow"
-				android:summary="@string/weatherTimeStartToShowTomorrowSummary" />                   
-			<ru.yanus171.android.handyclockwidget.free.AutoSummaryEditPreference
-				android:defaultValue="@string/constDefaultWeatherRefreshInterval"
-				android:inputType="number"
-				android:key="eventListWidgetWeatherRefreshInterval"
-				android:summary="@string/eventListWidgetWeatherRefreshIntervalSummary"
-				android:title="@string/refreshInterval" />
-			<ru.yanus171.android.handyclockwidget.free.AppSelectPreference
-				android:defaultValue="openContextMenu"
-				android:key="weatherTapAction"
-				android:title="@string/tapAction" />
-			<CheckBoxPreference
-				android:defaultValue="false"
-				android:key="ignoreWeatherErrors"
-				android:summary="@string/ignoreWeatherErrorsSummary"
-				android:title="@string/ignoreWeatherErrors" />
-			<ru.yanus171.android.handyclockwidget.free.AutoSummaryEditPreference
-				android:defaultValue="30"
-				android:inputType="number"
-				android:key="sunEventWidgetVisibleInterval"
-				android:summary="@string/sunEventWidgetVisibleIntervalSummary"
-				android:title="@string/sunEventWidgetVisibleInterval" />
-			<ru.yanus171.android.handyclockwidget.free.AutoSummaryEditPreference
-				android:defaultValue="30"
-				android:inputType="number"
-				android:key="sunEventWidgetVisibleIntervalAfter"
-				android:summary="@string/sunEventWidgetVisibleIntervalAfterSummary"
-				android:title="@string/sunEventWidgetVisibleIntervalAfter" />
+            <!--<PreferenceCategory
+                android:layout="@layout/preference_category"
+                android:key="genieWidgetCategory"
+                android:title="Genie widget" >
+                <CheckBoxPreference
+                    android:defaultValue="false"
+                    android:key="eventListWidgetShowWeatherGenieWidget"
+                    android:title="@string/show" />
+                <ru.yanus171.android.handyclockwidget.free.LabelPreference
+                    android:key="weatherSetupHint"
+                    android:summary="@string/weatherSetupHint" />
+                <ru.yanus171.android.handyclockwidget.free.LinkPreference
+                    android:key="GenieWidgetLink"
+                    android:title="@string/installGenieWidget"
+                    link:HTTPLink="http://forum.xda-developers.com/attachment.php?attachmentid=1215728" />
+                <ru.yanus171.android.handyclockwidget.free.AutoSummaryEditPreference
+                    android:defaultValue=""
+                    android:dependency="eventListWidgetShowWeatherGenieWidget"
+                    android:key="eventListWidgetWeatherLocation"
+                    android:summary="@string/weatherLocationSummary"
+                    android:title="@string/weatherLocation" />
+                <CheckBoxPreference
+                    android:defaultValue="false"
+                    android:dependency="eventListWidgetShowWeatherGenieWidget"
+                    android:key="weatherGenieWidgetHourly"
+                    android:title="@string/weatherGenieWidgetHourly" />
+                <ru.yanus171.android.handyclockwidget.free.AutoSummaryEditPreference
+                    android:defaultValue="@string/constDefaultChancePrecipitationThreshold"
+                    android:dependency="eventListWidgetShowWeatherGenieWidget"
+                    android:dialogMessage="@string/chancePrecipitationThresholdSummary"
+                    android:inputType="number"
+                    android:key="chancePrecipitationThreshold"
+                    android:summary="@string/chancePrecipitationThresholdSummary"
+                    android:title="@string/chancePrecipitationThreshold" />
+            </PreferenceCategory> -->
 
-	<!--         <CheckBoxPreference -->
-	<!--             android:defaultValue="true" -->
-	<!--             android:key="showTemperatureChanges" -->
-	<!--             android:title="@string/showTemperatureChanges"  -->
-	<!--             android:summary="@string/showTemperatureChangesSummary"/> -->
-			
-	<!--         <ru.yanus171.android.handyclockwidget.free.AutoSummaryEditPreference -->
-	<!--             android:defaultValue="1" -->
-	<!--             android:dependency="showTemperatureChanges" -->
-	<!--             android:dialogMessage="@string/deltaTemperatureThresholdSummary" -->
-	<!--             android:inputType="number" -->
-	<!--             android:key="deltaTemperatureThreshold" -->
-	<!--             android:summary="@string/deltaTemperatureThresholdSummary" -->
-	<!--             android:title="@string/deltaTemperatureThreshold" /> -->
-			
-		</PreferenceScreen>
+            <PreferenceCategory
+                android:layout="@layout/preference_category"
+                android:summary="@string/eventListPeriodWidgetSummary"
+                android:title="@string/eventListPeriodWidget" />
+            <ru.yanus171.android.handyclockwidget.free.AutoSummaryEditPreference
+                android:defaultValue="@string/constDefaultDaysInAdvance"
+                android:inputType="number"
+                android:key="eventListWidgetWeatherDaysBefore"
+                android:title="@string/eventListPeriodDaysInAdvance" />
+
+            <PreferenceCategory
+                android:layout="@layout/preference_category"
+                android:title="@string/weatherWidgetPanel" />
+            <CheckBoxPreference
+                android:defaultValue="true"
+                android:key="weatherWidgetPanel"
+                android:title="@string/show"
+                android:summary="@string/weatherWidgetPanelSummary" />
+            <CheckBoxPreference
+                android:defaultValue="true"
+                android:dependency="weatherWidgetPanel"
+                android:key="weatherWidgetPanelShowDate"
+                android:title="@string/weatherWidgetPanelShowDate"
+                android:summary="@string/weatherWidgetPanelShowDateSummary" />
+            <CheckBoxPreference
+                android:defaultValue="true"
+                android:dependency="weatherWidgetPanel"
+                android:key="weatherWidgetPanelShowImage"
+                android:title="@string/weatherWidgetPanelShowImage"
+                android:summary="@string/weatherWidgetPanelShowImageSummary" />
+            <CheckBoxPreference
+                android:defaultValue="true"
+                android:dependency="weatherWidgetPanel"
+                android:key="weatherWidgetPanelShowLowTemp"
+                android:title="@string/weatherWidgetPanelShowLowTemp"
+                android:summary="@string/weatherWidgetPanelShowLowTempSummary" />
+            <CheckBoxPreference
+                android:defaultValue="false"
+                android:dependency="weatherWidgetPanel"
+                android:key="weatherWidgetPanelShowPressure"
+                android:title="@string/weatherWidgetPanelShowPressure"
+                android:summary="@string/weatherWidgetPanelShowPressureSummary" />
+            <CheckBoxPreference
+                android:defaultValue="false"
+                android:dependency="weatherWidgetPanel"
+                android:key="weatherWidgetPanelShowLocation"
+                android:title="@string/location"
+                android:summary="@string/weatherWidgetPanelShowLocationSummary" />
+            <CheckBoxPreference
+                android:defaultValue="true"
+                android:dependency="weatherWidgetPanel"
+                android:key="weatherWidgetPanelShowTodayDetails"
+                android:title="@string/weatherWidgetPanelShowTodayDetails"
+                android:summary="@string/weatherWidgetPanelShowTodayDetailsSummary" />
+            <ru.yanus171.android.handyclockwidget.free.AutoSummaryEditPreference
+                android:defaultValue="12"
+                android:dependency="weatherWidgetPanel"
+                android:inputType="number"
+                android:key="weatherWidgetPanelDayCount"
+                android:title="@string/weatherWidgetPanelDayCount"
+                android:summary="@string/weatherWidgetPanelDayCountSummary" />
+            <CheckBoxPreference
+                android:defaultValue="true"
+                android:dependency="weatherWidgetPanel"
+                android:key="colorTemperature"
+                android:title="@string/weatherWidgetPanelColorTemperature"
+                android:summary="@string/weatherWidgetPanelColorTemperatureSummary" />
+            <CheckBoxPreference
+                android:defaultValue="false"
+                android:dependency="weatherWidgetPanel"
+                android:key="weatherWidgetPanelShowComfort"
+                android:title="@string/weatherWidgetPanelShowComfort"
+                android:summary="@string/weatherWidgetPanelShowComfortSummary" />
+
+            <PreferenceCategory
+                android:layout="@layout/preference_category"
+                android:title="@string/miscellaneous" />
+            <CheckBoxPreference
+                android:defaultValue="false"
+                android:key="weatherWidgetInEventList"
+                android:title="@string/weatherWidgetInEventList"
+                android:summary="@string/weatherWidgetInEventListSummary" />
+            <CheckBoxPreference
+                android:defaultValue="true"
+                android:key="todayWeatherEventInfoInWidget"
+                android:summary="@string/todayWeatherEventInfoInWidgetSummary"
+                android:title="@string/todayWeatherEventInfoInWidget" />
+            <ru.yanus171.android.handyclockwidget.free.TimePreference
+                android:defaultValue="20"
+                android:key="weatherTimeStartToShowTomorrow"
+                android:title="@string/weatherTimeStartToShowTomorrow"
+                android:summary="@string/weatherTimeStartToShowTomorrowSummary" />
+            <ru.yanus171.android.handyclockwidget.free.AutoSummaryEditPreference
+                android:defaultValue="@string/constDefaultWeatherRefreshInterval"
+                android:inputType="number"
+                android:key="eventListWidgetWeatherRefreshInterval"
+                android:summary="@string/eventListWidgetWeatherRefreshIntervalSummary"
+                android:title="@string/refreshInterval" />
+            <ru.yanus171.android.handyclockwidget.free.AppSelectPreference
+                android:defaultValue="openContextMenu"
+                android:key="weatherTapAction"
+                android:title="@string/tapAction" />
+            <CheckBoxPreference
+                android:defaultValue="false"
+                android:key="ignoreWeatherErrors"
+                android:summary="@string/ignoreWeatherErrorsSummary"
+                android:title="@string/ignoreWeatherErrors" />
+            <ru.yanus171.android.handyclockwidget.free.AutoSummaryEditPreference
+                android:defaultValue="30"
+                android:inputType="number"
+                android:key="sunEventWidgetVisibleInterval"
+                android:summary="@string/sunEventWidgetVisibleIntervalSummary"
+                android:title="@string/sunEventWidgetVisibleInterval" />
+            <ru.yanus171.android.handyclockwidget.free.AutoSummaryEditPreference
+                android:defaultValue="30"
+                android:inputType="number"
+                android:key="sunEventWidgetVisibleIntervalAfter"
+                android:summary="@string/sunEventWidgetVisibleIntervalAfterSummary"
+                android:title="@string/sunEventWidgetVisibleIntervalAfter" />
+
+            <!--         <CheckBoxPreference -->
+            <!--             android:defaultValue="true" -->
+            <!--             android:key="showTemperatureChanges" -->
+            <!--             android:title="@string/showTemperatureChanges"  -->
+            <!--             android:summary="@string/showTemperatureChangesSummary"/> -->
+
+            <!--         <ru.yanus171.android.handyclockwidget.free.AutoSummaryEditPreference -->
+            <!--             android:defaultValue="1" -->
+            <!--             android:dependency="showTemperatureChanges" -->
+            <!--             android:dialogMessage="@string/deltaTemperatureThresholdSummary" -->
+            <!--             android:inputType="number" -->
+            <!--             android:key="deltaTemperatureThreshold" -->
+            <!--             android:summary="@string/deltaTemperatureThresholdSummary" -->
+            <!--             android:title="@string/deltaTemperatureThreshold" /> -->
+
+        </PreferenceScreen>
     </PreferenceScreen>
 
     <PreferenceCategory
@@ -2179,7 +2191,7 @@
     <PreferenceCategory
         android:layout="@layout/preference_category"
         android:title="@string/common" />
-        
+
     <PreferenceScreen
         android:key="preferenceScreenEventseventListWidget"
         android:icon="@drawable/pref_eventwidget"
@@ -2212,13 +2224,13 @@
         <!-- android:defaultValue="showContextMenu" -->
         <!-- android:entryValues="@array/widgetTapActionValues" -->
         <!-- android:entries="@array/widgetTapActionEntry"/> -->
-<!--         <ru.yanus171.android.handyclockwidget.free.AutoSummaryListPreference -->
-<!--             android:defaultValue="@string/constDefaultEventListWidgetEmptyDayFontSize" -->
-<!--             android:entries="@array/fontSizeValueList" -->
-<!--             android:entryValues="@array/fontSizeValueList" -->
-<!--             android:key="eventListWidgetEmptyDayFontSize" -->
-<!--             android:summary="@string/emptyDayFontSizeWidgetSummary" -->
-<!--             android:title="@string/emptyDayFontSize" /> -->
+        <!--         <ru.yanus171.android.handyclockwidget.free.AutoSummaryListPreference -->
+        <!--             android:defaultValue="@string/constDefaultEventListWidgetEmptyDayFontSize" -->
+        <!--             android:entries="@array/fontSizeValueList" -->
+        <!--             android:entryValues="@array/fontSizeValueList" -->
+        <!--             android:key="eventListWidgetEmptyDayFontSize" -->
+        <!--             android:summary="@string/emptyDayFontSizeWidgetSummary" -->
+        <!--             android:title="@string/emptyDayFontSize" /> -->
         <CheckBoxPreference
             android:defaultValue="true"
             android:key="eventListViewShowEmptyDays"
@@ -2235,6 +2247,13 @@
             android:dependency="eventListViewShowEmptyDays"
             android:summary="@string/showHiddenEventInDateSummary"
             android:title="@string/showHiddenEventInDate" />
+        <CheckBoxPreference
+            android:defaultValue="false"
+            android:key="eventListShowEmptyDayDate"
+            android:dependency="eventListViewShowEmptyDays"
+            android:summary="@string/eventListShowEmptyDayDateSummary"
+            android:title="@string/eventListShowEmptyDayDate" />
+
         <CheckBoxPreference
             android:defaultValue="true"
             android:key="showBottomBar"
@@ -2262,7 +2281,7 @@
             android:title="@string/tapActionWidgetBottomButtonRight"
             android:summary="@string/tapActionWidgetBottomButtonRightSummary" />
     </PreferenceScreen>
-    
+
     <PreferenceScreen
         android:key="preferenceScreenEventDateContent"
         android:icon="@drawable/pref_calendar_2"
@@ -2315,7 +2334,7 @@
             android:key="eventListWidgetDateTapAction"
             android:title="@string/tapAction" />
     </PreferenceScreen>
-    
+
     <PreferenceScreen
         android:key="preferenceScreenСontextMenu"
         android:summary="@string/contextMenuSummary"
@@ -2388,7 +2407,7 @@
             android:defaultValue="true"
             android:key="contextMenuShowBack"
             android:title="@string/back" />
-        
+
         <PreferenceCategory
             android:layout="@layout/preference_category"
             android:title="@string/appShortcuts" />
@@ -2397,7 +2416,7 @@
             android:defaultValue="true"
             android:key="contextMenuShowAppShortcuts"
             android:title="@string/show" />
-        
+
         <ru.yanus171.android.handyclockwidget.free.AutoSummaryEditPreference
             android:defaultValue="60"
             android:dependency="contextMenuShowAppShortcuts"
@@ -2472,7 +2491,7 @@
             android:dependency="contextMenuShowAppShortcutsSecondRow"
             android:key="contextMenuAppShortcut12"
             android:title="@string/app6" />
-        
+
         <PreferenceCategory
             android:layout="@layout/preference_category"
             android:title="@string/common" />
@@ -2483,18 +2502,18 @@
             android:summary="@string/contextMenuTapActionSummary"
             android:title="@string/tapAction" />
     </PreferenceScreen>
-<!--     <PreferenceScreen -->
-<!--         android:key="preferenceScreenLockerWidget" -->
-<!--         android:title="@string/lockerWidget" > -->
-<!--         <ru.yanus171.android.handyclockwidget.free.BackPreference android:defaultValue="preferenceScreenLockerWidget" /> -->
+    <!--     <PreferenceScreen -->
+    <!--         android:key="preferenceScreenLockerWidget" -->
+    <!--         android:title="@string/lockerWidget" > -->
+    <!--         <ru.yanus171.android.handyclockwidget.free.BackPreference android:defaultValue="preferenceScreenLockerWidget" /> -->
 
-        
-<!--     </PreferenceScreen> -->
-<!--     <PreferenceScreen -->
-<!--         android:key="preferenceScreenEventEventListView" -->
-<!--         android:title="@string/eventListViewSetup" > -->
-<!--         <ru.yanus171.android.handyclockwidget.free.BackPreference android:defaultValue="preferenceScreenEventEventListView" /> -->
-<!--     </PreferenceScreen> -->
+
+    <!--     </PreferenceScreen> -->
+    <!--     <PreferenceScreen -->
+    <!--         android:key="preferenceScreenEventEventListView" -->
+    <!--         android:title="@string/eventListViewSetup" > -->
+    <!--         <ru.yanus171.android.handyclockwidget.free.BackPreference android:defaultValue="preferenceScreenEventEventListView" /> -->
+    <!--     </PreferenceScreen> -->
 
     <PreferenceScreen
         android:key="preferenceScreenEventNotify"
@@ -2511,14 +2530,14 @@
             android:showDefault="true"
             android:title="@string/melody" />
     </PreferenceScreen>
-    
+
     <CheckBoxPreference
         android:defaultValue="true"
         android:key="eventListShowTodayBorder"
         android:summary="@string/eventListShowTodayBorderSummary"
         android:title="@string/eventListShowTodayBorder" />
-    
-    
+
+
     <ru.yanus171.android.handyclockwidget.free.LanguageSelectPreference
         android:defaultValue="System"
         android:entries="@array/languageList"
@@ -2575,73 +2594,73 @@
             android:title="@string/notificantionIconEmpty" />
 
         <ru.yanus171.android.handyclockwidget.free.AutoSummaryEditPreference
-	        android:defaultValue="0"
-	        android:dialogMessage="@string/eventListUpdateIntervalMinutesSummary"
-	        android:inputType="number"
-	        android:key="eventListUpdateIntervalMinutes"
-	        android:summary="@string/eventListUpdateIntervalMinutesSummary"
-	        android:title="@string/eventListUpdateIntervalMinutes" />
+            android:defaultValue="0"
+            android:dialogMessage="@string/eventListUpdateIntervalMinutesSummary"
+            android:inputType="number"
+            android:key="eventListUpdateIntervalMinutes"
+            android:summary="@string/eventListUpdateIntervalMinutesSummary"
+            android:title="@string/eventListUpdateIntervalMinutes" />
 
         <CheckBoxPreference
-	        android:defaultValue="true"
-	        android:key="showEventImages"
-	        android:summary="@string/showEventImagesSummary"
-	        android:title="@string/showEventImages" />
+            android:defaultValue="true"
+            android:key="showEventImages"
+            android:summary="@string/showEventImagesSummary"
+            android:title="@string/showEventImages" />
 
         <ru.yanus171.android.handyclockwidget.free.ImageBorderListSelectPreference
-	        android:defaultValue="0"
-	        android:dependency="showEventImages"
-	        android:key="imageBorder"
-	        android:title="@string/imageBorder" />
-<!--         <CheckBoxPreference -->
-<!--             android:defaultValue="true" -->
-<!--             android:key="showAddEventCalendarButtonWithDate" -->
-<!--             android:summary="@string/showAddEventCalendarButtonWithDateSummary" -->
-<!--             android:title="@string/showAddEventCalendarButtonWithDate" />         -->
+            android:defaultValue="0"
+            android:dependency="showEventImages"
+            android:key="imageBorder"
+            android:title="@string/imageBorder" />
+        <!--         <CheckBoxPreference -->
+        <!--             android:defaultValue="true" -->
+        <!--             android:key="showAddEventCalendarButtonWithDate" -->
+        <!--             android:summary="@string/showAddEventCalendarButtonWithDateSummary" -->
+        <!--             android:title="@string/showAddEventCalendarButtonWithDate" />         -->
         <CheckBoxPreference
             android:defaultValue="false"
             android:key="widgetSourceRemeberLastRemoteViews"
             android:summary="@string/widgetSourceRemeberLastRemoteViewsSummary"
             android:title="@string/widgetSourceRemeberLastRemoteViews" />
         <ru.yanus171.android.handyclockwidget.free.AutoSummaryEditPreference
-	        android:defaultValue="0"
-	        android:dialogMessage="@string/firstUpdateDelaySummary"
-	        android:inputType="number"
-	        android:key="firstUpdateDelay"
-	        android:summary="@string/firstUpdateDelaySummary"
-	        android:title="@string/firstUpdateDelay" />
+            android:defaultValue="0"
+            android:dialogMessage="@string/firstUpdateDelaySummary"
+            android:inputType="number"
+            android:key="firstUpdateDelay"
+            android:summary="@string/firstUpdateDelaySummary"
+            android:title="@string/firstUpdateDelay" />
         <ru.yanus171.android.handyclockwidget.free.AutoSummaryEditPreference
-	        android:defaultValue="0"
-	        android:inputType="number"
-	        android:key="eventFilterResetOldItemsInterval"
-	        android:summary="@string/eventFilterResetOldItemsIntervalSummary"
-	        android:title="@string/eventFilterResetOldItemsInterval" />
+            android:defaultValue="0"
+            android:inputType="number"
+            android:key="eventFilterResetOldItemsInterval"
+            android:summary="@string/eventFilterResetOldItemsIntervalSummary"
+            android:title="@string/eventFilterResetOldItemsInterval" />
         <ru.yanus171.android.handyclockwidget.free.AutoSummaryEditPreference
-	        android:defaultValue="5"
-	        android:inputType="number"
-	        android:key="eventFilterOldDelayInDays"
-	        android:summary="@string/eventFilterOldDelaySummary"
-	        android:title="@string/eventFilterOldDelay" />
-        
+            android:defaultValue="5"
+            android:inputType="number"
+            android:key="eventFilterOldDelayInDays"
+            android:summary="@string/eventFilterOldDelaySummary"
+            android:title="@string/eventFilterOldDelay" />
+
         <ru.yanus171.android.handyclockwidget.free.AutoSummaryEditPreference
-	        android:defaultValue="8"
-	        android:inputType="number"
-	        android:key="balanceShortCaptionLen"
-	        android:summary="@string/balanceShortCaptionLenSummary"
-	        android:title="@string/balanceShortCaptionLen" />
+            android:defaultValue="8"
+            android:inputType="number"
+            android:key="balanceShortCaptionLen"
+            android:summary="@string/balanceShortCaptionLenSummary"
+            android:title="@string/balanceShortCaptionLen" />
         <ru.yanus171.android.handyclockwidget.free.AutoSummaryEditPreference
-	        android:defaultValue="16"
-	        android:inputType="number"
-	        android:key="balanceLongCaptionLen"
-	        android:summary="@string/balanceLongCaptionLenSummary"
-	        android:title="@string/balanceLongCaptionLen" />
-        
+            android:defaultValue="16"
+            android:inputType="number"
+            android:key="balanceLongCaptionLen"
+            android:summary="@string/balanceLongCaptionLenSummary"
+            android:title="@string/balanceLongCaptionLen" />
+
         <ru.yanus171.android.handyclockwidget.free.AutoSummaryEditPreference
-	        android:defaultValue=""
-	        android:key="productBlackList"
-	        android:summary="@string/productBlackListSummary"
-	        android:title="@string/productBlackList" />
-        
+            android:defaultValue=""
+            android:key="productBlackList"
+            android:summary="@string/productBlackListSummary"
+            android:title="@string/productBlackList" />
+
         <CheckBoxPreference
             android:defaultValue="false"
             android:key="alarmFromNextAlarmFormatted"
@@ -2659,12 +2678,12 @@
             android:key="debugCursorQuery"
             android:dependency="debugMode"
             android:title="debugCursorQuery" />
-        
+
         <ru.yanus171.android.handyclockwidget.free.AutoSummaryEditPreference
-	        android:defaultValue="100"
-	        android:inputType="number"
-	        android:key="balanceUpdateDelay"
-	        android:title="balanceUpdateDelay" />
+            android:defaultValue="100"
+            android:inputType="number"
+            android:key="balanceUpdateDelay"
+            android:title="balanceUpdateDelay" />
 
         <CheckBoxPreference
             android:defaultValue="false"
@@ -2807,6 +2826,10 @@
                     android:defaultValue="false"
                     android:key="showBalanceBYTVShedule"
                     android:title="@string/show" />
+                <CheckBoxPreference
+                    android:defaultValue="false"
+                    android:key="show_progress_info"
+                    android:title="@string/show_progress_info" />
             </PreferenceScreen>
         </PreferenceScreen>
     </PreferenceScreen>

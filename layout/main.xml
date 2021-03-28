@@ -47,6 +47,14 @@
                 android:text="@string/throwUnhandledException" />
 
             <Button
+                android:id="@+id/btnShowWebAccountList"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:onClick="ShowWebAccountList"
+                android:text="ShowWebAccountList"
+                android:textStyle="bold" />
+
+            <Button
                 android:id="@+id/btnSendDebugInfo"
                 android:layout_width="fill_parent"
                 android:layout_height="wrap_content"

@@ -197,4 +197,13 @@
         <item>4</item>
         <item>5</item>
     </string-array>
+
+    <string-array name="account_update_freq" tools:ignore="MissingTranslation">
+        <item>30 min</item>
+        <item>1 hour</item>
+        <item>3 hours</item>
+        <item>6 hours</item>
+        <item>12 hours</item>
+        <item>1 day</item>
+    </string-array>
 </resources>
