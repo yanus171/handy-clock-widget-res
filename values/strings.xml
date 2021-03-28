@@ -269,6 +269,9 @@
     <string name="eventListView">All events</string>
     <string name="eventListViewDotsInEmptyDays">Dots in empty days</string>
     <string name="eventListViewDotsInEmptyDaysSummary">Show three dots if there are days without events between two dates</string>
+    <string name="eventListShowEmptyDayDate">Date in empty days</string>
+    <string name="eventListShowEmptyDayDateSummary"></string>
+
     <string name="eventListViewEndOfPeriod">The End of common period. To view next events change common period in setup</string>
     <string name="eventListViewSetup">All events …</string>
     <string name="eventListViewShowEmptyDays">Empty days</string>
@@ -284,6 +287,8 @@
     <string name="eventListWidgetFullWeekDay">Full weekday</string>
     <string name="eventListWidgetShowAnyBalance">Show AnyBalance</string>
     <string name="eventListWidgetShowAnyBalanceSummary">Show data from Any Balance app</string>
+    <string name="eventListWidgetShowWebLoadBalance">Show Web load balance</string>
+    <string name="eventListWidgetShowWebLoadBalanceSummary">Show data from Web load balances</string>
     <string name="eventListWidgetShowBalanceBY">Show Balance BY</string>
     <string name="eventListWidgetShowBalanceBYSummary">Show data from Balance BY app</string>
     <string name="eventListWidgetShowDate">Show date</string>
@@ -915,5 +920,13 @@
 Payment.(\d+).+?SHOP2_NAME</string>
     <string name="sms_price_cat_rule_list">Price text extract rules</string>
     <string name="sms_price_cat_rule_list_summary">"Each line is the regex with () where to find the price "</string>
+    <string name="refresh_account">Refresh</string>
+    <string name="refresh_account_with_debug">Refresh with debug</string>
+    <string name="edit_account">Edit</string>
+    <string name="show_progress_info">Show progress info</string>
+    <string name="view_account">View</string>
+    <string name="operation">Openration</string>
+    <string name="webload_account_pref_update_freq">Update frequency</string>
+    <string name="openWebload">Open webload</string>
 
 </resources>

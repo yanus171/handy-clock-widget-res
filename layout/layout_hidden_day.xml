@@ -2,26 +2,40 @@
 <FrameLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
 	xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/hidden_day_root"
     android:layout_width="wrap_content"
-    android:layout_height="fill_parent"
+    android:layout_height="wrap_content"
     android:layout_weight="1"
+    android:layout_gravity="center"
     android:layout_marginTop="0sp"
-    android:layout_marginLeft="5sp"
+    android:layout_marginLeft="2sp"
+    android:layout_marginRight="2sp"
     android:layout_marginBottom="0sp"
     tools:ignore="InefficientWeight" >
 
     <TextView
-        android:id="@+id/inner"
+        android:id="@+id/innerText"
         style="@style/Shadow"        
-        android:textSize="16sp"
-        android:layout_width="wrap_content"
+        android:textSize="10sp"
+        android:layout_width="fill_parent"
         android:layout_height="fill_parent"
         android:layout_gravity="center"
         android:lineSpacingMultiplier="1"
         android:gravity="center"
-        android:paddingLeft="2sp"
-        android:paddingRight="2sp"
-        android:text=" " />
+        android:visibility="visible"
+        android:text="  " />
+    <ImageView
+        android:id="@+id/innerImage"
+        style="@style/Shadow"
+        android:layout_width="20dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:adjustViewBounds="true"
+        android:gravity="center"
+        android:layout_margin="3sp"
+        android:visibility="visible"
+        android:scaleType="fitCenter"
+        android:src="@drawable/ic_ort_red_cross" />
     <LinearLayout
         android:id="@+id/leftBorder"
         android:layout_width="2sp"
@@ -54,4 +68,5 @@
         android:visibility="visible"
         android:background="#FFFF00"
         android:orientation="horizontal" />
+
 </FrameLayout>

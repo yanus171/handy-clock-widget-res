@@ -7,8 +7,8 @@
         android:title="@android:string/untitled"
         app:showAsAction="always" />
     <item
-        android:id="@+id/menu_refresh"
-        android:icon="@android:drawable/ic_menu_add"
+        android:id="@+id/menu_cancel"
+        android:icon="@android:drawable/ic_menu_close_clear_cancel"
         android:title="@android:string/untitled"
         app:showAsAction="always" />
 </menu>
