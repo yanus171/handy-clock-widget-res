@@ -14,5 +14,7 @@
     <string name="tropar">Тропарь</string>
     <string name="kondak">Кондак</string>
     <string name="velichanie">Величание</string>
+    <string name="zadostoinik">Задостойник</string>
+    <string name="glas">Глас</string>
     <string name="hideDayHiddenEventsBack"><![CDATA[<<<<<<]]></string>
 </resources>
