@@ -928,5 +928,10 @@ Payment.(\d+).+?SHOP2_NAME</string>
     <string name="operation">Openration</string>
     <string name="webload_account_pref_update_freq">Update frequency</string>
     <string name="openWebload">Open webload</string>
+    <string name="add_acount">Add account</string>
+    <string name="webload_account_pref_provider_type">Type</string>
+    <string name="webload_account_pref_provider_name">Name</string>
+    <string name="remove_account">Remove</string>
+    <string name="remove_account_confirmation">Remove account?</string>
 
 </resources>
