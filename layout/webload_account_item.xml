@@ -7,14 +7,14 @@
         android:id="@+id/text_name"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:textAppearance="?android:textAppearanceLarge"
         android:text="Name" />
     <TextView
-        android:id="@+id/text_error"
+        android:id="@+id/text_plan"
         style="@style/Shadow"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Error"
-        android:textColor="@android:color/holo_red_light"/>
+        android:text="Plan"/>
     <LinearLayout
         android:orientation="horizontal"
         android:layout_width="match_parent"
@@ -34,7 +34,7 @@
             android:text="freq"
             android:paddingStart="10dp"
             android:paddingLeft="10dp"
-            android:textColor="@android:color/secondary_text_dark"/>
+            android:textColor="@color/dark_theme_color_primary_dark"/>
         <TextView
             android:id="@+id/text_status"
             style="@style/Shadow"
@@ -45,4 +45,12 @@
             android:textColor="@android:color/holo_green_dark"
             android:paddingLeft="10dp" />
     </LinearLayout>
+    <TextView
+        android:id="@+id/text_error"
+        style="@style/Shadow"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Error"
+        android:textColor="@android:color/holo_red_light"/>
+
 </LinearLayout>

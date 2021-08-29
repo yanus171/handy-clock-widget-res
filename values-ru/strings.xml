@@ -57,7 +57,7 @@
     <string name="appShortcutsSecondRow">Вторая строка ярлыков</string>
     <string name="appShortcutImageSizeSummary">0 - автоматически</string>
     <string name="appShortcutLaunchFailed">Не удалось выполнить действие</string>
-    <string name="appContentProviderQueryFailed">Не удалось прочитать данные %s. Проверьте, что это приложение установлено. Его можно установить по ссылке из настроек. Если оно уже установлено, поробуйте запустить его. Если это не помогает, удалите приложение Удобное время, сохранив настройки, а затем снова установлите его</string>
+    <string name="appcontentproviderqueryfailed">Не удалось прочитать данные %s. Проверьте, что это приложение установлено. Его можно установить по ссылке из настроек. Если оно уже установлено, поробуйте запустить его. Если это не помогает, удалите приложение Удобное время, сохранив настройки, а затем снова установлите его</string>
     <string name="appViews">Окна приложения</string>
     <string name="appViewsSummary">кнопки и тексты окна всех событий, контекстного меню</string>
     <string name="andMoreNEvents">и еще %d пока скрытых</string>
@@ -658,7 +658,7 @@
     <string name="weatherDay">Погода на день</string>
     <string name="weatherCurrent">Текущая погода</string>
     <string name="weatherDetails">Детализация погоды</string>
-    <string name="weatherBalanceBYHint">Нужно установить приложение Balance By (кнопка ниже). В нем необходимо добавить аккаунт провайдера \'Погода.Гисетео(Удобное время)\' (раздел Погода), задав в настройках аккаунта название города. При первой загрузке аккаунта отобразится список из вариантов найденных городов - выбрав нужный, введите отличительную часть его названия в настройку "Ключевое слово" аккаунта. Источник данных https://www.gismeteo.ru/news/</string>
+    <string name="weatherBalanceBYHint">Нужно зарегистрироваться на сайте https://openweathermap.org (тип учетной записи - БЕСПЛАТНАЯ! (FREE)), получить персональный ключ (API key), добавить в Удобном времени аккаунт с типом openweatherapi.xml в списке аккаунтов, ввести туде ключ и указать Ваш город</string>
     <string name="weatherGenieWidgetHourly">Почасовой прогноз</string>
     <string name="weatherGenieWidgetHourlyColor">Цвет почасового прогноза</string>
     <string name="weatherGenieWidgetHourlyColorSummary">а также текущей температуры</string>
@@ -668,7 +668,7 @@
     <string name="weatherProviders">Приложения погоды</string>
     <string name="weatherSetup">Погода …</string>
     <string name="weatherSetupHint">2 способ: Установить приложение Новости и погода (Genie widget). Установочный файл можно скачать, нажав по кнопке ниже (существующее в Google play одноименное приложение не поддерживается Удобным временем). Необходимо задать настройку \'Город\'.  </string>
-    <string name="weatherSetupSummary">чрез приложение BalanceBy</string>
+    <string name="weatherSetupSummary">используя Open weather API</string>
     <string name="weatherTimeStartToShowTomorrow">Время завтрашнего описания</string>
     <string name="weatherTimeStartToShowTomorrowSummary">С какого часа показывать описание погодына завтра вместо сегодняшнего</string>
     <string name="weatherWidgetInEventList">В списке событий</string>
@@ -801,4 +801,25 @@
 Покупка.(\d+).+?MAGNOLIYA
 Покупка.(\d+).+?GASTRONOM
 Покупка.(\d+).+?PYATEROCHKA</string>
+
+    <string name="refresh_account">Обновить</string>
+    <string name="refresh_account_with_debug">Обновить с отладкой</string>
+    <string name="edit_account">Редактировать</string>
+    <string name="show_progress_info">Показать информацию процесса</string>
+    <string name="view_account">Просмотр</string>
+    <string name="operation">Длительные операции</string>
+    <string name="webload_account_pref_update_freq">Частота обновления</string>
+    <string name="openWebload">Список аккаунтов</string>
+    <string name="add_acount">Добавить</string>
+    <string name="webload_account_pref_provider_type">Тип</string>
+    <string name="webload_account_pref_provider_name">Имя</string>
+    <string name="remove_account">Удалить</string>
+    <string name="remove_account_confirmation">Удалить аккаунт?</string>
+    <string name="show_web_account_list">Список аккаунтов</string>
+    <string name="title_activity_web_load_account_list">Аккаунты</string>
+    <string name="WeatherUFI">УФ индекс</string>
+    <string name="WeatherPOP">Вероятность осадков</string>
+    <string name="WeatherClouds">Облачность</string>
+    <string name="WeatherWind">Ветер</string>
+    <string name="customExternalStoragePathApi29PlusDiabled">В текущей версии ОС Android (и выше) доступ к произвоным путям файловоц системы заблокрирован</string>
 </resources>

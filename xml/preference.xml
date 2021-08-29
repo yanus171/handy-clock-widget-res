@@ -1474,6 +1474,11 @@
             android:key="customOrthodoxyXMLFileName"
             android:title="@string/customOrthodoxyXMLFileName"
             android:summary="@string/customOrthodoxyXMLFileNameSummary"/>
+        <CheckBoxPreference
+            android:defaultValue="false"
+            android:key="useCustomOrthodoxyXMLFileName"
+            android:title="@string/useCustomOrthodoxyXMLFileName"
+            android:summary="@string/useCustomOrthodoxyXMLFileNameSummary"/>
 
 
     </PreferenceScreen>
@@ -1747,6 +1752,167 @@
             android:key="shopperTapHint"
             android:summary="@string/shopperTapHint" />
     </PreferenceScreen>
+	
+	<PreferenceScreen
+		android:key="preferenceScreenEventsWeather"
+		android:summary="@string/weatherSetupSummary"
+		android:title="@string/weatherSetup"
+		android:icon="@drawable/pref_sun" >
+		<ru.yanus171.android.handyclockwidget.free.BackPreference android:defaultValue="preferenceScreenEventsWeather" />
+
+		<ru.yanus171.android.handyclockwidget.free.LabelPreference
+			android:key="weatherBalanceBYHint"
+			android:summary="@string/weatherBalanceBYHint" />
+		<CheckBoxPreference
+			android:defaultValue="true"
+			android:key="showBalanceBYWeather"
+			android:title="@string/show" />
+		<ru.yanus171.android.handyclockwidget.free.StartActivityPreference
+			android:key="openWebAccountList"
+			android:title="@string/show_web_account_list"
+			startActivity:className=".webload.WebLoadAccountListActivity"
+			android:icon="@drawable/pref_school"
+			startActivity:oper="" />
+		<ru.yanus171.android.handyclockwidget.free.AppSelectPreference
+			android:defaultValue="weatherDetails"
+			android:key="weatherPanelTapAction"
+			android:title="@string/tapWeatherPanelAction" />
+		<CheckBoxPreference
+			android:defaultValue="true"
+			android:key="balanceBYWeatherShowRainWarning"
+			android:title="@string/balanceBYWeatherShowRainWarning"
+			android:summary="@string/balanceBYWeatherShowRainWarningSummary" />
+
+		<PreferenceCategory
+			android:layout="@layout/preference_category"
+			android:summary="@string/eventListPeriodWidgetSummary"
+			android:title="@string/eventListPeriodWidget" />
+		<ru.yanus171.android.handyclockwidget.free.AutoSummaryEditPreference
+			android:defaultValue="@string/constDefaultDaysInAdvance"
+			android:inputType="number"
+			android:key="eventListWidgetWeatherDaysBefore"
+			android:title="@string/eventListPeriodDaysInAdvance" />
+
+		<PreferenceCategory
+			android:layout="@layout/preference_category"
+			android:title="@string/weatherWidgetPanel" />
+		<CheckBoxPreference
+			android:defaultValue="true"
+			android:key="weatherWidgetPanel"
+			android:title="@string/show"
+			android:summary="@string/weatherWidgetPanelSummary" />
+		<CheckBoxPreference
+			android:defaultValue="true"
+			android:dependency="weatherWidgetPanel"
+			android:key="weatherWidgetPanelShowDate"
+			android:title="@string/weatherWidgetPanelShowDate"
+			android:summary="@string/weatherWidgetPanelShowDateSummary" />
+		<CheckBoxPreference
+			android:defaultValue="true"
+			android:dependency="weatherWidgetPanel"
+			android:key="weatherWidgetPanelShowImage"
+			android:title="@string/weatherWidgetPanelShowImage"
+			android:summary="@string/weatherWidgetPanelShowImageSummary" />
+		<CheckBoxPreference
+			android:defaultValue="true"
+			android:dependency="weatherWidgetPanel"
+			android:key="weatherWidgetPanelShowLowTemp"
+			android:title="@string/weatherWidgetPanelShowLowTemp"
+			android:summary="@string/weatherWidgetPanelShowLowTempSummary" />
+		<CheckBoxPreference
+			android:defaultValue="false"
+			android:dependency="weatherWidgetPanel"
+			android:key="weatherWidgetPanelShowPressure"
+			android:title="@string/weatherWidgetPanelShowPressure"
+			android:summary="@string/weatherWidgetPanelShowPressureSummary" />
+		<CheckBoxPreference
+			android:defaultValue="false"
+			android:dependency="weatherWidgetPanel"
+			android:key="weatherWidgetPanelShowLocation"
+			android:title="@string/location"
+			android:summary="@string/weatherWidgetPanelShowLocationSummary" />
+		<CheckBoxPreference
+			android:defaultValue="true"
+			android:dependency="weatherWidgetPanel"
+			android:key="weatherWidgetPanelShowTodayDetails"
+			android:title="@string/weatherWidgetPanelShowTodayDetails"
+			android:summary="@string/weatherWidgetPanelShowTodayDetailsSummary" />
+		<ru.yanus171.android.handyclockwidget.free.AutoSummaryEditPreference
+			android:defaultValue="12"
+			android:dependency="weatherWidgetPanel"
+			android:inputType="number"
+			android:key="weatherWidgetPanelDayCount"
+			android:title="@string/weatherWidgetPanelDayCount"
+			android:summary="@string/weatherWidgetPanelDayCountSummary" />
+		<CheckBoxPreference
+			android:defaultValue="true"
+			android:dependency="weatherWidgetPanel"
+			android:key="colorTemperature"
+			android:title="@string/weatherWidgetPanelColorTemperature"
+			android:summary="@string/weatherWidgetPanelColorTemperatureSummary" />
+		<CheckBoxPreference
+			android:defaultValue="false"
+			android:dependency="weatherWidgetPanel"
+			android:key="weatherWidgetPanelShowComfort"
+			android:title="@string/weatherWidgetPanelShowComfort"
+			android:summary="@string/weatherWidgetPanelShowComfortSummary" />
+
+		<PreferenceCategory
+			android:layout="@layout/preference_category"
+			android:title="@string/miscellaneous" />
+		<CheckBoxPreference
+			android:defaultValue="false"
+			android:key="weatherWidgetInEventList"
+			android:title="@string/weatherWidgetInEventList"
+			android:summary="@string/weatherWidgetInEventListSummary" />
+		<CheckBoxPreference
+			android:defaultValue="true"
+			android:key="todayWeatherEventInfoInWidget"
+			android:summary="@string/todayWeatherEventInfoInWidgetSummary"
+			android:title="@string/todayWeatherEventInfoInWidget" />
+		<ru.yanus171.android.handyclockwidget.free.TimePreference
+			android:defaultValue="20"
+			android:key="weatherTimeStartToShowTomorrow"
+			android:title="@string/weatherTimeStartToShowTomorrow"
+			android:summary="@string/weatherTimeStartToShowTomorrowSummary" />
+		<ru.yanus171.android.handyclockwidget.free.AppSelectPreference
+			android:defaultValue="openContextMenu"
+			android:key="weatherTapAction"
+			android:title="@string/tapAction" />
+		<CheckBoxPreference
+			android:defaultValue="false"
+			android:key="ignoreWeatherErrors"
+			android:summary="@string/ignoreWeatherErrorsSummary"
+			android:title="@string/ignoreWeatherErrors" />
+		<ru.yanus171.android.handyclockwidget.free.AutoSummaryEditPreference
+			android:defaultValue="30"
+			android:inputType="number"
+			android:key="sunEventWidgetVisibleInterval"
+			android:summary="@string/sunEventWidgetVisibleIntervalSummary"
+			android:title="@string/sunEventWidgetVisibleInterval" />
+		<ru.yanus171.android.handyclockwidget.free.AutoSummaryEditPreference
+			android:defaultValue="30"
+			android:inputType="number"
+			android:key="sunEventWidgetVisibleIntervalAfter"
+			android:summary="@string/sunEventWidgetVisibleIntervalAfterSummary"
+			android:title="@string/sunEventWidgetVisibleIntervalAfter" />
+
+		<!--         <CheckBoxPreference -->
+		<!--             android:defaultValue="true" -->
+		<!--             android:key="showTemperatureChanges" -->
+		<!--             android:title="@string/showTemperatureChanges"  -->
+		<!--             android:summary="@string/showTemperatureChangesSummary"/> -->
+
+		<!--         <ru.yanus171.android.handyclockwidget.free.AutoSummaryEditPreference -->
+		<!--             android:defaultValue="1" -->
+		<!--             android:dependency="showTemperatureChanges" -->
+		<!--             android:dialogMessage="@string/deltaTemperatureThresholdSummary" -->
+		<!--             android:inputType="number" -->
+		<!--             android:key="deltaTemperatureThreshold" -->
+		<!--             android:summary="@string/deltaTemperatureThresholdSummary" -->
+		<!--             android:title="@string/deltaTemperatureThreshold" /> -->
+
+	</PreferenceScreen>
 
     <PreferenceScreen
         android:key="preferenceScreenOtherSources"
@@ -1771,13 +1937,7 @@
             <PreferenceCategory
                 android:layout="@layout/preference_category"
                 android:title="Web load" />
-            <CheckBoxPreference
-                android:defaultValue="false"
-                android:key="eventListWidgetShowWebLoadBalance"
-                android:summary="@string/eventListWidgetShowWebLoadBalanceSummary"
-                android:title="@string/show" />
             <ru.yanus171.android.handyclockwidget.free.webload.WebLoadBalanceValueSelectPreference
-                android:dependency="eventListWidgetShowWebLoadBalance"
                 android:title="@string/selectBalanceValues" />
 
             <PreferenceCategory
@@ -1876,10 +2036,6 @@
                 android:defaultValue="false"
                 android:key="balanceShowUpdateTimeInWidget"
                 android:title="@string/balanceShowUpdateTimeInWidget" />
-            <CheckBoxPreference
-                android:defaultValue="false"
-                android:key="balanceShowUpdateErrorInWidget"
-                android:title="@string/balanceShowUpdateErrorInWidget" />
 
             <PreferenceCategory
                 android:layout="@layout/preference_category"
@@ -1965,212 +2121,7 @@
                 android:title="@string/thresholdPerDayCount" />
 
         </PreferenceScreen>
-
-        <PreferenceScreen
-            android:key="preferenceScreenEventsWeather"
-            android:summary="@string/weatherSetupSummary"
-            android:title="@string/weatherSetup"
-            android:icon="@drawable/pref_sun" >
-            <ru.yanus171.android.handyclockwidget.free.BackPreference android:defaultValue="preferenceScreenEventsWeather" />
-
-            <PreferenceCategory
-                android:key="weatherBalanceBY"
-                android:layout="@layout/preference_category"
-                android:title="Balance BY" />
-            <ru.yanus171.android.handyclockwidget.free.LabelPreference
-                android:key="weatherBalanceBYHint"
-                android:summary="@string/weatherBalanceBYHint" />
-            <CheckBoxPreference
-                android:defaultValue="false"
-                android:key="showBalanceBYWeather"
-                android:title="@string/show" />
-            <ru.yanus171.android.handyclockwidget.free.LinkPreference
-                android:key="balanceBYLink"
-                android:title="@string/balanceBYLink"
-                link:HTTPLink="http://4pda.ru/forum/index.php?showtopic=204464"
-                link:marketLink="market://details?id=com.vladyud.balance" />
-            <ru.yanus171.android.handyclockwidget.free.AppSelectPreference
-                android:defaultValue="weatherDetails"
-                android:key="weatherPanelTapAction"
-                android:title="@string/tapWeatherPanelAction" />
-            <CheckBoxPreference
-                android:defaultValue="true"
-                android:key="balanceBYWeatherShowRainWarning"
-                android:title="@string/balanceBYWeatherShowRainWarning"
-                android:summary="@string/balanceBYWeatherShowRainWarningSummary" />
-
-            <!--<PreferenceCategory
-                android:layout="@layout/preference_category"
-                android:key="genieWidgetCategory"
-                android:title="Genie widget" >
-                <CheckBoxPreference
-                    android:defaultValue="false"
-                    android:key="eventListWidgetShowWeatherGenieWidget"
-                    android:title="@string/show" />
-                <ru.yanus171.android.handyclockwidget.free.LabelPreference
-                    android:key="weatherSetupHint"
-                    android:summary="@string/weatherSetupHint" />
-                <ru.yanus171.android.handyclockwidget.free.LinkPreference
-                    android:key="GenieWidgetLink"
-                    android:title="@string/installGenieWidget"
-                    link:HTTPLink="http://forum.xda-developers.com/attachment.php?attachmentid=1215728" />
-                <ru.yanus171.android.handyclockwidget.free.AutoSummaryEditPreference
-                    android:defaultValue=""
-                    android:dependency="eventListWidgetShowWeatherGenieWidget"
-                    android:key="eventListWidgetWeatherLocation"
-                    android:summary="@string/weatherLocationSummary"
-                    android:title="@string/weatherLocation" />
-                <CheckBoxPreference
-                    android:defaultValue="false"
-                    android:dependency="eventListWidgetShowWeatherGenieWidget"
-                    android:key="weatherGenieWidgetHourly"
-                    android:title="@string/weatherGenieWidgetHourly" />
-                <ru.yanus171.android.handyclockwidget.free.AutoSummaryEditPreference
-                    android:defaultValue="@string/constDefaultChancePrecipitationThreshold"
-                    android:dependency="eventListWidgetShowWeatherGenieWidget"
-                    android:dialogMessage="@string/chancePrecipitationThresholdSummary"
-                    android:inputType="number"
-                    android:key="chancePrecipitationThreshold"
-                    android:summary="@string/chancePrecipitationThresholdSummary"
-                    android:title="@string/chancePrecipitationThreshold" />
-            </PreferenceCategory> -->
-
-            <PreferenceCategory
-                android:layout="@layout/preference_category"
-                android:summary="@string/eventListPeriodWidgetSummary"
-                android:title="@string/eventListPeriodWidget" />
-            <ru.yanus171.android.handyclockwidget.free.AutoSummaryEditPreference
-                android:defaultValue="@string/constDefaultDaysInAdvance"
-                android:inputType="number"
-                android:key="eventListWidgetWeatherDaysBefore"
-                android:title="@string/eventListPeriodDaysInAdvance" />
-
-            <PreferenceCategory
-                android:layout="@layout/preference_category"
-                android:title="@string/weatherWidgetPanel" />
-            <CheckBoxPreference
-                android:defaultValue="true"
-                android:key="weatherWidgetPanel"
-                android:title="@string/show"
-                android:summary="@string/weatherWidgetPanelSummary" />
-            <CheckBoxPreference
-                android:defaultValue="true"
-                android:dependency="weatherWidgetPanel"
-                android:key="weatherWidgetPanelShowDate"
-                android:title="@string/weatherWidgetPanelShowDate"
-                android:summary="@string/weatherWidgetPanelShowDateSummary" />
-            <CheckBoxPreference
-                android:defaultValue="true"
-                android:dependency="weatherWidgetPanel"
-                android:key="weatherWidgetPanelShowImage"
-                android:title="@string/weatherWidgetPanelShowImage"
-                android:summary="@string/weatherWidgetPanelShowImageSummary" />
-            <CheckBoxPreference
-                android:defaultValue="true"
-                android:dependency="weatherWidgetPanel"
-                android:key="weatherWidgetPanelShowLowTemp"
-                android:title="@string/weatherWidgetPanelShowLowTemp"
-                android:summary="@string/weatherWidgetPanelShowLowTempSummary" />
-            <CheckBoxPreference
-                android:defaultValue="false"
-                android:dependency="weatherWidgetPanel"
-                android:key="weatherWidgetPanelShowPressure"
-                android:title="@string/weatherWidgetPanelShowPressure"
-                android:summary="@string/weatherWidgetPanelShowPressureSummary" />
-            <CheckBoxPreference
-                android:defaultValue="false"
-                android:dependency="weatherWidgetPanel"
-                android:key="weatherWidgetPanelShowLocation"
-                android:title="@string/location"
-                android:summary="@string/weatherWidgetPanelShowLocationSummary" />
-            <CheckBoxPreference
-                android:defaultValue="true"
-                android:dependency="weatherWidgetPanel"
-                android:key="weatherWidgetPanelShowTodayDetails"
-                android:title="@string/weatherWidgetPanelShowTodayDetails"
-                android:summary="@string/weatherWidgetPanelShowTodayDetailsSummary" />
-            <ru.yanus171.android.handyclockwidget.free.AutoSummaryEditPreference
-                android:defaultValue="12"
-                android:dependency="weatherWidgetPanel"
-                android:inputType="number"
-                android:key="weatherWidgetPanelDayCount"
-                android:title="@string/weatherWidgetPanelDayCount"
-                android:summary="@string/weatherWidgetPanelDayCountSummary" />
-            <CheckBoxPreference
-                android:defaultValue="true"
-                android:dependency="weatherWidgetPanel"
-                android:key="colorTemperature"
-                android:title="@string/weatherWidgetPanelColorTemperature"
-                android:summary="@string/weatherWidgetPanelColorTemperatureSummary" />
-            <CheckBoxPreference
-                android:defaultValue="false"
-                android:dependency="weatherWidgetPanel"
-                android:key="weatherWidgetPanelShowComfort"
-                android:title="@string/weatherWidgetPanelShowComfort"
-                android:summary="@string/weatherWidgetPanelShowComfortSummary" />
-
-            <PreferenceCategory
-                android:layout="@layout/preference_category"
-                android:title="@string/miscellaneous" />
-            <CheckBoxPreference
-                android:defaultValue="false"
-                android:key="weatherWidgetInEventList"
-                android:title="@string/weatherWidgetInEventList"
-                android:summary="@string/weatherWidgetInEventListSummary" />
-            <CheckBoxPreference
-                android:defaultValue="true"
-                android:key="todayWeatherEventInfoInWidget"
-                android:summary="@string/todayWeatherEventInfoInWidgetSummary"
-                android:title="@string/todayWeatherEventInfoInWidget" />
-            <ru.yanus171.android.handyclockwidget.free.TimePreference
-                android:defaultValue="20"
-                android:key="weatherTimeStartToShowTomorrow"
-                android:title="@string/weatherTimeStartToShowTomorrow"
-                android:summary="@string/weatherTimeStartToShowTomorrowSummary" />
-            <ru.yanus171.android.handyclockwidget.free.AutoSummaryEditPreference
-                android:defaultValue="@string/constDefaultWeatherRefreshInterval"
-                android:inputType="number"
-                android:key="eventListWidgetWeatherRefreshInterval"
-                android:summary="@string/eventListWidgetWeatherRefreshIntervalSummary"
-                android:title="@string/refreshInterval" />
-            <ru.yanus171.android.handyclockwidget.free.AppSelectPreference
-                android:defaultValue="openContextMenu"
-                android:key="weatherTapAction"
-                android:title="@string/tapAction" />
-            <CheckBoxPreference
-                android:defaultValue="false"
-                android:key="ignoreWeatherErrors"
-                android:summary="@string/ignoreWeatherErrorsSummary"
-                android:title="@string/ignoreWeatherErrors" />
-            <ru.yanus171.android.handyclockwidget.free.AutoSummaryEditPreference
-                android:defaultValue="30"
-                android:inputType="number"
-                android:key="sunEventWidgetVisibleInterval"
-                android:summary="@string/sunEventWidgetVisibleIntervalSummary"
-                android:title="@string/sunEventWidgetVisibleInterval" />
-            <ru.yanus171.android.handyclockwidget.free.AutoSummaryEditPreference
-                android:defaultValue="30"
-                android:inputType="number"
-                android:key="sunEventWidgetVisibleIntervalAfter"
-                android:summary="@string/sunEventWidgetVisibleIntervalAfterSummary"
-                android:title="@string/sunEventWidgetVisibleIntervalAfter" />
-
-            <!--         <CheckBoxPreference -->
-            <!--             android:defaultValue="true" -->
-            <!--             android:key="showTemperatureChanges" -->
-            <!--             android:title="@string/showTemperatureChanges"  -->
-            <!--             android:summary="@string/showTemperatureChangesSummary"/> -->
-
-            <!--         <ru.yanus171.android.handyclockwidget.free.AutoSummaryEditPreference -->
-            <!--             android:defaultValue="1" -->
-            <!--             android:dependency="showTemperatureChanges" -->
-            <!--             android:dialogMessage="@string/deltaTemperatureThresholdSummary" -->
-            <!--             android:inputType="number" -->
-            <!--             android:key="deltaTemperatureThreshold" -->
-            <!--             android:summary="@string/deltaTemperatureThresholdSummary" -->
-            <!--             android:title="@string/deltaTemperatureThreshold" /> -->
-
-        </PreferenceScreen>
+        
     </PreferenceScreen>
 
     <PreferenceCategory

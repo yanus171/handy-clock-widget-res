@@ -287,7 +287,6 @@
     <string name="eventListWidgetFullWeekDay">Full weekday</string>
     <string name="eventListWidgetShowAnyBalance">Show AnyBalance</string>
     <string name="eventListWidgetShowAnyBalanceSummary">Show data from Any Balance app</string>
-    <string name="eventListWidgetShowWebLoadBalance">Show Web load balance</string>
     <string name="eventListWidgetShowWebLoadBalanceSummary">Show data from Web load balances</string>
     <string name="eventListWidgetShowBalanceBY">Show Balance BY</string>
     <string name="eventListWidgetShowBalanceBYSummary">Show data from Balance BY app</string>
@@ -811,6 +810,7 @@
     <string name="saveSMSasCalendarEventConfirm">Save SMS as calendar event?</string>
     <string name="customOrthodoxyXMLFileName">Пусть к XML файлу с праздниками</string>
     <string name="customOrthodoxyXMLFileNameSummary">Исходный файл можно скачать по ссылке https://github.com/yanus171/handy-clock-widget-res/blob/master/xml/orthodoxy.xml</string>
+    <string name="useCustomOrthodoxyXMLFileNameSummary">Исходный файл можно скачать по ссылке https://github.com/yanus171/handy-clock-widget-res/blob/master/xml/orthodoxy.xml</string>
     <string name="tropar2">Ин тропарь</string>
     <string name="kondak2">Ин кондак</string>
     <string name="monthCalendarFromMonthStart">From the month start</string>
@@ -933,5 +933,14 @@ Payment.(\d+).+?SHOP2_NAME</string>
     <string name="webload_account_pref_provider_name">Name</string>
     <string name="remove_account">Remove</string>
     <string name="remove_account_confirmation">Remove account?</string>
+    <string name="show_web_account_list">Show acccount list</string>
+    <string name="loading">Loading ...</string>
+    <string name="WeatherUFI">UFI</string>
+    <string name="WeatherPOP">Probability of precipitation</string>
+    <string name="WeatherClouds">Cloud cover</string>
+    <string name="WeatherWind">Wind</string>
+    <string name="customExternalStoragePathApi29PlusDiabled">In the current and (above) android OS version the access to arbitrary storage path is disabled</string>
+    <string name="useCustomOrthodoxyXMLFileName">Читать праздники из файла</string>
+    <string name="ortodoxyCustomFilePath">"Путь к файлу: "</string>
 
 </resources>

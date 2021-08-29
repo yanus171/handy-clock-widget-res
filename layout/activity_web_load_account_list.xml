@@ -16,12 +16,6 @@
         android:fitsSystemWindows="true"
         android:theme="@style/styleApp.AppBarOverlay">
 
-          <androidx.appcompat.widget.Toolbar
-                android:id="@+id/toolbar"
-                android:layout_width="match_parent"
-                android:layout_height="?attr/actionBarSize"
-                app:layout_collapseMode="parallax"
-                app:popupTheme="@style/styleApp.PopupOverlay" />
 
     </androidx.appcompat.widget.Toolbar>
     <include layout="@layout/status_view" />

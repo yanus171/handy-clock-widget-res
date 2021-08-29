@@ -26,7 +26,7 @@
 
     <ImageView
         android:id="@+id/eventImageSmall"
-        android:layout_width="22sp"
+        android:layout_width="25sp"
         android:layout_height="wrap_content"        
         android:layout_gravity="center"
         android:paddingRight="2sp"
