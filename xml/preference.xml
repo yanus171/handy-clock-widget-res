@@ -1473,7 +1473,7 @@
             android:defaultValue=""
             android:key="customOrthodoxyXMLFileName"
             android:title="@string/customOrthodoxyXMLFileName"
-            android:summary="@string/customOrthodoxyXMLFileNameSummary"/>
+            android:summary="@string/customOrthodoxyXMLFileNameSummaryo"/>
         <CheckBoxPreference
             android:defaultValue="false"
             android:key="useCustomOrthodoxyXMLFileName"
@@ -2536,6 +2536,11 @@
             android:key="customExternalStoragePath"
             android:summary="path to external storage to save settings, logs, and pictures (empty to use standard system path)"
             android:title="Custom external storage path" />
+<!--        <ru.yanus171.android.handyclockwidget.free.StartActivityPreference-->
+<!--            android:key="openAppFolder"-->
+<!--            android:title="@string/openAppFolder"-->
+<!--            startActivity:className=""-->
+<!--            startActivity:oper="openAppFolder" />-->
 
         <CheckBoxPreference
             android:defaultValue="false"

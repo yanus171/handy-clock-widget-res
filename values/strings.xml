@@ -809,8 +809,8 @@
     <string name="colorMonthCalendarDayInTimeScheduleSummary">in shift schedule color. Otherwise draw an additional small square</string>
     <string name="saveSMSasCalendarEventConfirm">Save SMS as calendar event?</string>
     <string name="customOrthodoxyXMLFileName">Пусть к XML файлу с праздниками</string>
-    <string name="customOrthodoxyXMLFileNameSummary">Исходный файл можно скачать по ссылке https://github.com/yanus171/handy-clock-widget-res/blob/master/xml/orthodoxy.xml</string>
-    <string name="useCustomOrthodoxyXMLFileNameSummary">Исходный файл можно скачать по ссылке https://github.com/yanus171/handy-clock-widget-res/blob/master/xml/orthodoxy.xml</string>
+    <string name="customOrthodoxyXMLFileNameSummary"></string>
+    <string name="useCustomOrthodoxyXMLFileNameSummary"></string>
     <string name="tropar2">Ин тропарь</string>
     <string name="kondak2">Ин кондак</string>
     <string name="monthCalendarFromMonthStart">From the month start</string>
@@ -942,5 +942,8 @@ Payment.(\d+).+?SHOP2_NAME</string>
     <string name="customExternalStoragePathApi29PlusDiabled">In the current and (above) android OS version the access to arbitrary storage path is disabled</string>
     <string name="useCustomOrthodoxyXMLFileName">Читать праздники из файла</string>
     <string name="ortodoxyCustomFilePath">"Путь к файлу: "</string>
+    <string name="addFontFile">Add custom font file</string>
+    <string name="invalidFontFile">Invalid font file</string>
+    <string name="openAppFolder">Open app folder in file manager</string>
 
 </resources>
